@@ -1,8 +1,15 @@
 <header class="header" role="banner">
   <figure class="avatar">
-    <img src="{{ site.avatar }}" alt="{{ site.full_name }}">
+    <a href="/"><img src="{{ site.avatar }}" alt="{{ site.full_name }}"></a>
   </figure>
   <h1 class="site__name">{{ site.full_name }}</h1>
-  <h2 class="site__bio"><a href="/about/">About</a></h2>
+
+	{% assign sorted_pages = site.pages | sort: "order" %}
+	{% for page in sorted_pages %}
+		{% if page.title %}
+			<a class="site__page" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+		{% endif %}
+	{% endfor %}
+
 <!--  <a href="#" class="button button--primary">Subscribe</a> -->
 </header>
