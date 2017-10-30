@@ -2,10 +2,19 @@
 <rss version="2.0">
   <channel>
     <title>Scott Densmore</title>
-    <description>Powered by &lt;a href=&quot;http://micro.blog/&quot;&gt;Micro.blog&lt;/a&gt;.</description>
+    <description>Follow &lt;a href=&quot;https://micro.blog/scottdensmore&quot;&gt;@scottdensmore on Micro.blog&lt;/a&gt;.</description>
     <link>http://www.scottdensmore.io/</link>
-    <pubDate>Mon, 24 Jul 2017 11:40:59 -0700</pubDate>
-    <lastBuildDate>Mon, 24 Jul 2017 11:40:59 -0700</lastBuildDate>
+    <pubDate>Mon, 30 Oct 2017 14:58:34 -0700</pubDate>
+    <lastBuildDate>Mon, 30 Oct 2017 14:58:34 -0700</lastBuildDate>
+    
+      <item>
+      	
+        <description>&lt;p&gt;Ordered my iPhone X.  Took me a while because I was in San Fransico where the caching for the store was bad because everyone there were trying to get the phone. I ended up with a Nov 17th - 24th delivery. Waiting for the reviews to see if I am going to keep my order.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Oct 2017 14:58:00 -0700</pubDate>
+        <link>http://www.scottdensmore.io/2017/10/30/ordered-my-iphone.html</link>
+        <guid isPermaLink="true">http://scottdensmore.micro.blog/2017/10/30/ordered-my-iphone.html</guid>
+      </item>
     
   </channel>
 </rss>
