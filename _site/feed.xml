@@ -4,14 +4,32 @@
     <title>Scott Densmore</title>
     <description>Follow &lt;a href=&quot;https://micro.blog/scottdensmore&quot;&gt;@scottdensmore on Micro.blog&lt;/a&gt;.</description>
     <link>http://www.scottdensmore.io/</link>
-    <pubDate>Fri, 10 Nov 2017 12:54:45 -0800</pubDate>
-    <lastBuildDate>Fri, 10 Nov 2017 12:54:45 -0800</lastBuildDate>
+    <pubDate>Sat, 25 Nov 2017 13:39:00 -0800</pubDate>
+    <lastBuildDate>Sat, 25 Nov 2017 13:39:00 -0800</lastBuildDate>
+    
+      <item>
+      	
+        <title>Finding Loaded Frameworks in macOS</title>
+        
+        <description>&lt;p&gt;I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:
+&lt;code&gt;
+[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        NSLog(@&quot;note.object:%@&quot;, [note object]);
+    }];
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Nov 2017 13:38:00 -0800</pubDate>
+        <link>http://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html</link>
+        <guid isPermaLink="true">http://scottdensmore.micro.blog/2017/11/25/finding-loaded-frameworks.html</guid>
+      </item>
     
       <item>
       	
         <description>&lt;p&gt;Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding&lt;/p&gt;
 </description>
-        <pubDate>Fri, 10 Nov 2017 13:54:00 -0700</pubDate>
+        <pubDate>Fri, 10 Nov 2017 12:54:00 -0800</pubDate>
         <link>http://www.scottdensmore.io/2017/11/10/spent-time-last.html</link>
         <guid isPermaLink="true">http://scottdensmore.micro.blog/2017/11/10/spent-time-last.html</guid>
       </item>
@@ -20,7 +38,7 @@
       	
         <description>&lt;p&gt;FaceID is awesome. TouchID is beastly… no longer can live like an animal.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 08 Nov 2017 21:52:00 -0700</pubDate>
+        <pubDate>Wed, 08 Nov 2017 20:52:00 -0800</pubDate>
         <link>http://www.scottdensmore.io/2017/11/08/faceid-is-awesome.html</link>
         <guid isPermaLink="true">http://scottdensmore.micro.blog/2017/11/09/faceid-is-awesome.html</guid>
       </item>
@@ -29,7 +47,7 @@
       	
         <description>&lt;p&gt;Ordered my iPhone X.  Took me a while because I was in San Fransico where the caching for the store was bad because everyone there were trying to get the phone. I ended up with a Nov 17th - 24th delivery. Waiting for the reviews to see if I am going to keep my order.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 30 Oct 2017 14:58:00 -0700</pubDate>
+        <pubDate>Mon, 30 Oct 2017 13:58:00 -0800</pubDate>
         <link>http://www.scottdensmore.io/2017/10/30/ordered-my-iphone.html</link>
         <guid isPermaLink="true">http://scottdensmore.micro.blog/2017/10/30/ordered-my-iphone.html</guid>
       </item>
