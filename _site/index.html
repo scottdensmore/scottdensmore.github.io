@@ -61,10 +61,25 @@
       <section class="posts h-feed">
   
     <article class="post h-entry">
+      <div class="e-content"><p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:
+<code>
+[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        NSLog(@"note.object:%@", [note object]);
+    }];
+</code></p>
+
+<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>
+</div>
+      <footer class="post__footer">
+        <small><time class="dt-published" datetime="2017-11-25T13:38:00-08:00"><a href="/2017/11/25/finding-loaded-frameworks.html" title="Permalink to Microblog post" class="u-url">Sat, Nov 25, 2017 at 01:38pm</time></a></small>
+      </footer>
+    </article>
+  
+    <article class="post h-entry">
       <div class="e-content"><p>Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding</p>
 </div>
       <footer class="post__footer">
-        <small><time class="dt-published" datetime="2017-11-10T13:54:00-07:00"><a href="/2017/11/10/spent-time-last.html" title="Permalink to Microblog post" class="u-url">Fri, Nov 10, 2017 at 01:54pm</time></a></small>
+        <small><time class="dt-published" datetime="2017-11-10T12:54:00-08:00"><a href="/2017/11/10/spent-time-last.html" title="Permalink to Microblog post" class="u-url">Fri, Nov 10, 2017 at 12:54pm</time></a></small>
       </footer>
     </article>
   
@@ -72,7 +87,7 @@
       <div class="e-content"><p>FaceID is awesome. TouchID is beastly… no longer can live like an animal.</p>
 </div>
       <footer class="post__footer">
-        <small><time class="dt-published" datetime="2017-11-08T21:52:00-07:00"><a href="/2017/11/08/faceid-is-awesome.html" title="Permalink to Microblog post" class="u-url">Wed, Nov 08, 2017 at 09:52pm</time></a></small>
+        <small><time class="dt-published" datetime="2017-11-08T20:52:00-08:00"><a href="/2017/11/08/faceid-is-awesome.html" title="Permalink to Microblog post" class="u-url">Wed, Nov 08, 2017 at 08:52pm</time></a></small>
       </footer>
     </article>
   
@@ -80,7 +95,7 @@
       <div class="e-content"><p>Ordered my iPhone X.  Took me a while because I was in San Fransico where the caching for the store was bad because everyone there were trying to get the phone. I ended up with a Nov 17th - 24th delivery. Waiting for the reviews to see if I am going to keep my order.</p>
 </div>
       <footer class="post__footer">
-        <small><time class="dt-published" datetime="2017-10-30T14:58:00-07:00"><a href="/2017/10/30/ordered-my-iphone.html" title="Permalink to Microblog post" class="u-url">Mon, Oct 30, 2017 at 02:58pm</time></a></small>
+        <small><time class="dt-published" datetime="2017-10-30T13:58:00-08:00"><a href="/2017/10/30/ordered-my-iphone.html" title="Permalink to Microblog post" class="u-url">Mon, Oct 30, 2017 at 01:58pm</time></a></small>
       </footer>
     </article>
   
