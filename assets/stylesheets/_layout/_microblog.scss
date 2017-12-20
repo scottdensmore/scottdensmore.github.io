@@ -138,3 +138,13 @@ blockquote {
 	margin: 20px;
 	border-left: 1px solid lightgray;
 }
+
+ol {
+	list-style: decimal;
+	padding-left: 20px;
+	padding-bottom: 15px;
+}
+
+sup {
+	vertical-align: super;
+}
