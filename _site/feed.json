@@ -1,9 +1,17 @@
 {
 	"version": "https://jsonfeed.org/version/1",
 	"title": "Scott Densmore",
-	"home_page_url": "http://www.scottdensmore.io/",
-	"feed_url": "http://www.scottdensmore.io/feed.json",
+	"home_page_url": "https://www.scottdensmore.io/",
+	"feed_url": "https://www.scottdensmore.io/feed.json",
 	"items": [
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2017/12/20/really-wish-people.html",
+	      	
+			"content_html": "<p>Really wish people crossing the street in the morning did not where all black in the rain. The only thing I could see was the light coming from their phone as the crossed. </p>\n",
+			"date_published": "2017-12-19T20:19:00-08:00",
+			"url": "https://www.scottdensmore.io/2017/12/19/really-wish-people.html"
+		},
 		
 		{
 			"id": "http://scottdensmore.micro.blog/2017/11/25/finding-loaded-frameworks.html",
@@ -12,7 +20,7 @@
 			
 			"content_html": "<p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:\n<code>\n[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {\n        NSLog(@\"note.object:%@\", [note object]);\n    }];\n</code></p>\n\n<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>\n",
 			"date_published": "2017-11-25T13:38:00-08:00",
-			"url": "http://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
+			"url": "https://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
 		},
 		
 		{
@@ -20,7 +28,7 @@
 	      	
 			"content_html": "<p>Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding</p>\n",
 			"date_published": "2017-11-10T12:54:00-08:00",
-			"url": "http://www.scottdensmore.io/2017/11/10/spent-time-last.html"
+			"url": "https://www.scottdensmore.io/2017/11/10/spent-time-last.html"
 		},
 		
 		{
@@ -28,7 +36,7 @@
 	      	
 			"content_html": "<p>FaceID is awesome. TouchID is beastly… no longer can live like an animal.</p>\n",
 			"date_published": "2017-11-08T20:52:00-08:00",
-			"url": "http://www.scottdensmore.io/2017/11/08/faceid-is-awesome.html"
+			"url": "https://www.scottdensmore.io/2017/11/08/faceid-is-awesome.html"
 		},
 		
 		{
@@ -36,7 +44,7 @@
 	      	
 			"content_html": "<p>Ordered my iPhone X.  Took me a while because I was in San Fransico where the caching for the store was bad because everyone there were trying to get the phone. I ended up with a Nov 17th - 24th delivery. Waiting for the reviews to see if I am going to keep my order.</p>\n",
 			"date_published": "2017-10-30T13:58:00-08:00",
-			"url": "http://www.scottdensmore.io/2017/10/30/ordered-my-iphone.html"
+			"url": "https://www.scottdensmore.io/2017/10/30/ordered-my-iphone.html"
 		}
 		
 	]
