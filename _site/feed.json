@@ -6,6 +6,16 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/01/02/st-century-schizoid.html",
+	      	
+			"title": "21st Century Schizoid Man",
+			
+			"content_html": "<p>Sitting here watching the College Football Playoffs, I hear <a href=\"https://en.wikipedia.org/wiki/21st_Century_Schizoid_Man\">21rst Century Schizoid Man</a> being played by one of the bands. I said “Wow! I am surprised to here that song, it is 48 years old.”. My oldest daughter said “What? That song is only a few years old.”. After a little more schooling on both sides, I realized it is a song by Kayne West called <a href=\"https://en.wikipedia.org/wiki/Power_%28Kanye_West_song%29\">Power</a>. I played the original for the kids: there was much eye rolling.</p>\n",
+			"date_published": "2018-01-01T17:51:00-08:00",
+			"url": "https://www.scottdensmore.io/2018/01/01/st-century-schizoid.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2017/12/31/sending-out-my.html",
 	      	
 			"content_html": "<p>Sending out my Apple Watch for repair. Mic not working. Going to miss my activity streak and badges :(. </p>\n",
@@ -77,14 +87,6 @@
 			"content_html": "<p>Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding</p>\n",
 			"date_published": "2017-11-10T12:54:00-08:00",
 			"url": "https://www.scottdensmore.io/2017/11/10/spent-time-last.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/11/09/faceid-is-awesome.html",
-	      	
-			"content_html": "<p>FaceID is awesome. TouchID is beastly… no longer can live like an animal.</p>\n",
-			"date_published": "2017-11-08T20:52:00-08:00",
-			"url": "https://www.scottdensmore.io/2017/11/08/faceid-is-awesome.html"
 		}
 		
 	]
