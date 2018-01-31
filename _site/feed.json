@@ -6,6 +6,14 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/01/31/i-will-no.html",
+	      	
+			"content_html": "<p>I will no longer refer to it as ‘My Calendar’ and now refer to it as ‘My Tetris Board’.</p>\n",
+			"date_published": "2018-01-30T16:14:00-08:00",
+			"url": "https://www.scottdensmore.io/2018/01/30/i-will-no.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/01/02/st-century-schizoid.html",
 	      	
 			"title": "21st Century Schizoid Man",
@@ -79,14 +87,6 @@
 			"content_html": "<p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:\n<code>\n[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {\n        NSLog(@\"note.object:%@\", [note object]);\n    }];\n</code></p>\n\n<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>\n",
 			"date_published": "2017-11-25T13:38:00-08:00",
 			"url": "https://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/11/10/spent-time-last.html",
-	      	
-			"content_html": "<p>Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding</p>\n",
-			"date_published": "2017-11-10T12:54:00-08:00",
-			"url": "https://www.scottdensmore.io/2017/11/10/spent-time-last.html"
 		}
 		
 	]
