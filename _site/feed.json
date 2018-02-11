@@ -6,6 +6,14 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/02/11/after-living-in.html",
+	      	
+			"content_html": "<p>After living in the Northwest for many years, you would think I was used to the grey and rainy days. Nope… hate them.</p>\n",
+			"date_published": "2018-02-10T16:50:00-08:00",
+			"url": "https://www.scottdensmore.io/2018/02/10/after-living-in.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/01/31/i-will-no.html",
 	      	
 			"content_html": "<p>I will no longer refer to it as ‘My Calendar’ and now refer to it as ‘My Tetris Board’.</p>\n",
@@ -77,16 +85,6 @@
 			"content_html": "<p>Really wish people crossing the street in the morning did not where all black in the rain. The only thing I could see was the light coming from their phone as the crossed. </p>\n",
 			"date_published": "2017-12-19T20:19:00-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/19/really-wish-people.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/11/25/finding-loaded-frameworks.html",
-	      	
-			"title": "Finding Loaded Frameworks in macOS",
-			
-			"content_html": "<p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:\n<code>\n[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {\n        NSLog(@\"note.object:%@\", [note object]);\n    }];\n</code></p>\n\n<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>\n",
-			"date_published": "2017-11-25T13:38:00-08:00",
-			"url": "https://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
 		}
 		
 	]
