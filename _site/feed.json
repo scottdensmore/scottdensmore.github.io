@@ -6,6 +6,16 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/02/19/life-is-a.html",
+	      	
+			"title": "Life is a TRAP",
+			
+			"content_html": "<p>I don’t like to talk much about politics (although this shouldn’t be political): I just don’t understand how so many people can be pro-life then once that person is born, they are on their own. In many states, abortions have a 3 day waiting period (WTF?) where you can get a gun and kill 17 kids whenever you want. Where is the protection for them? Most laws for waiting periods on guns are applied to handguns, not shotguns or rifles. Where are the TRAP laws for all guns?</p>\n<p>[www.youtube.com/watch](https://www.youtube.com/watch?v=DRauXXz6t0Y)</p>\n",
+			"date_published": "2018-02-19T12:46:00-08:00",
+			"url": "https://www.scottdensmore.io/2018/02/19/life-is-a.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/02/13/days-like-these.html",
 	      	
 			"content_html": "<p>Days like these the phrase “Life is a rough sport” really rings true. </p>\n",
@@ -85,6 +95,48 @@
 			"content_html": "<p>Holiday traveling is always interesting. Flights overbooked and offering 400 US to change. I wonder how many times you can change and collect a ticket around the world.</p>\n",
 			"date_published": "2017-12-21T11:14:00-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/21/holiday-traveling-is.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2017/12/20/really-wish-people.html",
+	      	
+			"content_html": "<p>Really wish people crossing the street in the morning did not where all black in the rain. The only thing I could see was the light coming from their phone as the crossed. </p>\n",
+			"date_published": "2017-12-19T20:19:00-08:00",
+			"url": "https://www.scottdensmore.io/2017/12/19/really-wish-people.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2017/11/25/finding-loaded-frameworks.html",
+	      	
+			"title": "Finding Loaded Frameworks in macOS",
+			
+			"content_html": "<p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:\n<code>\n[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {\n        NSLog(@\"note.object:%@\", [note object]);\n    }];\n</code></p>\n\n<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>\n",
+			"date_published": "2017-11-25T13:38:00-08:00",
+			"url": "https://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2017/11/10/spent-time-last.html",
+	      	
+			"content_html": "<p>Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding</p>\n",
+			"date_published": "2017-11-10T12:54:00-08:00",
+			"url": "https://www.scottdensmore.io/2017/11/10/spent-time-last.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2017/11/09/faceid-is-awesome.html",
+	      	
+			"content_html": "<p>FaceID is awesome. TouchID is beastly… no longer can live like an animal.</p>\n",
+			"date_published": "2017-11-08T20:52:00-08:00",
+			"url": "https://www.scottdensmore.io/2017/11/08/faceid-is-awesome.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2017/10/30/ordered-my-iphone.html",
+	      	
+			"content_html": "<p>Ordered my iPhone X.  Took me a while because I was in San Fransico where the caching for the store was bad because everyone there were trying to get the phone. I ended up with a Nov 17th - 24th delivery. Waiting for the reviews to see if I am going to keep my order.</p>\n",
+			"date_published": "2017-10-30T13:58:00-08:00",
+			"url": "https://www.scottdensmore.io/2017/10/30/ordered-my-iphone.html"
 		}
 		
 	]
