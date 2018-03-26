@@ -2,7 +2,8 @@
 layout: post
 title: "Finding Loaded Frameworks in macOS"
 microblog: false
-date: 2017-11-25 13:38 -0800
+audio: 
+date: 2017-11-25 14:38 -0700
 guid: http://scottdensmore.micro.blog/2017/11/25/finding-loaded-frameworks.html
 ---
 I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:
