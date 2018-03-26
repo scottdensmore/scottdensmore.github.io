@@ -1,7 +1,8 @@
 ---
 layout: post
 microblog: true
-date: 2017-12-25 13:37 -0800
+audio: 
+date: 2017-12-25 14:37 -0700
 guid: http://scottdensmore.micro.blog/2017/12/25/merry-christmas-you.html
 ---
 Merry Christmas you filthy animals!
