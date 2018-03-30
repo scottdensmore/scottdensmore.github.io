@@ -31,33 +31,6 @@
   <body class="single">
 
     
-      <header class="header" role="banner">
-  <figure class="avatar">
-    <a href="/"><img src="https://micro.blog/scottdensmore/avatar.jpg" alt="Scott Densmore"></a>
-  </figure>
-  <h1 class="site__name">Scott Densmore</h1>
-
-	
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			<a class="site__page" href="/about/">About</a>
-		
-	
-
-<!--  <a href="#" class="button button--primary">Subscribe</a> -->
-</header>
-
-    
 
     <main class="main__content" role="main">
       <article class="post--single h-entry">
@@ -65,24 +38,24 @@
     <h1>Finding Loaded Frameworks in macOS</h1>
   
   <div class="e-content">
-  <p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:
-<code>
-[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+  <p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
         NSLog(@"note.object:%@", [note object]);
     }];
-</code></p>
+</code></pre>
+</div>
 
 <p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>
 
   </div>
   <footer class="post__footer">
-    <small><time class="dt-published" datetime="2017-11-25T14:38:00-07:00">Sat, Nov 25, 2017 at 02:38pm</time></small>
+    <small><time class="dt-published" datetime="2017-11-25T13:38:00-08:00">Sat, Nov 25, 2017 at 01:38pm</time></small>
   </footer>
 </article>
 
     </main>
 
-    <footer class="footer " role="contentinfo">
+    <footer class="footer footer--single" role="contentinfo">
   <small class="copyright">&copy; 2018 <a href="https://www.scottdensmore.io">Scott Densmore</a>. Follow <a href="https://micro.blog/scottdensmore">@scottdensmore on Micro.blog</a>.</small>
 </footer>
 
