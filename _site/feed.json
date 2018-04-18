@@ -6,10 +6,18 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/04/18/you-know-its.html",
+	      	
+			"content_html": "<p>You know it’s a fun job, but still a job  <a href=\"https://itunes.apple.com/us/album/rock-superstar-feat-chino-moreno-everlast/211508512?i=211510377\">itunes.apple.com</a></p>\n",
+			"date_published": "2018-04-18T11:01:14-07:00",
+			"url": "https://www.scottdensmore.io/2018/04/18/you-know-its.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/04/08/i-am-not.html",
 	      	
 			"content_html": "<p>I am not accident prone, I am a licensed gravity tester.</p>\n",
-			"date_published": "2018-04-07T21:34:00-07:00",
+			"date_published": "2018-04-07T21:34:28-07:00",
 			"url": "https://www.scottdensmore.io/2018/04/07/i-am-not.html"
 		},
 		
@@ -17,7 +25,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/04/05/music-shifts-your.html",
 	      	
 			"content_html": "<p>Music shifts your perspective… helps you see things differently. I love music.</p>\n",
-			"date_published": "2018-04-04T20:22:00-07:00",
+			"date_published": "2018-04-04T20:22:33-07:00",
 			"url": "https://www.scottdensmore.io/2018/04/04/music-shifts-your.html"
 		},
 		
@@ -25,7 +33,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/04/01/happy-easter.html",
 	      	
 			"content_html": "<p>Happy Easter!</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/697d0d8331.jpg\" alt=\"April Fools\" title=\"aprile-fools.jpg\" border=\"0\" width=\"250\" height=\"250\" /></p>\n",
-			"date_published": "2018-04-01T14:29:00-07:00",
+			"date_published": "2018-04-01T14:29:24-07:00",
 			"url": "https://www.scottdensmore.io/2018/04/01/happy-easter.html"
 		},
 		
@@ -33,7 +41,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/03/30/burpee-for-days.html",
 	      	
 			"content_html": "<p>Burpee for days</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/de2e579693.jpg\" width=\"600\" height=\"600\" /></p>\n",
-			"date_published": "2018-03-30T14:00:00-07:00",
+			"date_published": "2018-03-30T14:00:51-07:00",
 			"url": "https://www.scottdensmore.io/2018/03/30/burpee-for-days.html"
 		},
 		
@@ -41,7 +49,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/03/26/sitting-here-watching.html",
 	      	
 			"content_html": "<p>Sitting here watching Fringe and forgot that Chadwick Boseman (Black Panther) was in the episode <a href=\"https://en.wikipedia.org/wiki/Subject_9\">Subject 9</a>.</p>\n",
-			"date_published": "2018-03-25T19:05:00-07:00",
+			"date_published": "2018-03-25T19:05:27-07:00",
 			"url": "https://www.scottdensmore.io/2018/03/25/sitting-here-watching.html"
 		},
 		
@@ -49,7 +57,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/03/25/cousins-and-coffee.html",
 	      	
 			"content_html": "<p>Cousins and coffee.<img src=\"http://www.scottdensmore.io/uploads/2018/33dec8136f.jpg\" alt=\"Cousins and Coffee\" title=\"IMG_0637.jpeg\" border=\"0\" width=\"2016\" height=\"1512\" /></p>\n",
-			"date_published": "2018-03-25T14:26:00-07:00",
+			"date_published": "2018-03-25T14:26:23-07:00",
 			"url": "https://www.scottdensmore.io/2018/03/25/cousins-and-coffee.html"
 		},
 		
@@ -57,7 +65,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/02/22/time-to-watch.html",
 	      	
 			"content_html": "<p>Time to watch all the kids play. Love hearing everyone from elementary to high school.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/72c95c983f.jpg\" width=\"600\" height=\"600\" /></p>\n",
-			"date_published": "2018-02-21T18:47:00-08:00",
+			"date_published": "2018-02-21T18:47:07-08:00",
 			"url": "https://www.scottdensmore.io/2018/02/21/time-to-watch.html"
 		},
 		
@@ -67,7 +75,7 @@
 			"title": "Life is a TRAP",
 			
 			"content_html": "<p>I don’t like to talk much about politics (although this shouldn’t be political): I just don’t understand how so many people can be pro-life then once that person is born, they are on their own. In many states, abortions have a 3 day waiting period (WTF?) where you can get a gun and kill 17 kids whenever you want. Where is the protection for them? Most laws for waiting periods on guns are applied to handguns, not shotguns or rifles. Where are the TRAP laws for all guns?</p>\n<p>[www.youtube.com/watch](https://www.youtube.com/watch?v=DRauXXz6t0Y)</p>\n",
-			"date_published": "2018-02-19T12:46:00-08:00",
+			"date_published": "2018-02-19T12:46:52-08:00",
 			"url": "https://www.scottdensmore.io/2018/02/19/life-is-a.html"
 		},
 		
@@ -75,7 +83,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/02/13/days-like-these.html",
 	      	
 			"content_html": "<p>Days like these the phrase “Life is a rough sport” really rings true. </p>\n",
-			"date_published": "2018-02-13T14:47:00-08:00",
+			"date_published": "2018-02-13T14:47:25-08:00",
 			"url": "https://www.scottdensmore.io/2018/02/13/days-like-these.html"
 		},
 		
@@ -83,7 +91,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/02/11/after-living-in.html",
 	      	
 			"content_html": "<p>After living in the Northwest for many years, you would think I was used to the grey and rainy days. Nope… hate them.</p>\n",
-			"date_published": "2018-02-10T16:50:00-08:00",
+			"date_published": "2018-02-10T16:50:12-08:00",
 			"url": "https://www.scottdensmore.io/2018/02/10/after-living-in.html"
 		},
 		
@@ -91,7 +99,7 @@
 			"id": "http://scottdensmore.micro.blog/2018/01/31/i-will-no.html",
 	      	
 			"content_html": "<p>I will no longer refer to it as ‘My Calendar’ and now refer to it as ‘My Tetris Board’.</p>\n",
-			"date_published": "2018-01-30T16:14:00-08:00",
+			"date_published": "2018-01-30T16:14:48-08:00",
 			"url": "https://www.scottdensmore.io/2018/01/30/i-will-no.html"
 		},
 		
@@ -101,7 +109,7 @@
 			"title": "21st Century Schizoid Man",
 			
 			"content_html": "<p>Sitting here watching the College Football Playoffs, I hear <a href=\"https://en.wikipedia.org/wiki/21st_Century_Schizoid_Man\">21rst Century Schizoid Man</a> being played by one of the bands. I said “Wow! I am surprised to here that song, it is 48 years old.”. My oldest daughter said “What? That song is only a few years old.”. After a little more schooling on both sides, I realized it is a song by Kayne West called <a href=\"https://en.wikipedia.org/wiki/Power_%28Kanye_West_song%29\">Power</a>. I played the original for the kids: there was much eye rolling.</p>\n",
-			"date_published": "2018-01-01T17:51:00-08:00",
+			"date_published": "2018-01-01T17:51:16-08:00",
 			"url": "https://www.scottdensmore.io/2018/01/01/st-century-schizoid.html"
 		},
 		
@@ -117,7 +125,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/12/28/what-i-learned.html",
 	      	
 			"content_html": "<p>What I learned on this trip: sleeping on an air mattress is air at night, quicksand in the morning.</p>\n",
-			"date_published": "2017-12-27T16:46:00-08:00",
+			"date_published": "2017-12-27T16:46:23-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/27/what-i-learned.html"
 		},
 		
@@ -125,7 +133,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/12/25/sitting-here-in.html",
 	      	
 			"content_html": "<p>Sitting here in Galveston, TX thinking about all my people in the snow in Seattle. Cold and grey yet a great Christmas.</p>\n",
-			"date_published": "2017-12-25T13:46:00-08:00",
+			"date_published": "2017-12-25T13:46:42-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/25/sitting-here-in.html"
 		},
 		
@@ -133,7 +141,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/12/25/merry-christmas-you.html",
 	      	
 			"content_html": "<p>Merry Christmas you filthy animals!</p>\n",
-			"date_published": "2017-12-25T13:37:00-08:00",
+			"date_published": "2017-12-25T13:37:18-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/25/merry-christmas-you.html"
 		},
 		
@@ -141,7 +149,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/12/23/i-wonder-if.html",
 	      	
 			"content_html": "<p>I wonder if this Domino’s pizza insurance thing has a clause for the 5 second rule.</p>\n",
-			"date_published": "2017-12-23T13:28:00-08:00",
+			"date_published": "2017-12-23T13:28:51-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/23/i-wonder-if.html"
 		},
 		
@@ -149,7 +157,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/12/21/holiday-traveling-is.html",
 	      	
 			"content_html": "<p>Holiday traveling is always interesting. Flights overbooked and offering 400 US to change. I wonder how many times you can change and collect a ticket around the world.</p>\n",
-			"date_published": "2017-12-21T11:14:00-08:00",
+			"date_published": "2017-12-21T11:14:33-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/21/holiday-traveling-is.html"
 		},
 		
@@ -157,7 +165,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/12/20/really-wish-people.html",
 	      	
 			"content_html": "<p>Really wish people crossing the street in the morning did not where all black in the rain. The only thing I could see was the light coming from their phone as the crossed.</p>\n",
-			"date_published": "2017-12-19T20:19:00-08:00",
+			"date_published": "2017-12-19T20:19:12-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/19/really-wish-people.html"
 		},
 		
@@ -167,7 +175,7 @@
 			"title": "Finding Loaded Frameworks in macOS",
 			
 			"content_html": "<p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:</p>\n<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {\n        NSLog(@\"note.object:%@\", [note object]);\n    }];\n</code></pre>\n</div>\n\n<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>\n",
-			"date_published": "2017-11-25T13:38:00-08:00",
+			"date_published": "2017-11-25T13:38:59-08:00",
 			"url": "https://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
 		},
 		
@@ -175,7 +183,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/11/10/spent-time-last.html",
 	      	
 			"content_html": "<p>Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding</p>\n",
-			"date_published": "2017-11-10T12:54:00-08:00",
+			"date_published": "2017-11-10T12:54:44-08:00",
 			"url": "https://www.scottdensmore.io/2017/11/10/spent-time-last.html"
 		},
 		
@@ -191,7 +199,7 @@
 			"id": "http://scottdensmore.micro.blog/2017/10/30/ordered-my-iphone.html",
 	      	
 			"content_html": "<p>Ordered my iPhone X.  Took me a while because I was in San Fransico where the caching for the store was bad because everyone there were trying to get the phone. I ended up with a Nov 17th - 24th delivery. Waiting for the reviews to see if I am going to keep my order.</p>\n",
-			"date_published": "2017-10-30T14:58:00-07:00",
+			"date_published": "2017-10-30T14:58:33-07:00",
 			"url": "https://www.scottdensmore.io/2017/10/30/ordered-my-iphone.html"
 		}
 		
