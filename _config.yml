@@ -15,6 +15,7 @@ baseurl: ""
 url: "https://www.scottdensmore.io"
 markdown: "kramdown"
 username: "scottdensmore"
+microblog_user: "scottdensmore"
 permalink: "/:year/:month/:day/:title.html"
 relative_permalinks: false
 author: "Scott Densmore"
@@ -31,3 +32,5 @@ paginate_path: "/page/:num/"
 timezone: "US/Pacific-New"
 site_id: "1425"
 gems: ["jekyll-paginate"]
+itunes_category: "Society & Culture"
+itunes_subcategory: "Personal Journals"
