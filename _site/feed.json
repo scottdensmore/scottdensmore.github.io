@@ -6,6 +6,14 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/05/01/being-a-good.html",
+	      	
+			"content_html": "<p>Being a good team mate should be the first requirement for any developer that is working on a team.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/9bd67349be.jpg\" width=\"200\" height=\"138\" /></p>\n",
+			"date_published": "2018-05-01T15:54:17-07:00",
+			"url": "https://www.scottdensmore.io/2018/05/01/being-a-good.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/04/18/you-know-its.html",
 	      	
 			"content_html": "<p>You know it’s a fun job, but still a job  <a href=\"https://itunes.apple.com/us/album/rock-superstar-feat-chino-moreno-everlast/211508512?i=211510377\">itunes.apple.com</a></p>\n",
