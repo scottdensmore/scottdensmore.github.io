@@ -6,6 +6,14 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/05/03/todays-mission-if.html",
+	      	
+			"content_html": "<p>Today’s mission if you accept it:\n<img src=\"http://www.scottdensmore.io/uploads/2018/ec23b95cf8.jpg\" alt=\"Operation CF\" title=\"op-cf.jpg\" border=\"0\" width=\"450\" height=\"600\" /></p>\n",
+			"date_published": "2018-05-03T08:16:18-07:00",
+			"url": "https://www.scottdensmore.io/2018/05/03/todays-mission-if.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/05/01/being-a-good.html",
 	      	
 			"content_html": "<p>Being a good team mate should be the first requirement for any developer that is working on a team.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/9bd67349be.jpg\" width=\"200\" height=\"138\" /></p>\n",
@@ -201,14 +209,6 @@
 			"content_html": "<p>FaceID is awesome. TouchID is beastly… no longer can live like an animal.</p>\n",
 			"date_published": "2017-11-08T20:52:00-08:00",
 			"url": "https://www.scottdensmore.io/2017/11/08/faceid-is-awesome.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/10/30/ordered-my-iphone.html",
-	      	
-			"content_html": "<p>Ordered my iPhone X.  Took me a while because I was in San Fransico where the caching for the store was bad because everyone there were trying to get the phone. I ended up with a Nov 17th - 24th delivery. Waiting for the reviews to see if I am going to keep my order.</p>\n",
-			"date_published": "2017-10-30T14:58:33-07:00",
-			"url": "https://www.scottdensmore.io/2017/10/30/ordered-my-iphone.html"
 		}
 		
 	]
