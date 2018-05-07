@@ -6,6 +6,14 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/05/07/dont-let-them.html",
+	      	
+			"content_html": "<p>Don’t let them take you out if they think you are trash.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/57f1a01ed6.jpg\" alt=\"Gi0D1DO\" title=\"gi0D1DO.png\" border=\"0\" width=\"599\" height=\"337\" /></p>\n",
+			"date_published": "2018-05-07T11:04:50-07:00",
+			"url": "https://www.scottdensmore.io/2018/05/07/dont-let-them.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/05/03/my-creed-learn.html",
 	      	
 			"content_html": "<p>My creed. Learn it, love it, live it:</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/ae8a6f04a2.jpg\" alt=\"Don't Give Up\" title=\"dontgiveup.jpg\" border=\"0\" width=\"249\" height=\"171\" /></p>\n",
@@ -201,14 +209,6 @@
 			"content_html": "<p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:</p>\n<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {\n        NSLog(@\"note.object:%@\", [note object]);\n    }];\n</code></pre>\n</div>\n\n<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>\n",
 			"date_published": "2017-11-25T13:38:59-08:00",
 			"url": "https://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/11/10/spent-time-last.html",
-	      	
-			"content_html": "<p>Spent time last night fixing UWP symbolication issues in HockeyApp. Needs a little more love but things are working again. #partynightcoding</p>\n",
-			"date_published": "2017-11-10T12:54:44-08:00",
-			"url": "https://www.scottdensmore.io/2017/11/10/spent-time-last.html"
 		}
 		
 	]
