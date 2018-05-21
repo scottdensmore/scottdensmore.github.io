@@ -6,6 +6,16 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/05/21/the-software-engineers.html",
+	      	
+			"title": "The software engineer’s guide to asserting dominance in the workplace",
+			
+			"content_html": "<p><a href=\"https://medium.com/feature-creep/the-software-engineer-s-guide-to-asserting-office-dominance-ddea7b598df7\">The software engineer’s guide to asserting dominance in the workplace</a></p>\n\n<blockquote>\n  <p>As a software engineer, changing jobs is a way of life. Every day, beautiful recruiters from top tech companies reach out to you on LinkedIn with new opportunities, and each new job equals higher pay and an opportunity to reinvent yourself for the better — as long as you know how to. Here is a handy first-week guide to becoming the alpha of your new workplace.</p>\n</blockquote>\n",
+			"date_published": "2018-05-20T19:30:35-07:00",
+			"url": "https://www.scottdensmore.io/2018/05/20/the-software-engineers.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/05/07/dont-let-them.html",
 	      	
 			"content_html": "<p>Don’t let them take you out if they think you are trash.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/57f1a01ed6.jpg\" alt=\"Gi0D1DO\" title=\"gi0D1DO.png\" border=\"0\" width=\"599\" height=\"337\" /></p>\n",
@@ -199,16 +209,6 @@
 			"content_html": "<p>Really wish people crossing the street in the morning did not where all black in the rain. The only thing I could see was the light coming from their phone as the crossed.</p>\n",
 			"date_published": "2017-12-19T20:19:12-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/19/really-wish-people.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/11/25/finding-loaded-frameworks.html",
-	      	
-			"title": "Finding Loaded Frameworks in macOS",
-			
-			"content_html": "<p>I have been sitting on this for a while. After starting back at Microsoft, I work on HockeyApp which includes the HockeyApp macOS application. The app had a bug that would always ask to give access to the users Address Book even though the app didn’t ever use it. I sat with one of the Apple Engineers while at WWDC and he taught be a trick to see what was being loaded in the bundle. We put the following code in main:</p>\n<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>[[NSNotificationCenter defaultCenter] addObserverForName:NSBundleDidLoadNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {\n        NSLog(@\"note.object:%@\", [note object]);\n    }];\n</code></pre>\n</div>\n\n<p>This should us that the contacts framework was being loaded by the logging framework we were using. We updated the logging from the older version and all is well.</p>\n",
-			"date_published": "2017-11-25T13:38:59-08:00",
-			"url": "https://www.scottdensmore.io/2017/11/25/finding-loaded-frameworks.html"
 		}
 		
 	]
