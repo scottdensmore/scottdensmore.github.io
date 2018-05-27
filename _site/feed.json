@@ -6,6 +6,24 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/05/27/i-might-have.html",
+	      	
+			"content_html": "<p>I might have to make a call today.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/64fdbb94a1.jpg\" width=\"500\" height=\"413\" /></p>\n",
+			"date_published": "2018-05-27T12:19:44-07:00",
+			"url": "https://www.scottdensmore.io/2018/05/27/i-might-have.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2018/05/21/creating-a-culture.html",
+	      	
+			"title": "Creating a Culture of Consistency - naildrivin5.com - David Bryant Copeland's Website",
+			
+			"content_html": "<p><a href=\"https://naildrivin5.com/blog/2018/05/06/creating-a-culture-of-consistency.html\">Creating a Culture of Consistency - naildrivin5.com - David Bryant Copeland’s Website</a>:</p>\n\n<blockquote>\n  <p>Embrace a culture of consistency early on, when the team is small.</p>\n</blockquote>\n",
+			"date_published": "2018-05-20T19:30:40-07:00",
+			"url": "https://www.scottdensmore.io/2018/05/20/creating-a-culture.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/05/21/the-software-engineers.html",
 	      	
 			"title": "The software engineer’s guide to asserting dominance in the workplace",
@@ -193,22 +211,6 @@
 			"content_html": "<p>I wonder if this Domino’s pizza insurance thing has a clause for the 5 second rule.</p>\n",
 			"date_published": "2017-12-23T13:28:51-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/23/i-wonder-if.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/12/21/holiday-traveling-is.html",
-	      	
-			"content_html": "<p>Holiday traveling is always interesting. Flights overbooked and offering 400 US to change. I wonder how many times you can change and collect a ticket around the world.</p>\n",
-			"date_published": "2017-12-21T11:14:33-08:00",
-			"url": "https://www.scottdensmore.io/2017/12/21/holiday-traveling-is.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/12/20/really-wish-people.html",
-	      	
-			"content_html": "<p>Really wish people crossing the street in the morning did not where all black in the rain. The only thing I could see was the light coming from their phone as the crossed.</p>\n",
-			"date_published": "2017-12-19T20:19:12-08:00",
-			"url": "https://www.scottdensmore.io/2017/12/19/really-wish-people.html"
 		}
 		
 	]
