@@ -6,6 +6,16 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/05/27/mob-programming-how.html",
+	      	
+			"title": "Mob Programming: How We Stumbled Upon and Learned to Love It",
+			
+			"content_html": "<p><a href=\"https://spin.atomicobject.com/2018/05/23/mob-programming-story/\">Mob Programming: How We Stumbled Upon and Learned to Love It</a></p>\n\n<blockquote>\n  <p>In many ways, the concept of mobbing or swarming isn’t new. We already do it all the time when we groom the backlog, estimate stories, or hold any type of team meeting.</p>\n</blockquote>\n",
+			"date_published": "2018-05-27T13:23:19-07:00",
+			"url": "https://www.scottdensmore.io/2018/05/27/mob-programming-how.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/05/27/i-might-have.html",
 	      	
 			"content_html": "<p>I might have to make a call today.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/64fdbb94a1.jpg\" width=\"500\" height=\"413\" /></p>\n",
@@ -203,14 +213,6 @@
 			"content_html": "<p>Merry Christmas you filthy animals!</p>\n",
 			"date_published": "2017-12-25T13:37:18-08:00",
 			"url": "https://www.scottdensmore.io/2017/12/25/merry-christmas-you.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/12/23/i-wonder-if.html",
-	      	
-			"content_html": "<p>I wonder if this Domino’s pizza insurance thing has a clause for the 5 second rule.</p>\n",
-			"date_published": "2017-12-23T13:28:51-08:00",
-			"url": "https://www.scottdensmore.io/2017/12/23/i-wonder-if.html"
 		}
 		
 	]
