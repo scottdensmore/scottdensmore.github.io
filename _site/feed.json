@@ -6,6 +6,26 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/07/10/getting-started-flint.html",
+	      	
+			"title": "Getting Started | Flint framework",
+			
+			"content_html": "<p>Leaving this here for later… might be interesting to play with and see if it helps.</p>\n\n<table>\n  <tbody>\n    <tr>\n      <td>[Getting Started</td>\n      <td>Flint framework](https://flint.tools/manual/guides/getting_started.html)</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+			"date_published": "2018-07-10T11:27:20-07:00",
+			"url": "https://www.scottdensmore.io/2018/07/10/getting-started-flint.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2018/07/10/a-cartoon-intro.html",
+	      	
+			"title": "A cartoon intro to DNS over HTTPS – Mozilla Hacks – the Web developer blog",
+			
+			"content_html": "<p>Even simple enough for me.</p>\n\n<p><a href=\"https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/\">A cartoon intro to DNS over HTTPS – Mozilla Hacks – the Web developer blog</a></p>\n\n",
+			"date_published": "2018-07-10T10:00:32-07:00",
+			"url": "https://www.scottdensmore.io/2018/07/10/a-cartoon-intro.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/07/01/sunday-is-recovery.html",
 	      	
 			"content_html": "<p>Sunday is recovery day. Why does Monday always feel like a grind?</p>\n",
@@ -195,24 +215,6 @@
 			"content_html": "<p>I will no longer refer to it as ‘My Calendar’ and now refer to it as ‘My Tetris Board’.</p>\n",
 			"date_published": "2018-01-30T16:14:48-08:00",
 			"url": "https://www.scottdensmore.io/2018/01/30/i-will-no.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2018/01/02/st-century-schizoid.html",
-	      	
-			"title": "21st Century Schizoid Man",
-			
-			"content_html": "<p>Sitting here watching the College Football Playoffs, I hear <a href=\"https://en.wikipedia.org/wiki/21st_Century_Schizoid_Man\">21rst Century Schizoid Man</a> being played by one of the bands. I said “Wow! I am surprised to here that song, it is 48 years old.”. My oldest daughter said “What? That song is only a few years old.”. After a little more schooling on both sides, I realized it is a song by Kayne West called <a href=\"https://en.wikipedia.org/wiki/Power_%28Kanye_West_song%29\">Power</a>. I played the original for the kids: there was much eye rolling.</p>\n",
-			"date_published": "2018-01-01T17:51:16-08:00",
-			"url": "https://www.scottdensmore.io/2018/01/01/st-century-schizoid.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2017/12/31/sending-out-my.html",
-	      	
-			"content_html": "<p>Sending out my Apple Watch for repair. Mic not working. Going to miss my activity streak and badges :(.</p>\n",
-			"date_published": "2017-12-31T13:24:00-08:00",
-			"url": "https://www.scottdensmore.io/2017/12/31/sending-out-my.html"
 		}
 		
 	]
