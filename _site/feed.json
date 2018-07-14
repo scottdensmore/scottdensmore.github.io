@@ -10,7 +10,7 @@
 	      	
 			"title": "Getting Started | Flint framework",
 			
-			"content_html": "<p>Leaving this here for later… might be interesting to play with and see if it helps.</p>\n\n<table>\n  <tbody>\n    <tr>\n      <td>[Getting Started</td>\n      <td>Flint framework](https://flint.tools/manual/guides/getting_started.html)</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+			"content_html": "<p>Leaving this here for later… might be interesting to play with and see if it helps.</p>\n\n<p><a href=\"https://flint.tools/manual/guides/getting_started.html\">Getting Started Flint framework</a></p>\n\n",
 			"date_published": "2018-07-10T11:27:20-07:00",
 			"url": "https://www.scottdensmore.io/2018/07/10/getting-started-flint.html"
 		},
