@@ -6,6 +6,22 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/07/17/i-cant-get.html",
+	      	
+			"content_html": "<p>I can’t get this out of my head today “The scariest thing about distance is that you don’t know wether they’ll miss you or forget you.”</p>\n",
+			"date_published": "2018-07-16T22:15:52-07:00",
+			"url": "https://www.scottdensmore.io/2018/07/16/i-cant-get.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2018/07/17/watching-fahrenheit-and.html",
+	      	
+			"content_html": "<p>Watching <a href=\"https://en.wikipedia.org/wiki/Fahrenheit_451_(2018_film)\">Fahrenheit 451</a> and the strong correlation to today makes me sad. It makes me sad for all the books they have already banned in schools today. Big brother didn’t take over, we opened the door and let him in (or maybe they in?).</p>\n",
+			"date_published": "2018-07-16T20:31:05-07:00",
+			"url": "https://www.scottdensmore.io/2018/07/16/watching-fahrenheit-and.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/07/10/getting-started-flint.html",
 	      	
 			"title": "Getting Started | Flint framework",
@@ -199,22 +215,6 @@
 			"content_html": "<p>Days like these the phrase “Life is a rough sport” really rings true. </p>\n",
 			"date_published": "2018-02-13T14:47:25-08:00",
 			"url": "https://www.scottdensmore.io/2018/02/13/days-like-these.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2018/02/11/after-living-in.html",
-	      	
-			"content_html": "<p>After living in the Northwest for many years, you would think I was used to the grey and rainy days. Nope… hate them.</p>\n",
-			"date_published": "2018-02-10T16:50:12-08:00",
-			"url": "https://www.scottdensmore.io/2018/02/10/after-living-in.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2018/01/31/i-will-no.html",
-	      	
-			"content_html": "<p>I will no longer refer to it as ‘My Calendar’ and now refer to it as ‘My Tetris Board’.</p>\n",
-			"date_published": "2018-01-30T16:14:48-08:00",
-			"url": "https://www.scottdensmore.io/2018/01/30/i-will-no.html"
 		}
 		
 	]
