@@ -6,6 +6,30 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/08/04/on-the-way.html",
+	      	
+			"content_html": "<p>On the way home from Whistler and the girls wanted to stop at Bob’s Burgers because you know… Bob’s Burgers. They are mad this is not <em>the</em> Bob’s Burgers. 🤦‍♀️</p>\n",
+			"date_published": "2018-08-03T17:32:48-07:00",
+			"url": "https://www.scottdensmore.io/2018/08/03/on-the-way.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2018/07/24/everybody-wants-to.html",
+	      	
+			"content_html": "<p>Everybody wants to be number one. I have never talked to anyone and said “do you want to be number 3?” and get a “Yes”. Not everyone is ready to do what it takes to be number one, this is where you have to have commitment.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/d38effc424.jpg\" width=\"600\" height=\"600\" /></p>\n",
+			"date_published": "2018-07-24T09:05:17-07:00",
+			"url": "https://www.scottdensmore.io/2018/07/24/everybody-wants-to.html"
+		},
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2018/07/24/the-greatest-emotional.html",
+	      	
+			"content_html": "<p>The greatest emotional pendulum swing in 30 seconds. <a href=\"http://www.espn.com/video/clip?id=24132876\">Hey coach, we just needed more room to throw the ball.</a>.</p>\n",
+			"date_published": "2018-07-24T08:02:40-07:00",
+			"url": "https://www.scottdensmore.io/2018/07/24/the-greatest-emotional.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/07/24/perhaps-this-life.html",
 	      	
 			"content_html": "<p>Perhaps this life is not my true life. This world not my true home. But she was. She always will be.</p>\n",
@@ -189,30 +213,6 @@
 			"content_html": "<p>Burpee for days</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/de2e579693.jpg\" width=\"600\" height=\"600\" /></p>\n",
 			"date_published": "2018-03-30T14:00:51-07:00",
 			"url": "https://www.scottdensmore.io/2018/03/30/burpee-for-days.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2018/03/26/sitting-here-watching.html",
-	      	
-			"content_html": "<p>Sitting here watching Fringe and forgot that Chadwick Boseman (Black Panther) was in the episode <a href=\"https://en.wikipedia.org/wiki/Subject_9\">Subject 9</a>.</p>\n",
-			"date_published": "2018-03-25T19:05:27-07:00",
-			"url": "https://www.scottdensmore.io/2018/03/25/sitting-here-watching.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2018/03/25/cousins-and-coffee.html",
-	      	
-			"content_html": "<p>Cousins and coffee.<img src=\"http://www.scottdensmore.io/uploads/2018/33dec8136f.jpg\" alt=\"Cousins and Coffee\" title=\"IMG_0637.jpeg\" border=\"0\" width=\"2016\" height=\"1512\" /></p>\n",
-			"date_published": "2018-03-25T14:26:23-07:00",
-			"url": "https://www.scottdensmore.io/2018/03/25/cousins-and-coffee.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2018/02/22/time-to-watch.html",
-	      	
-			"content_html": "<p>Time to watch all the kids play. Love hearing everyone from elementary to high school.</p>\n\n<p><img src=\"http://www.scottdensmore.io/uploads/2018/72c95c983f.jpg\" width=\"600\" height=\"600\" /></p>\n",
-			"date_published": "2018-02-21T18:47:07-08:00",
-			"url": "https://www.scottdensmore.io/2018/02/21/time-to-watch.html"
 		}
 		
 	]
