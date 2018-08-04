@@ -35,3 +35,4 @@ gems: ["jekyll-paginate"]
 itunes_category: "Society & Culture"
 itunes_subcategory: "Personal Journals"
 itunes_author: "Scott Densmore"
+podcast: false
