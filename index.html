@@ -4,7 +4,7 @@ css_class: home
 regenerate: true
 ---
 <section class="posts h-feed">
-  {% for p in paginator.posts %}
+  {% for p in site.posts limit:25 %}
     <article class="post h-entry">
 	  {% if p.microblog == false %}
 		<h1><a href="{{ p.url }}">{{ p.title }}</a></h1>
@@ -16,7 +16,3 @@ regenerate: true
     </article>
   {% endfor %}
 </section>
-
-{% if paginator.previous_page or paginator.next_page %}
-    {% include pagination.html %}
-{% endif %}
