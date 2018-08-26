@@ -2,17 +2,23 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Scott Densmore</title>
-    <description>Follow &lt;a href=&quot;https://micro.blog/scottdensmore&quot;&gt;@scottdensmore on Micro.blog&lt;/a&gt;.</description>
+    <description>Sorta social, demented and sad, but social.</description>
     <link>https://www.scottdensmore.io/</link>
-    <pubDate>Fri, 03 Aug 2018 17:32:59 -0700</pubDate>
-    <lastBuildDate>Fri, 03 Aug 2018 17:32:59 -0700</lastBuildDate>
+    <pubDate>Fri, 24 Aug 2018 21:42:49 -0700</pubDate>
+    <lastBuildDate>Fri, 24 Aug 2018 21:42:49 -0700</lastBuildDate>
 	<itunes:image href="https://micro.blog/scottdensmore/podcast.png" />
 	<itunes:category text="Society &amp; Culture">
 		<itunes:category text="Personal Journals"></itunes:category>
 	</itunes:category>
 	<itunes:author>Scott Densmore</itunes:author>
 	<itunes:explicit>no</itunes:explicit>		
+	<itunes:owner>
+		<itunes:name>Scott Densmore</itunes:name>
+		<itunes:email></itunes:email>
+	</itunes:owner>
 	<language>en</language>
+    
+		
     
 		
     
