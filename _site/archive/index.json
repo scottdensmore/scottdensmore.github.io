@@ -6,9 +6,17 @@
 	"items": [
 		
 		{
+			"id": "http://scottdensmore.micro.blog/2018/09/01/your-talent-is.html",
+	      	
+			"content_text": "Your talent is your greatest nemesis when it comes to...",
+			"date_published": "2018-09-01T13:09:11-07:00",
+			"url": "https://www.scottdensmore.io/2018/09/01/your-talent-is.html"
+		},
+		
+		{
 			"id": "http://scottdensmore.micro.blog/2018/08/25/rmbf-resting-mouth.html",
 	      	
-			"content_text": "RMBF. Resting mouth breather facee.\n\n\n",
+			"content_text": "RMBF. Resting mouth breather face.\n\n\n",
 			"date_published": "2018-08-24T21:42:36-07:00",
 			"url": "https://www.scottdensmore.io/2018/08/24/rmbf-resting-mouth.html"
 		},
