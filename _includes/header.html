@@ -6,7 +6,7 @@
 
 	{% assign sorted_pages = site.pages | sort: "order" %}
 	{% for page in sorted_pages %}
-		{% if page.title %}
+		{% if page.title and page.navigation %}
 			<a class="site__page" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
 		{% endif %}
 	{% endfor %}
