@@ -1,9 +1,18 @@
 {
 	"version": "https://jsonfeed.org/version/1",
 	"title": "Scott Densmore",
+	"icon": "https://micro.blog/scottdensmore/avatar.jpg",
 	"home_page_url": "https://www.scottdensmore.io/",
 	"feed_url": "https://www.scottdensmore.io/feed.json",
 	"items": [
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2018/09/21/pulled-out-some.html",
+	      	
+			"content_html": "<p>Pulled out some Protest the Hero this morning to fix all the things for arm64e!</p>\n",
+			"date_published": "2018-09-21T08:56:59-07:00",
+			"url": "https://www.scottdensmore.io/2018/09/21/pulled-out-some.html"
+		},
 		
 		{
 			"id": "http://scottdensmore.micro.blog/2018/09/01/your-talent-is.html",
@@ -205,14 +214,6 @@
 			"content_html": "<p>I am not accident prone, I am a licensed gravity tester.</p>\n",
 			"date_published": "2018-04-07T21:34:28-07:00",
 			"url": "https://www.scottdensmore.io/2018/04/07/i-am-not.html"
-		},
-		
-		{
-			"id": "http://scottdensmore.micro.blog/2018/04/05/music-shifts-your.html",
-	      	
-			"content_html": "<p>Music shifts your perspective… helps you see things differently. I love music.</p>\n",
-			"date_published": "2018-04-04T20:22:33-07:00",
-			"url": "https://www.scottdensmore.io/2018/04/04/music-shifts-your.html"
 		}
 		
 	]
