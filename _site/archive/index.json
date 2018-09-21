@@ -1,9 +1,18 @@
 {
 	"version": "https://jsonfeed.org/version/1",
 	"title": "Scott Densmore",
+	"icon": "https://micro.blog/scottdensmore/avatar.jpg",
 	"home_page_url": "https://www.scottdensmore.io/",
 	"feed_url": "https://www.scottdensmore.io/archive/index.json",
 	"items": [
+		
+		{
+			"id": "http://scottdensmore.micro.blog/2018/09/21/pulled-out-some.html",
+	      	
+			"content_text": "Pulled out some Protest the Hero this morning to fix...",
+			"date_published": "2018-09-21T08:56:59-07:00",
+			"url": "https://www.scottdensmore.io/2018/09/21/pulled-out-some.html"
+		},
 		
 		{
 			"id": "http://scottdensmore.micro.blog/2018/09/01/your-talent-is.html",
