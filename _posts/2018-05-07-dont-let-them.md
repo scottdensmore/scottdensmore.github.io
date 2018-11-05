@@ -2,7 +2,7 @@
 layout: post
 microblog: true
 audio: 
-date: 2018-05-07 11:04:50 -0700
+date: 2018-05-07 10:04:50 -0800
 guid: http://scottdensmore.micro.blog/2018/05/07/dont-let-them.html
 ---
 Don't let them take you out if they think you are trash.
