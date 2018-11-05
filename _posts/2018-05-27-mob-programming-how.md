@@ -3,7 +3,7 @@ layout: post
 title: "Mob Programming: How We Stumbled Upon and Learned to Love It"
 microblog: false
 audio: 
-date: 2018-05-27 13:23:19 -0700
+date: 2018-05-27 12:23:19 -0800
 guid: http://scottdensmore.micro.blog/2018/05/27/mob-programming-how.html
 ---
 [Mob Programming: How We Stumbled Upon and Learned to Love It](https://spin.atomicobject.com/2018/05/23/mob-programming-story/)
