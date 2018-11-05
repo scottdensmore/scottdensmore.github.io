@@ -2,7 +2,7 @@
 layout: post
 microblog: true
 audio: 
-date: 2018-04-01 14:29:24 -0700
+date: 2018-04-01 13:29:24 -0800
 guid: http://scottdensmore.micro.blog/2018/04/01/happy-easter.html
 ---
 Happy Easter!
