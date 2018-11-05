@@ -2,7 +2,7 @@
 layout: post
 microblog: true
 audio: 
-date: 2018-02-21 19:47:07 -0700
+date: 2018-02-21 18:47:07 -0800
 guid: http://scottdensmore.micro.blog/2018/02/22/time-to-watch.html
 ---
 Time to watch all the kids play. Love hearing everyone from elementary to high school. 
