@@ -2,7 +2,7 @@
 layout: post
 microblog: true
 audio: 
-date: 2018-08-24 21:42:36 -0700
+date: 2018-08-24 20:42:36 -0800
 guid: http://scottdensmore.micro.blog/2018/08/25/rmbf-resting-mouth.html
 ---
 RMBF. Resting mouth breather face. 
