@@ -2,7 +2,7 @@
 layout: post
 microblog: true
 audio: 
-date: 2018-05-27 12:19:44 -0700
+date: 2018-05-27 11:19:44 -0800
 guid: http://scottdensmore.micro.blog/2018/05/27/i-might-have.html
 ---
 I might have to make a call today. 
