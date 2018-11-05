@@ -2,7 +2,7 @@
 layout: post
 microblog: true
 audio: 
-date: 2018-05-03 08:16:18 -0700
+date: 2018-05-03 07:16:18 -0800
 guid: http://scottdensmore.micro.blog/2018/05/03/todays-mission-if.html
 ---
 Today's mission if you accept it:
