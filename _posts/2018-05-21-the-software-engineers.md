@@ -3,7 +3,7 @@ layout: post
 title: "The software engineer’s guide to asserting dominance in the workplace"
 microblog: false
 audio: 
-date: 2018-05-20 19:30:35 -0700
+date: 2018-05-20 18:30:35 -0800
 guid: http://scottdensmore.micro.blog/2018/05/21/the-software-engineers.html
 ---
 [The software engineer’s guide to asserting dominance in the workplace](https://medium.com/feature-creep/the-software-engineer-s-guide-to-asserting-office-dominance-ddea7b598df7)
