@@ -1,10 +1,7 @@
 ---
 layout: post
 title: "Meme Time: Growing Up Geek"
-microblog: false
-audio:
 date: 2008-10-04 01:30 -0700
-guid: http://scottdensmore.micro.blog/2008/10/04/meme-time-growing-up-geek.html
 ---
 [Brad Wilson](http://bradwilson.typepad.com) decided to [tag me geek](http://bradwilson.typepad.com/blog/2008/10/meme-time-growi.html).
 

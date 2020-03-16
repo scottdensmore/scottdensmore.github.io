@@ -8,7 +8,7 @@ I have been working on an extension to Unity for a while to do interception. It 
 
 {% highlight csharp %}
 Parameter name: str
-(Strategy type Microsoft.Practices.ObjectBuilder2.DynamicMethodConstructorStrategy, index 0) --->   
+(Strategy type Microsoft.Practices.ObjectBuilder2.DynamicMethodConstructorStrategy, index 0) --->
 System.ArgumentNullException: Value cannot be null. Parameter name: str  
 ...
 {% endhighlight %}

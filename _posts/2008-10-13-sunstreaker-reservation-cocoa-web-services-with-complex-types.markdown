@@ -8,40 +8,40 @@ So far we have been doing what I do in most projects when I start, spiking some 
 The first part was to setup a call in the service contract of our IReservationService that had complex types:
 
 {% highlight objectivec %}
-[OperationContract(Name = "SearchAvailibilty",
-            Action = "SearchAvailibiltyRequest",
-            ReplyAction = "SearchAvailibiltyResponse")]
-ResortCollection SearchAvailibilty(SearchAvailibiltyRequest searchAvailibiltyRequest);
+[OperationContract(Name = "SearchAvailability",
+            Action = "SearchAvailabilityRequest",
+            ReplyAction = "SearchAvailabilityResponse")]
+ResortCollection SearchAvailability(SearchAvailabilityRequest searchAvailabilityRequest);
 {% endhighlight %}
 
 The first thing we need to do is setup the code for the call to the operation. I will forgo the header declaration and the following is the implementation:
 
 {% highlight objectivec %}
-@implementation SearchAvailibilty
-- (void) setParameters:(CFTypeRef) in_parameters
+@implementation SearchAvailability
+\-\ (void) setParameters:(CFTypeRef) in_parameters
 {
     id _paramValues[] = {
         (id)in_parameters,
     };
     NSString* _paramNames[] = {
-        @"searchAvailibiltyRequest",
+        @"searchAvailabilityRequest",
     };
     [super setParameters:1 values: _paramValues names: _paramNames];
 }
 
 - (id) resultValue
 {
-        return [[super getResultDictionary] objectForKey: @"SearchAvailibiltyResult"];
+        return [[super getResultDictionary] objectForKey: @"SearchAvailabilityResult"];
 }
 
 - (WSMethodInvocationRef) genCreateInvocationRef
 {
         WSMethodInvocationRef ref = [self createInvocationRef
                         /*endpoint*/: @"http://172.16.41.128/Reservation/ReservationService.svc"
-                        methodName: @"SearchAvailibilty"
+                        methodName: @"SearchAvailability"
                         protocol: (NSString*) kWSSOAP2001Protocol
                         style: (NSString*) kWSSOAPStyleDoc
-                        soapAction: @"SearchAvailibiltyRequest"
+                        soapAction: @"SearchAvailabilityRequest"
             methodNamespace: @"http://scottdensmore.com/reservations/2008/09"
                         ];
         return ref;
@@ -49,10 +49,10 @@ The first thing we need to do is setup the code for the call to the operation. I
 
 @end;
 
-+ (id) SearchAvailibilty:(CFTypeRef) in_parameters
+\+\ (id) SearchAvailability:(CFTypeRef) in_parameters
 {
     id result = NULL;
-    SearchAvailibilty* _invocation = [[SearchAvailibilty alloc] init];
+    SearchAvailability* _invocation = [[SearchAvailability alloc] init];
     [_invocation setParameters: in_parameters];
     result = [[_invocation resultValue] retain];
     [_invocation release];
@@ -60,12 +60,12 @@ The first thing we need to do is setup the code for the call to the operation. I
 }
 {% endhighlight %}
 
-I did another call to WSMakeStubs to make sure I wasn't missing anything, yet by this time I have figured out that it is going to get it wrong no matter what I do for my service. (I see a refactoring in our future since all this code is starting to look the same.) In this code, we see that in the result we are getting the value for the SearchAvailibilityResult instead of SearchAvailibilityResponse. The reason for this is that the actual schema type defined in the WSDL is SearchAvailibiltyResult for the type ResortCollection.
+I did another call to WSMakeStubs to make sure I wasn't missing anything, yet by this time I have figured out that it is going to get it wrong no matter what I do for my service. (I see a refactoring in our future since all this code is starting to look the same.) In this code, we see that in the result we are getting the value for the SearchAvailabilityResult instead of SearchAvailabilityResponse. The reason for this is that the actual schema type defined in the WSDL is SearchAvailabilityResult for the type ResortCollection.
 
 Now we need to figure out how to send the request. Since the WebServicesCore.framework works with NSDictionary (CFDictionary to be exact) instances, I decided to follow some of the advice from this [entry](http://en.wikibooks.org/wiki/Programming:WebObjects/Web_Services/Web_Service_Provider#Passing_a_Complex_Type_to_WO)and build a wrapper object to represent my request. The following is the declaration and implementation of the object
 
 {% highlight objectivec %}
-@interface WSSearchAvailibiltyRequest : NSObject {
+@interface WSSearchAvailabilityRequest : NSObject {
         NSMutableDictionary *resultDictionary;
 }
 
@@ -81,7 +81,7 @@ Now we need to figure out how to send the request. Since the WebServicesCore.fra
 -(void)setNumberOfAdults:(int)count;
 @end
 
-@implementation WSSearchAvailibiltyRequest
+@implementation WSSearchAvailabilityRequest
 -(id)init
 {
         return [self initWithDictionary:[NSDictionary dictionaryWithObjectsAndKeys:
@@ -97,7 +97,7 @@ Now we need to figure out how to send the request. Since the WebServicesCore.fra
         self = [super init];
         resultDictionary = [[dictionary mutableCopy] retain];
         [resultDictionary setObject:@"http://scottdensmore.com/reservations/2008/09" forKey:(NSString *)kWSRecordNamespaceURI];
-        [resultDictionary setObject:@"SearchAvailibiltyRequest" forKey:(NSString *)kWSRecordType];
+        [resultDictionary setObject:@"SearchAvailabilityRequest" forKey:(NSString *)kWSRecordType];
 
         return self;
 }
@@ -152,7 +152,6 @@ Now we need to figure out how to send the request. Since the WebServicesCore.fra
         return [val intValue];
 }
 
-
 -(void)setNumberOfAdults:(int)count;
 {
         [resultDictionary setObject:[NSNumber numberWithInt:count] forKey:@"NumberOfAdults"];
@@ -160,35 +159,35 @@ Now we need to figure out how to send the request. Since the WebServicesCore.fra
 @end
 {% endhighlight %}
 
-Each of the calls wraps a call to the dictionary that holds the value for the key in the schema. For example, the call to numberOfChildren / setNumberOfChildern wraps the value for the NumberOfChildren element in the schema. Now that we have this object we can write the following code in our client to get a result:
+Each of the calls wraps a call to the dictionary that holds the value for the key in the schema. For example, the call to numberOfChildren / setNumberOfChildren wraps the value for the NumberOfChildren element in the schema. Now that we have this object we can write the following code in our client to get a result:
 
 {% highlight objectivec %}
-NSLog(@"Calling reservation service: SearchAvailibilty");
-WSSearchAvailibiltyRequest *searchAvailibiltyReqeust = [[WSSearchAvailibiltyRequest alloc] init];
-[searchAvailibiltyReqeust setArrival:[NSDate date]];
-[searchAvailibiltyReqeust setDeparture:[NSDate date]];
-[searchAvailibiltyReqeust setNumberOfAdults:2];
-[searchAvailibiltyReqeust setNumberOfChildren:2];
-result = [ReservationService SearchAvailibilty:[searchAvailibiltyReqeust dictionary]];
-NSLog(@"Result from SearchAvailibilty: %@", result);
+NSLog(@"Calling reservation service: SearchAvailability");
+WSSearchAvailabilityRequest *SearchAvailabilityRequest = [[WSSearchAvailabilityRequest alloc] init];
+[SearchAvailabilityRequest setArrival:[NSDate date]];
+[SearchAvailabilityRequest setDeparture:[NSDate date]];
+[SearchAvailabilityRequest setNumberOfAdults:2];
+[SearchAvailabilityRequest setNumberOfChildren:2];
+result = [ReservationService SearchAvailability:[SearchAvailabilityRequest dictionary]];
+NSLog(@"Result from SearchAvailability: %@", result);
 {% endhighlight %}
 
-Of course, nothing, nadda, zip. The problem is we don't know what is going on. It would be nice to be able to see what is going in and out of the calls to our service. Fortunately we can see this with some properties set in our call to the service. We will update the genCreateInvocationRef call in the SearchAvailibilty class with the debugging options available. These options are not well documented, yet I found them [here](http://developer.apple.com/internet/webservices/webservicescoreandcfnetwork.html) .
+Of course, nothing, nadda, zip. The problem is we don't know what is going on. It would be nice to be able to see what is going in and out of the calls to our service. Fortunately we can see this with some properties set in our call to the service. We will update the genCreateInvocationRef call in the SearchAvailability class with the debugging options available. These options are not well documented, yet I found them [here](http://developer.apple.com/internet/webservices/webservicescoreandcfnetwork.html) .
 
-*   kWSDebugIncomingBody - add the incoming SOAP body to the result
-*   kWSDebugIncomingHeaders - add the incoming SOAP headers to the result
-*   kWSDebugOutgoingBody - add the outgoing SOAP headers to the result
-*   kWSDebugOutgoingHeaders - add the outgoing SOAP headers to the result
+- kWSDebugIncomingBody - add the incoming SOAP body to the result
+- kWSDebugIncomingHeaders - add the incoming SOAP headers to the result
+- kWSDebugOutgoingBody - add the outgoing SOAP headers to the result
+- kWSDebugOutgoingHeaders - add the outgoing SOAP headers to the result
 
 {% highlight objectivec %}
-- (WSMethodInvocationRef) genCreateInvocationRef
+\-\ (WSMethodInvocationRef) genCreateInvocationRef
 {
    WSMethodInvocationRef ref = [self createInvocationRef
                         /*endpoint*/: @"http://172.16.41.128/Reservation/ReservationService.svc"
-                        methodName: @"SearchAvailibilty"
+                        methodName: @"SearchAvailability"
                         protocol: (NSString*) kWSSOAP2001Protocol
                         style: (NSString*) kWSSOAPStyleDoc
-                        soapAction: @"SearchAvailibiltyRequest"
+                        soapAction: @"SearchAvailabilityRequest"
             methodNamespace: @"http://scottdensmore.com/reservations/2008/09"
                         ];
 
@@ -227,12 +226,12 @@ We get the following results:
 2008-10-13 21:27:34.405 EchoClient[6848:813] Key: /WSDebugOutHeaders, Value: {
     "Content-Type" = "text/xml";
     Host = "172.16.41.128";
-    Soapaction = SearchAvailibiltyRequest;
+    Soapaction = SearchAvailabilityRequest;
     "User-Agent" = "Mac OS X; WebServicesCore.framework (1.0.0)";
 }
 2008-10-13 21:27:34.407 EchoClient[6848:813] Key: /kWSHTTPResponseMessage, Value:
 2008-10-13 21:27:34.408 EchoClient[6848:813] Key: /kWSResultIsFault, Value: 1
-2008-10-13 21:27:34.409 EchoClient[6848:813] Key: /FaultString, Value: The formatter threw an exception while trying to deserialize the message: There was an error while trying to deserialize parameter http://scottdensmore.com/reservations/2008/09:searchAvailibiltyRequest. The InnerException message was 'Error in line 11 position 48. 'Element' 'NumberOfAdults' from namespace 'http://scottdensmore.com/reservations/2008/09' is not expected. Expecting element 'Arrival'.'.  Please see InnerException for more details.
+2008-10-13 21:27:34.409 EchoClient[6848:813] Key: /FaultString, Value: The formatter threw an exception while trying to deserialize the message: There was an error while trying to deserialize parameter http://scottdensmore.com/reservations/2008/09:SearchAvailabilityRequest. The InnerException message was 'Error in line 11 position 48. 'Element' 'NumberOfAdults' from namespace 'http://scottdensmore.com/reservations/2008/09' is not expected. Expecting element 'Arrival'.'.  Please see InnerException for more details.
 {% endhighlight %}
 
 With this debug information in the debug window, we can see that our order is not right. Here is where I spent most of my time. This is a gotcha that I only found by trial and error.
@@ -245,7 +244,7 @@ I started to look through the documentation and found [this entry about extra so
         self = [super init];
         resultDictionary = [[dictionary mutableCopy] retain];
         [resultDictionary setObject:@"http://scottdensmore.com/reservations/2008/09" forKey:(NSString *)kWSRecordNamespaceURI];
-        [resultDictionary setObject:@"SearchAvailibiltyRequest" forKey:(NSString *)kWSRecordType];
+        [resultDictionary setObject:@"SearchAvailabilityRequest" forKey:(NSString *)kWSRecordType];
         [resultDictionary setObject:[[NSArray alloc] initWithObjects:@"Arrival", @"Departure", @"NumberOfAdults", @"NumberOfChildren", nil]
                                                  forKey:(NSString *)kWSRecordParameterOrder];
         return self;

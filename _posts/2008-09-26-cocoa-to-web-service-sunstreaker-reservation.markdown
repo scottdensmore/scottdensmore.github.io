@@ -5,7 +5,7 @@ date: 2008-09-26 01:30 -0700
 ---
 In my [last post](http://scottdensmore.typepad.com/blog/2008/09/cocoa-to-wsdl-web-service-or-hi-pc-it-is-me-mac.html) I started putting together connecting my Mac to my WCF web service. I decided to make this into a series in the spirit of [MVC Storefront](http://blog.wekeroad.com/mvc-storefront/). I needed a good name. I talked with [jedi](http://blogs.msdn.com/agilemonkey/) about what I should name my series. He liked the Transformer names so picked one that I had as a kid, [Sunstreaker](http://en.wikipedia.org/wiki/Sunstreaker).
 
-Now that we have the name out of the way, lets talk about how we get a simple Foundation Tool talking to our Echo Web Service. After doing some reading I decided to give WSMakeStubs a try. It was pretty easy: WSMakeStubs -x ObjC -name ReservationService -url http://172.16.41.128/Reservation/ReservationService.svc?wsdl . This generated 4 files: ReservationService.h, ReservationService.m, WSGeneratedObj.h and WSGeneratedObj.m. The first two files implement the code that you use to interact with the Web Service. The last two files are generic and will be regenerated each time you run WSMakeStubs. I included these files in my project and added the CoreService.framework to the External Frameworks of the project. I built and ran the following code:
+Now that we have the name out of the way, lets talk about how we get a simple Foundation Tool talking to our Echo Web Service. After doing some reading I decided to give WSMakeStubs a try. It was pretty easy: WSMakeStubs -x ObjC -name ReservationService -url `http://172.16.41.128/Reservation/ReservationService.svc?wsdl`. This generated 4 files: ReservationService.h, ReservationService.m, WSGeneratedObj.h and WSGeneratedObj.m. The first two files implement the code that you use to interact with the Web Service. The last two files are generic and will be regenerated each time you run WSMakeStubs. I included these files in my project and added the CoreService.framework to the External Frameworks of the project. I built and ran the following code:
 
 {% highlight objectivec %}
 NSAutoreleasePool * pool = \[\[NSAutoreleasePool alloc\] init\];
@@ -161,10 +161,10 @@ If we look closely we will see that we have a message parameter called soapActio
 
  WSMethodInvocationSetProperty(ref, kWSSOAPMethodNamespaceURI, methodNamespace);
 
- WSClientContext context = { 0, 
-  (void*) self, 
+ WSClientContext context = { 0,
+  (void*) self,
   (WSClientContextRetainCallBackProcPtr) CFRetain,
-  (WSClientContextReleaseCallBackProcPtr) CFRelease, 
+  (WSClientContextReleaseCallBackProcPtr) CFRelease,
   (WSClientContextCopyDescriptionCallBackProcPtr) CFCopyDescription
  };
  WSMethodInvocationSetCallBack(ref, \_\_async\_callback, &context);
@@ -175,7 +175,7 @@ If we look closely we will see that we have a message parameter called soapActio
 }
 {% endhighlight %}
 
-Now run it and viola: success! WOOT!
+Now run it and viola: success! W00T!
 
 That seemed like a lot to get our little Echo Service running, yet we got there :). I have to say that I contribute most of what I learned here to a [post on connecting Web Objects to a Cocoa app](http://en.wikibooks.org/wiki/Programming:WebObjects/Web_Services/Web_Service_Provider).
 
