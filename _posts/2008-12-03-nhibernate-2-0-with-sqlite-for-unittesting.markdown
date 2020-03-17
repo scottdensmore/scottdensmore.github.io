@@ -13,12 +13,12 @@ public override ISessionFactory BuildSessionFactory()
 {
    var properties = new Dictionary
                         {
-                            { "connection.driver_class", "NHibernate.Driver.SQLite20Driver" }, 
-                            { "dialect", "NHibernate.Dialect.SQLiteDialect" }, 
-                            { "connection.connection_string", "Data Source=:memory:;Version=3;New=True;" }, 
-                            { "connection.provider", "NHibernate.Connection.DriverConnectionProvider" }, 
-                            { "connection.release_mode", "on_close" }, 
-                            { "show_sql", "true" } 
+                            { "connection.driver_class", "NHibernate.Driver.SQLite20Driver" },
+                            { "dialect", "NHibernate.Dialect.SQLiteDialect" },
+                            { "connection.connection_string", "Data Source=:memory:;Version=3;New=True;" },
+                            { "connection.provider", "NHibernate.Connection.DriverConnectionProvider" },
+                            { "connection.release_mode", "on_close" },
+                            { "show_sql", "true" }
                         };
 
     configuration = new Configuration { Properties = properties }; 
@@ -27,4 +27,4 @@ public override ISessionFactory BuildSessionFactory()
 }
 {% endhighlight %}
 
-The winning line is "connection.release\_mode" setting it to "on\_close".
+The winning line is "connection.release_mode" setting it to "on_close".

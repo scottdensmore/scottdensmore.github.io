@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Seattle Code Camp Talks"
+title: "My Azure Setup"
 date: 2010-03-09 02:39 -0700
 ---
 
@@ -25,15 +25,16 @@ Once you have the WPI setup and open, there are options to show other tabs. Go i
 
 After everything is setup I make a few adjustments to my PowerShell scripts. I do everything from the command line so this makes my life easier. I add the following to the my startup script (feel free to change the path to where Azure is located):
 
+<!-- markdownlint-disable MD018 -->
 {% highlight powershell %}
-\# setup Azure Environment
+#setup Azure Environment
 if (test-path "C:\\Program Files\\Windows Azure SDK\\v1.1\\") {
     append-path "C:\\Program Files\\Windows Azure SDK\\v1.1\\"
     append-path "C:\\Program Files\\Windows Azure SDK\\v1.1\\bin\\"
     set-content env:\\\_CSRUN\_STATE\_DIRECTORY "C:\\Azure"
 }
 
-\# The append-path statement is a file named append-path.ps1 in my profile directory and looks like this:
+#The append-path statement is a file named append-path.ps1 in my profile directory and looks like this:
 
 $local:command\_usage ="usage: append-path path-to-be-added"
 
@@ -43,6 +44,7 @@ $local:oldPath = get-content Env:\\Path
 $local:newPath = $local:oldPath + ";" + $args
 set-content Env:\\Path $local:newPath
 {% endhighlight %}
+<!-- markdownlint-enable MD018 -->
 
 All this does is add the azure sdk to my path and update the path where Azure stores the output for the local dev fabric. I change the directory because I hit the "path to long" error quite a bit. You can read more about the issue at [Jim Nakashima's blog.](http://blogs.msdn.com/jnak/archive/2010/01/14/windows-azure-path-too-long.aspx) Once I have this setup I can start and stop the local dev fabric, build, and deploy (more on this in a later post) my Azure projects.
 

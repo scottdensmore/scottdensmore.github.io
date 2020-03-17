@@ -12,15 +12,16 @@ I think the hardest thing for me to change in my thinking was the naming of my t
 
 Lets take a look at the before and after to see the difference:
 
+<!-- markdownlint-disable MD033 -->
 {% highlight csharp %}
-\[TestClass\]
+[TestClass]
 public class GuestServiceTests
 {
-    \[TestMethod\]
+    [TestMethod]
     public void ShouldUpdateGuestAccountWhenRequestingARefund()
     {
         // Arrange
-        Mock\<IAccountService\> accountService = new Mock\<IAccountService\>();
+        Mock<IAccountService> accountService = new Mock<IAccountService>();
         GuestService guestService = new GuestService(accountService.Object);
         int guestId = 7;
         decimal amount = 100M;
@@ -33,20 +34,20 @@ public class GuestServiceTests
     }
 }
 
-\[TestClass\]
-public class when\_guest\_requests\_a\_refund
+[TestClass]
+public class when_guest_requests_a_refund
 {
     GuestService guestService;
 
     // Arrange
-    \[TestInitialize\]
+    [TestInitialize]
     public void Context()
     {
         Mock<IAccountService> accountService = new Mock<IAccountService>();
         guestService = new GuestService(accountService.Object);
     }
 
-    public void should\_update\_guest\_account\_with\_amount()
+    public void should_update_guest_account_with_amount()
     {
         // Arrange
         int guestId = 7;
@@ -58,15 +59,17 @@ public class when\_guest\_requests\_a\_refund
     }
 }
 {% endhighlight %}
+<!-- markdownlint-enable MD033 -->
 
 In this example, I am using the [Test Fixture Per Class](http://xunitpatterns.com/Testcase%20Class%20per%20Fixture.html) pattern as the classic approach. \[I must admit that way back in my learnings of TDD I learned that very descriptive names are important.\] The three main portions of your test are still the same: Arrange / Act / Assert, just laid out differently (I labeled them here for the example). The difference is really about how you arrange the tests themselves. This is not the only difference, you also have to think about how this code communicates to the person looking at it. I find this the one thing I really like about this approach. You focus on the concern that you are testing (refunding a guest account). The underscores are a style thing. If you don't like them, don't use them. Some frameworks use this to build reports and I have found that it is easier to read with the underscores.
 
 The one thing I don't like about the way the test looks right now is a little bit of readability. I also feel the act and arrange should not be together: things just don't seem to flow. If you think about it: you also have to replicate arrange portions in each test (like guest identifier and amount) because we don't have a place to set this up. It also is missing some key pieces that Scott explains in his article. Here we change a couple of things around and I think come up with something easier to read (and explain):
 
+<!-- markdownlint-disable MD033 -->
 {% highlight csharp %}
 public class ContextSpecification
 {
-    \[TestInitialize\]
+    [TestInitialize]
     public void Initialize()
     {
         Context();
@@ -77,8 +80,8 @@ public class ContextSpecification
     protected virtual void Because() {}
 }
 
-\[TestClass\]
-public class when\_guest\_requests\_a\_refund : ContextSpecification
+[TestClass]
+public class when_guest_requests_a_refund : ContextSpecification
 {
     GuestService guestService;
     int guestId;
@@ -100,13 +103,14 @@ public class when\_guest\_requests\_a\_refund : ContextSpecification
     }
 
     // Assert
-    \[TestMethod\]
-    public void should\_update\_guest\_account\_with\_amount()
+    [TestMethod]
+    public void should_update_guest_account_with_amount()
     {
         accountService.Verify(x=>x.PostRefund(guestId, amount));
     }
 }
 {% endhighlight %}
+<!-- markdownlint-enable MD033 -->
 
 All this for me is just the first part of my journey. Lately I have been moving to writing more of my tests in this style and I am finding I really like it. I don't recommend you go and change all your unit tests to this style: it is not worth it. Just try it out. Get a feel for it. Don't get caught up in different styles at first. Learn them, internalize them and do what works for you.
 

@@ -10,26 +10,28 @@ I have been playing around with MonoTouch trying to figure out if I liked the ne
 
 I decided to start out with the easiest thing first: building HelloWorld based on this [article](http://monotouch.net/Tutorials/MonoDevelop_HelloWorld). I read through the article and built the Apple version first. Open XCode and choose a new Window-based application. This is the closest to the iPhone application from MonoTouch. The first thing I noticed is that I do things opposite of how they are done in MonoTouch. When I am going to create outlets for connecting objects from Interface Builder, I do that in code then go to Interface Builder. This is how "stylish" programmers do things. At least that is what I learned at the [Big Nerd Ranch](http://www.bignerdranch.com/index.shtml). So I opened up the header file and updated it to look like this:
 
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD018 -->
 {% highlight objectivec %}
+#import <UIKit/UIKit.h>
 
-\# import <UIKit/UIKit.h>
-
-@interface HelloWorldObjCAppDelegate : NSObject \<UIApplicationDelegate\> {  
-    UIWindow \*window;  
-    UIButton \*button;  
-    UILabel \*label;  
+@interface HelloWorldObjCAppDelegate : NSObject <UIApplicationDelegate> {  
+    UIWindow *window;  
+    UIButton *button;  
+    UILabel  *label;  
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow \*window;
-@property (nonatomic, retain) IBOutlet UIButton \*button;
-@property (nonatomic, retain) IBOutlet UILabel \*label;
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UIButton *button;
+@property (nonatomic, retain) IBOutlet UILabel  *label;
 
-\- (IBAction)sampleTap:(id)sender;
+- (IBAction)sampleTap:(id)sender;
 
 @end
 {% endhighlight %}
 
-I added two properties for the button and label. I use custom Text Macros for doing this so I don't have to do a lot of typing \[more on this later\]. After this I opened up Interface Builder and setup the interface and made the connections. The connections are the same except they are already part of the UIApplicationDelegate.
+I added two properties for the button and label. I use custom Text Macros for doing this so I don't have to do a lot of typing  [more on this later]. After this I opened up Interface Builder and setup the interface and made the connections. The connections are the same except they are already part of the UIApplicationDelegate.
 
 Now for the fun part. Adding in the code for the actions. Unlike Cocoa on Snow Leopard, there is no support for blocks on the iPhone so I don't get similar delegate support. If you want to have it you can get [plblocks](http://code.google.com/p/plblocks/). The code in the implementation file looks like this:
 
@@ -40,29 +42,33 @@ Now for the fun part. Adding in the code for the actions. Unlike Cocoa on Snow L
 @synthesize button;
 @synthesize label;
 
-\- (IBAction)sampleTap:(id)sender {  
-    \[label setText:@"Second button clicked"\];  
+- (IBAction)sampleTap:(id)sender {  
+    [label setText:@"Second button clicked"];  
 }
 
-\- (void)buttonEvent:(id)sender {  
+- (void)buttonEvent:(id)sender {  
     static int count = 0;  
-    \[label setText:\[NSString stringWithFormat:@"I have been tapped %d times.", count++\]\];  
+    [label setText:[NSString stringWithFormat:@"I have been tapped %d times.", count++]];  
 }
 
-\- (void)applicationDidFinishLaunching:(UIApplication \*)application {  
-    \[button addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchDown\];  
+- (void)applicationDidFinishLaunching:(UIApplication *)application {  
+    [button addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchDown];  
     // Override point for customization after application launch  
-    \[window makeKeyAndVisible\];  
+    [window makeKeyAndVisible];  
 }
 
-\- (void)dealloc {  
-    \[window release\];  
-    \[button release\];  
-    \[label release\];  
-    \[super dealloc\];
+- (void)dealloc {  
+    [window release];  
+    [button release];  
+    [label release];  
+    [super dealloc];
 }
 @end
 {% endhighlight %}
+
+<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-enable MD025 -->
+<!-- markdownlint-enable MD018 -->
 
 The `addTarget:action message` is what happens under the covers when you connect your action and event in Interface Builder. I set the text for the label using NSString stringWithFormat:. This is just like string.Format with `printf` arguments. All in all, not much code except for the release calls and not much difference in the hello world.
 

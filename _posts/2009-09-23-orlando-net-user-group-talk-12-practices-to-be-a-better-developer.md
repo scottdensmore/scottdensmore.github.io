@@ -6,8 +6,6 @@ date: 2009-09-23 01:54 -0700
 
 Last week I gave a talk at the Orlando .NET User Group on Practical Software Craftsmanship - 12 Practices to be a Better Developer. Most of these 12 are just things I have learned over my years of development. I promised I would put links to the slides and resources from my talk. They are in no particular order and I don't claim they are nothing more than fortune cookie wisdom :D. I will try and write more about these in the future.
 
-[Download 12 Steps to a Better Developer](http://scottdensmore.typepad.com/files/12%20Steps%20to%20a%20Better%20Developer.pptx.zip)
-
 ### The 12 Practices
 
 1. Source Control - If you don’t store your code in source control, you’re putting your company at risk.

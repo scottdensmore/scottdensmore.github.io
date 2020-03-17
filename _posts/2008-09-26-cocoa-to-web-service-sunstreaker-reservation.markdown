@@ -7,85 +7,87 @@ In my [last post](http://scottdensmore.typepad.com/blog/2008/09/cocoa-to-wsdl-we
 
 Now that we have the name out of the way, lets talk about how we get a simple Foundation Tool talking to our Echo Web Service. After doing some reading I decided to give WSMakeStubs a try. It was pretty easy: WSMakeStubs -x ObjC -name ReservationService -url `http://172.16.41.128/Reservation/ReservationService.svc?wsdl`. This generated 4 files: ReservationService.h, ReservationService.m, WSGeneratedObj.h and WSGeneratedObj.m. The first two files implement the code that you use to interact with the Web Service. The last two files are generic and will be regenerated each time you run WSMakeStubs. I included these files in my project and added the CoreService.framework to the External Frameworks of the project. I built and ran the following code:
 
+<!-- markdownlint-disable MD034 -->
+<!-- markdownlint-disable MD032 -->
 {% highlight objectivec %}
-NSAutoreleasePool * pool = \[\[NSAutoreleasePool alloc\] init\];
+NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 NSLog(@"Calling reservation service");
-id result = \[ReservationService Echo:@"boo"\];
+id result = [ReservationService Echo:@"boo"];
 NSLog(@"Result: %@", result);
-\[pool drain\];
+[pool drain];
 return 0;
 {% endhighlight %}
 
 What did I get for result? Nothing, nadda, zip, (nil). Wonder why? Well if we go back and look at SOAP Client and take a look at the calls made in ReservationService.m we might get a clue. The first thing I noticed was this code:
 
 {% highlight objectivec %}
-\- (WSMethodInvocationRef) genCreateInvocationRef
+- (WSMethodInvocationRef) genCreateInvocationRef
 {
-  return \[self createInvocationRef
-     /\*endpoint\*/: @"http://scottden-vm2/Reservation/ReservationService.svc"
+  return [self createInvocationRef
+     /* endpoint */: @"http://scottden-vm2/Reservation/ReservationService.svc"
          methodName: @"Echo"
            protocol: (NSString*) kWSSOAP2001Protocol
               // missing encoding style - defaulting to RPC
               style: (NSString*) kWSSOAPStyleRPC
          soapAction: @"EchoRequest"
     methodNamespace: NULL /* No Method Namespace specified */
- \];
+ ];
 }
 {% endhighlight %}
 
 One thing, we need to change is the endpoint to the IP address since there is no mapping to the host name. The next thing we need to change is the encoding style to document and set the namespace for the method. After those changes we have the following:
 
 {% highlight objectivec %}
-\- (WSMethodInvocationRef) genCreateInvocationRef
+- (WSMethodInvocationRef) genCreateInvocationRef
 {
- return \[self createInvocationRef
-        /\*endpoint\*/: @"http://172.16.41.128/Reservation/ReservationService.svc"
+ return [self createInvocationRef
+        /* endpoint */: @"http://172.16.41.128/Reservation/ReservationService.svc"
             methodName: @"Echo"
               protocol: (NSString*) kWSSOAP2001Protocol
                  style: (NSString*) kWSSOAPStyleDoc
             soapAction: @"EchoRequest"
        methodNamespace: @"http://scottdensmore.com/reservations/2008/09"
- \];
+ ];
 }
 {% endhighlight %}
 
 Now that we fixed the invocation request, I ran it again... still nothing. Looking at what WSMakeStubs generated as parameter names, I see the problem:
 
 {% highlight objectivec %}
-\- (void) setParameters:(CFTypeRef /* Complex type http://scottdensmore.com/reservations/2008/09|Echo */) in_parameters
+- (void) setParameters:(CFTypeRef /* Complex type http://scottdensmore.com/reservations/2008/09|Echo */) in_parameters
 {
-  id _paramValues\[\] = {
+  id _paramValues[] = {
     in_parameters,
   };
-  NSString* _paramNames\[\] = {
+  NSString* _paramNames[] = {
     @"parameters",
   };
-  \[super setParameters:1 values: \_paramValues names: \_paramNames\];
+  [super setParameters:1 values: _paramValues names: _paramNames];
 }
 
-\- (id) resultValue
+- (id) resultValue
 {
- return \[\[super getResultDictionary\] objectForKey: @"parameters"\];
+ return [[super getResultDictionary] objectForKey: @"parameters"];
 }
 {% endhighlight %}
 
 The parameter names are wrong. Change them to this:
 
 {% highlight objectivec %}
-\- (void) setParameters:(CFTypeRef /* Complex type http://scottdensmore.com/reservations/2008/09|Echo */) in_parameters
+- (void) setParameters:(CFTypeRef /* Complex type http://scottdensmore.com/reservations/2008/09|Echo */) in_parameters
 {
-  id _paramValues\[\] = {
+  id _paramValues[] = {
     in_parameters,
   };
-  NSString* _paramNames\[\] = {
+  NSString* _paramNames[] = {
     @"param",
   };
-  \[super setParameters:1 values: \_paramValues names: \_paramNames\];
+  [super setParameters:1 values: _paramValues names: _paramNames];
 }
 
-\- (id) resultValue
+- (id) resultValue
 {
- return \[\[super getResultDictionary\] objectForKey: @"EchoResult"\];
+ return [[super getResultDictionary] objectForKey: @"EchoResult"];
 }
 {% endhighlight %}
 
@@ -93,7 +95,7 @@ Ok, run it again. It has to run... nope. One more walk through of the code turns
 
 {% highlight objectivec %}
 // Utility function called by the generated code to create the invocation
-\- (WSMethodInvocationRef) createInvocationRef:(NSString*) endpoint
+- (WSMethodInvocationRef) createInvocationRef:(NSString*) endpoint
   methodName:(NSString*) methodName
   protocol:(NSString*) protocol
   style:(NSString*) style
@@ -102,21 +104,21 @@ Ok, run it again. It has to run... nope. One more walk through of the code turns
 
 {
   WSMethodInvocationRef ref = NULL;
-  NSURL* url = \[NSURL URLWithString: endpoint\];
+  NSURL* url = [NSURL URLWithString: endpoint];
   if (url == NULL) {
-    \[self handleError: @"NSURL URLWithString failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr\];
+    [self handleError: @"NSURL URLWithString failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr];
   } else {
     ref = WSMethodInvocationCreate((CFURLRef) url, (CFStringRef) methodName, (CFStringRef) protocol);
 
     if (ref == NULL)
-    \[self handleError: @"WSMethodInvocationCreate failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr\];
+    [self handleError: @"WSMethodInvocationCreate failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr];
     else {
       WSMethodInvocationSetProperty(ref, kWSSOAPBodyEncodingStyle, style);
 
       NSString* soapAction = @"SOAPAction";
-      NSDictionary* headers = \[self copyHeaderDictionary:1 extraVals:&soapAction extraKeys:&soapAction\];
+      NSDictionary* headers = [self copyHeaderDictionary:1 extraVals:&soapAction extraKeys:&soapAction];
       WSMethodInvocationSetProperty(ref, kWSHTTPExtraHeaders, headers);
-      \[headers release\];
+      [headers release];
       WSMethodInvocationSetProperty(ref, kWSSOAPMethodNamespaceURI, methodNamespace);
       WSClientContext context = { 0,
         (void*) self,
@@ -124,7 +126,7 @@ Ok, run it again. It has to run... nope. One more walk through of the code turns
         (WSClientContextReleaseCallBackProcPtr) CFRelease,
         (WSClientContextCopyDescriptionCallBackProcPtr) CFCopyDescription
       };
-     WSMethodInvocationSetCallBack(ref, \_\_async\_callback, &context);
+     WSMethodInvocationSetCallBack(ref, __async_callback, &context);
     }
  }
  return ref;
@@ -135,7 +137,7 @@ If we look closely we will see that we have a message parameter called soapActio
 
 {% highlight objectivec %}
 // Utility function called by the generated code to create the invocation
-\- (WSMethodInvocationRef) createInvocationRef:(NSString*) endpoint
+- (WSMethodInvocationRef) createInvocationRef:(NSString*) endpoint
   methodName:(NSString*) methodName
   protocol:(NSString*) protocol
   style:(NSString*) style
@@ -143,21 +145,21 @@ If we look closely we will see that we have a message parameter called soapActio
  methodNamespace:(NSString*) methodNamespace
 {
  WSMethodInvocationRef ref = NULL;
- NSURL* url = \[NSURL URLWithString: endpoint\];
+ NSURL* url = [NSURL URLWithString: endpoint];
  if (url == NULL) {
- \[self handleError: @"NSURL URLWithString failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr\];
+ [self handleError: @"NSURL URLWithString failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr];
  } else {
  ref = WSMethodInvocationCreate((CFURLRef) url, (CFStringRef) methodName, (CFStringRef) protocol);
 
  if (ref == NULL)
- \[self handleError: @"WSMethodInvocationCreate failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr\];
+ [self handleError: @"WSMethodInvocationCreate failed in createInvocationRef" errorString:NULL errorDomain:kCFStreamErrorDomainMacOSStatus errorNumber: paramErr];
  else {
  WSMethodInvocationSetProperty(ref, kWSSOAPBodyEncodingStyle, style);
 
  NSString* soapActionName = @"SOAPAction";
- NSDictionary* headers = \[self copyHeaderDictionary:1 extraVals:&soapAction extraKeys:&soapActionName\];
+ NSDictionary* headers = [self copyHeaderDictionary:1 extraVals:&soapAction extraKeys:&soapActionName];
  WSMethodInvocationSetProperty(ref, kWSHTTPExtraHeaders, headers);
- \[headers release\];
+ [headers release];
 
  WSMethodInvocationSetProperty(ref, kWSSOAPMethodNamespaceURI, methodNamespace);
 
@@ -167,14 +169,15 @@ If we look closely we will see that we have a message parameter called soapActio
   (WSClientContextReleaseCallBackProcPtr) CFRelease,
   (WSClientContextCopyDescriptionCallBackProcPtr) CFCopyDescription
  };
- WSMethodInvocationSetCallBack(ref, \_\_async\_callback, &context);
+ WSMethodInvocationSetCallBack(ref, __async_callback, &context);
  }
  }
 
  return ref;
 }
 {% endhighlight %}
-
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
 Now run it and viola: success! W00T!
 
 That seemed like a lot to get our little Echo Service running, yet we got there :). I have to say that I contribute most of what I learned here to a [post on connecting Web Objects to a Cocoa app](http://en.wikibooks.org/wiki/Programming:WebObjects/Web_Services/Web_Service_Provider).

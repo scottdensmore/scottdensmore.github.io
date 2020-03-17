@@ -16,9 +16,12 @@ ResortCollection SearchAvailability(SearchAvailabilityRequest searchAvailability
 
 The first thing we need to do is setup the code for the call to the operation. I will forgo the header declaration and the following is the implementation:
 
+<!-- markdownlint-disable MD034 -->
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD004 -->
 {% highlight objectivec %}
 @implementation SearchAvailability
-\-\ (void) setParameters:(CFTypeRef) in_parameters
+- (void) setParameters:(CFTypeRef) in_parameters
 {
     id _paramValues[] = {
         (id)in_parameters,
@@ -48,8 +51,7 @@ The first thing we need to do is setup the code for the call to the operation. I
 }
 
 @end;
-
-\+\ (id) SearchAvailability:(CFTypeRef) in_parameters
++ (id) SearchAvailability:(CFTypeRef) in_parameters
 {
     id result = NULL;
     SearchAvailability* _invocation = [[SearchAvailability alloc] init];
@@ -59,6 +61,7 @@ The first thing we need to do is setup the code for the call to the operation. I
     return result;
 }
 {% endhighlight %}
+<!-- markdownlint-enabled MD004 -->
 
 I did another call to WSMakeStubs to make sure I wasn't missing anything, yet by this time I have figured out that it is going to get it wrong no matter what I do for my service. (I see a refactoring in our future since all this code is starting to look the same.) In this code, we see that in the result we are getting the value for the SearchAvailabilityResult instead of SearchAvailabilityResponse. The reason for this is that the actual schema type defined in the WSDL is SearchAvailabilityResult for the type ResortCollection.
 
@@ -180,7 +183,7 @@ Of course, nothing, nadda, zip. The problem is we don't know what is going on. I
 - kWSDebugOutgoingHeaders - add the outgoing SOAP headers to the result
 
 {% highlight objectivec %}
-\-\ (WSMethodInvocationRef) genCreateInvocationRef
+- (WSMethodInvocationRef) genCreateInvocationRef
 {
    WSMethodInvocationRef ref = [self createInvocationRef
                         /*endpoint*/: @"http://172.16.41.128/Reservation/ReservationService.svc"
@@ -250,6 +253,8 @@ I started to look through the documentation and found [this entry about extra so
         return self;
 }
 {% endhighlight %}
+<!-- markdownlint-enabled MD034 -->
+<!-- markdownlint-enabled MD032 -->
 
 Success! Now we can just do the same thing for the request and we are in business.
 I will forgo posting all the code for the response object (you can download it to take a look). The one thing that is important to note is that the result contains a dictionary of an array of dictionary objects. Like I said, all you get is dictionary objects :).

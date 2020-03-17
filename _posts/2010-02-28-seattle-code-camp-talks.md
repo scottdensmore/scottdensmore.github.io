@@ -12,4 +12,3 @@ It is time for [Seattle Code Camp](https://seattle.codecamp.us/registered/defaul
 > For many the iPhone is a new and exciting platform for development. The new platform still brings the same questions "How do I test this?" and "How do I build this on my build server?". We will talk about unit testing tools, mocking tools, and how to setup your project to build on a Continuous Integration Server. The talk will focus on a small RSS reader application using OCUnit, Google Toolbox for Mac, GHUnit, and OCMock for unit testing. Then we will setup the project to run on a CI server (Hudson / Team City). The goal is to learn to setup up and run your environment for your iPhone project.
 
 Hope to see you there.
-

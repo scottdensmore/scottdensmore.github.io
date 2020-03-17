@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Protecting Your Config in Windows Azure"
+title: "Software Still Sucks and I am Stupid"
 date: 2010-11-28 02:39 -0700
 ---
 
