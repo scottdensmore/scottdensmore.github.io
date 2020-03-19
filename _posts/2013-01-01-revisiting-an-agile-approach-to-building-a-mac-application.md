@@ -43,17 +43,17 @@ That is the pattern that I followed for all the code in this application. You ca
 
 ### Code Coverage
 
-After the setup, when you run your tests, you get the code that is covered. The key here is how you want to view it. Once you have your code instrumented, you can use a tool like [CoverStory](http://code.google.com/p/coverstory/) to view it, yet I wanted something more automated. I found a [great article](http://qualitycoding.org/xcode-code-coverage/#comment-1817) that fits in with my workflow. This allows me to use lcov to generate a file that I can see before I integrate into CI (Continuous Integration) server. 
+After the setup, when you run your tests, you get the code that is covered. The key here is how you want to view it. Once you have your code instrumented, you can use a tool like [CoverStory](http://code.google.com/p/coverstory/) to view it, yet I wanted something more automated. I found a [great article](http://qualitycoding.org/xcode-code-coverage/#comment-1817) that fits in with my workflow. This allows me to use lcov to generate a file that I can see before I integrate into CI (Continuous Integration) server.
 
-Since I do not install the command line tools I did change the envcov.sh file to add the bin file to the path that includes gcov.  
+Since I do not install the command line tools I did change the `envcov.sh` file to add the bin file to the path that includes gcov.  
 
 export PATH=$PATH:/Applications/Xcode.app/Contents/Developer/usr/bin
 
-You will have to download the [lcov tool](http://downloads.sourceforge.net/ltp/lcov-1.10.tar.gz) for the project since the licence is iffy. 
+You will have to download the [lcov tool](http://downloads.sourceforge.net/ltp/lcov-1.10.tar.gz) for the project since the licence is iffy.
 
 ### Source Control Flow
 
-This one was pretty easy as well. I followed the process from [here](http://nvie.com/posts/a-successful-git-branching-model/). They call this git flow and it is pretty well laid out. I used this for all my projects now. The key is that you have to use branches. You do everything off topic branches and master is pretty much your release. I find that doing this helps me focus on working on one thing at a time. If I am writing a large commit message that includes to much work... I feel I am breaking some sort of magical law :). 
+This one was pretty easy as well. I followed the process from [here](http://nvie.com/posts/a-successful-git-branching-model/). They call this git flow and it is pretty well laid out. I used this for all my projects now. The key is that you have to use branches. You do everything off topic branches and master is pretty much your release. I find that doing this helps me focus on working on one thing at a time. If I am writing a large commit message that includes to much work... I feel I am breaking some sort of magical law :).
 
 I use [home-brew](http://mxcl.github.com/homebrew/) to install everything. You can install git and gitflow using this.
 

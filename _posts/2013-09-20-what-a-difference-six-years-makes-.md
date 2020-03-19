@@ -1,10 +1,7 @@
 ---
 layout: post
 title: "What A Difference Six Years Makes..."
-microblog: false
-audio:
 date: 2013-09-20 02:34 -0700
-guid: http://scottdensmore.micro.blog/2013/09/20/what-a-difference-six-years-makes-.html
 ---
 
 [ParisLemon — What A Difference Six Years Makes...](http://parislemon.com/post/61777379694/what-a-difference-six-years-makes):

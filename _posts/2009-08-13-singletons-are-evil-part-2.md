@@ -1,10 +1,7 @@
 ---
 layout: post
 title: "Singletons Are Evil Part 2"
-microblog: false
-audio:
 date: 2009-08-13 01:54 -0700
-guid: http://scottdensmore.micro.blog/2009/08/13/singletons-are-evil-part-2.html
 ---
 
 A while back I wrote a post about why [singletons are evil](http://blogs.msdn.com/scottdensmore/archive/2004/05/25/140827.aspx). I still agree with that statement, yet after my comment on twitter today, I think I need to show how you can solve this problem differently.  
