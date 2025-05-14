@@ -1,0 +1,14 @@
+title: "Your Blog Title"
+author: "Scott Densmore"
+description: "A short description of your blog"
+url: "https://scottdensmore.github.io"
+baseurl: "" # Leave empty for username.github.io sites
+
+theme: "minimal-mistakes-jekyll"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Optional: Minimal Mistakes settings
+minimal_mistakes_skin: "default" 
