@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Multi Entity Schema Tables in Windows Azure"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-04-13 02:45 -0700
-guid: http://scottdensmore.micro.blog/2011/04/13/multi-entity-schema-tables-in-windows-azure.html
 ---
 
 > The source for this is available on [github](https://github.com/scottdensmore/AzureMultiEntitySchema).
@@ -31,7 +29,7 @@ The main changes for this code are the following:
 
 The previous version of the project was split into two tables: Expense and ExpenseItems. This create a few problems that needed to be addressed. The first was that you could not create a transaction across the two entities. The way we solved this was to create the ExpenseItem(s) before creating the Expense. If there is a problem between the ExpenseItem and Expense, then there would be orphaned ExpenseItems. This would require a scavenger looking for all the orphaned records. This would all add up to more costs. Now we are going to save the ExpenseItem and Expense in the same table. The following is a diagram of doing this:
 
-![ClaimsNoReceipts](/assets/img/claims-no-receipts.png "ClaimsNoReceipts.png")
+![ClaimsNoReceipts](/assets/img/claims-no-receipts.png)
 
 This now lets us have one transaction across the table.
 
@@ -39,7 +37,7 @@ This now lets us have one transaction across the table.
 
 In the first version, when you uploaded receipts along with the expense, the code would post a message to a queue that would then update the table with the URI of the thumbnail and receipt images. In this version, we used a more convention based approach. Instead of updating the table, a new property, "HasReceipts", is added so when displaying the receipts the code can tell when there is a receipt and where there is not. Now when there is a receipt the URI is built on the fly and accessed. This saves on the cost of the update to the table. Here is the diagram:
 
-![ClaimsWithReceipt](/assets/img/claims-with-receipt.png "ClaimsWithReceipt.png")
+![ClaimsWithReceipt](/assets/img/claims-with-receipt.png)
 
 **Poison Messages**
 
@@ -74,7 +72,7 @@ finally
 
 QueueCommandHandler.For(exportQueue).Every(TimeSpan.FromSeconds(5)).WithPosionMessageQueue(poisonExportQueue).Do(exportQueueCommand);
 
-**Conclusion  
+**Conclusion
 **
 
 This is the beginning of our updates to our [Windows Azure Guidance](http://msdn.microsoft.com/en-us/library/ff898430.aspx). We want to show even better ways of moving and developing applications for the cloud. Go check out the [source](https://github.com/scottdensmore/AzureMultiEntitySchema).

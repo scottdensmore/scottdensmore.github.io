@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Typed Collections with Self Types in Objective-C"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2013-01-01 02:33 -0700
-guid: http://scottdensmore.micro.blog/2013/01/01/typed-collections-with-self-types-in-objective-c.html
 ---
 
 [Jonathan Sterling – Typed Collections with Self Types in Objective-C](http://www.jonmsterling.com/posts/2012-02-05-typed-collections-with-self-types-in-objective-c.html):

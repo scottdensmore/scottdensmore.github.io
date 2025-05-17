@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "What I Do Everyday"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2014-05-24 02:36 -0700
-guid: http://scottdensmore.micro.blog/2014/05/24/what-i-do-everyday.html
 ---
 
 If you every wanted to know what I do everyday… this is it:

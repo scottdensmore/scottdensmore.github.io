@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "S is for Service"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-02-22 02:33 -0700
-guid: http://scottdensmore.micro.blog/2012/02/22/s-is-for-service.html
 ---
 
 It is also for Single Responsibility Principle.

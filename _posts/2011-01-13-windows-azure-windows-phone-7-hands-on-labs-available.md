@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Windows Azure & Windows Phone 7 Hands On Labs Available"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-01-13 02:45 -0700
-guid: http://scottdensmore.micro.blog/2011/01/13/windows-azure-windows-phone-7-hands-on-labs-available.html
 ---
 
 After all the work we have done to ship the last 3 guides, we decided to go the extra mile and create some Hands On Labs (HOL) for each of the guides. These HOLs will guide you through development of the key features of the apps distributed with the books. Go get them today and learn even more about building Windows Azure and Windows Phone 7 applications.

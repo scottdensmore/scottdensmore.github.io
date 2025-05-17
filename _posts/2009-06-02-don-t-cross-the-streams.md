@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Don't Cross the Streams"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2009-06-02 01:54 -0700
-guid: http://scottdensmore.micro.blog/2009/06/02/don-t-cross-the-streams.html
 ---
 
 > "There's something very important I forgot to tell you.

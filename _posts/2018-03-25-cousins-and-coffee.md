@@ -1,10 +1,8 @@
 ---
 layout: post
-microblog: true
-audio: 
-date: 2018-03-25 13:26:23 -0800
+title: "Cousins and Coffee"
 author: "Scott Densmore"
-guid: http://scottdensmore.micro.blog/2018/03/25/cousins-and-coffee.html
+date: 2018-03-25 13:26:23 -0800
 ---
 
 Cousins and coffee.

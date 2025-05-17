@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "CodeLens Team Indicators - Processing Pipeline"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2014-06-03 02:36 -0700
-guid: http://scottdensmore.micro.blog/2014/06/03/codelens-team-indicators-processing-pipeline.html
 ---
 
 [CodeLens Team Indicators - Processing Pipeline - Microsoft Application Lifecycle Management - Site Home - MSDN Blogs](http://blogs.msdn.com/b/visualstudioalm/archive/2014/05/23/codelens-team-indicators-processing-pipeline.aspx): 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Azure Guidance Part 2 Out Now"
-date: 2010-09-21 02:39 -0700
 author: "Scott Densmore"
+date: 2010-09-21 02:39 -0700
 ---
 
 Go get it while it is hot. Our second version of our Azure Guidance is available on the web. The book should be available soon.

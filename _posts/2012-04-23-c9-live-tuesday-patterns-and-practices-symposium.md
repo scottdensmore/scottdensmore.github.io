@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "C9 Live: Tuesday - Patterns and Practices Symposium"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-04-23 02:33 -0700
-guid: http://scottdensmore.micro.blog/2012/04/23/c9-live-tuesday-patterns-and-practices-symposium.html
 ---
 
 I'll be there!

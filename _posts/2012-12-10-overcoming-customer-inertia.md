@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Overcoming Customer Inertia"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-12-10 02:33 -0700
 guid: http://scottdensmore.micro.blog/2012/12/10/overcoming-customer-inertia.html
 ---

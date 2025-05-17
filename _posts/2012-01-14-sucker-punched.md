@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Sucker Punched"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-01-14 02:56 -0700
-guid: http://scottdensmore.micro.blog/2012/01/14/sucker-punched.html
 ---
 
 My daughter was sucker punched on the bus after school.

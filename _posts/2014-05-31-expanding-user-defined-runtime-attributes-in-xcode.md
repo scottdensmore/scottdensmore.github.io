@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Expanding User-Defined Runtime Attributes in Xcode"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2014-05-31 02:36 -0700
-guid: http://scottdensmore.micro.blog/2014/05/31/expanding-user-defined-runtime-attributes-in-xcode.html
 ---
 
 [Expanding User-Defined Runtime Attributes in Xcode](http://spin.atomicobject.com/2014/05/30/xcode-runtime-attributes/):

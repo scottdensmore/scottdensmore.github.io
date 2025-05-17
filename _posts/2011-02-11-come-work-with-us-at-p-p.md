@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Come work with us at p&p"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-02-11 02:45 -0700
-guid: http://scottdensmore.micro.blog/2011/02/11/come-work-with-us-at-p-p.html
 ---
 
 Ever wanted to change the world? You too could come and enjoy the fun we have every day. If you think you would like to do this go apply here.

@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Windows Phone 7 Developer Guidance"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2010-12-10 02:45 -0700
-guid: http://scottdensmore.micro.blog/2010/12/10/windows-phone-7-developer-guidance.html
 ---
 
 Yesterday we released our [guidance on Windows Phone 7](http://msdn.microsoft.com/en-us/library/gg490765.aspx).  This is a continuation of our Windows Azure Guidance that we did previously.  We took the survey application and  made a version for Windows Phone 7.  This guidance is a little more advance, yet we tried to make it very approachable.  Here are a few topics you will find in the guide:

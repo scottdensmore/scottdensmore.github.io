@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Thinktecture.IdentityModel.* on GitHub"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-03-06 02:33 -0700
-guid: http://scottdensmore.micro.blog/2012/03/06/thinktecture-identitymodel-on-github.html
 ---
 
 [Thinktecture.IdentityModel.\* on GitHub](http://www.leastprivilege.com/ThinktectureIdentityModelOnGitHub.aspx)

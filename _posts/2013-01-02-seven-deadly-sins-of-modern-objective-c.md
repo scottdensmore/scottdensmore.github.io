@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Seven Deadly Sins of Modern Objective-C"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2013-01-02 02:34 -0700
-guid: http://scottdensmore.micro.blog/2013/01/02/seven-deadly-sins-of-modern-objective-c.html
 ---
 
 [Seven Deadly Sins of Modern Objective-C](http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c):

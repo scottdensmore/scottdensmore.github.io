@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Protecting Your Config in Windows Azure"
-microblog: false
-audio:
+title: "Software Still Sucks and I Am Stupid"
+author: "Scott Densmore"
 date: 2010-11-28 02:39 -0700
-guid: http://scottdensmore.micro.blog/2010/11/28/software-still-sucks-and-i-am-stupid.html
 ---
 
 So I am back on the kick to get rid of cable.  I don't really watch anything except the cooking channel and the occasional football game. I decided to sign up for Netflix since I can put this on all my devices that I have (XBox 360, PS3, iPad, iPhone) and I can catch up on a lot of shows.

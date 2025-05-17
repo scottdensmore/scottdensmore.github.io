@@ -55,7 +55,7 @@ The first thing we had to do was come up with a name for this DI container. I kn
 
 [Grigori](http://blogs.msdn.com/agile/default.aspx) was our Product Manager (now the Program Manger and the Enterprise Library Guardian) at the time. He has been promoting writing testable code since he got to patterns & practices. He was a big driver behind this release. He is still driving the project forward.
 
-[Chris](http://www.tavaresstudios.com/Blog/) was/is the brain behind Unity. He’s been the architect and dev lead of the project.
+[Chris](http://www.tavaresstudios.com/Blog/) was/is the brain behind Unity. He's been the architect and dev lead of the project.
 
 With the name out of the way we could focus on getting things done. We had a lot of changes to make and Unity to build. We had another great team and spent most of our time fixing things to support the theme of DI. This release was all about enabling this not necessarily getting it all done.  
 
@@ -75,7 +75,7 @@ One of the major things that I love about the release is the revamp of the tool.
 
 Another major theme carried over from version 4 that was championed by Grigori was [ease and simplicity](http://blogs.msdn.com/agile/archive/2009/05/14/taking-user-experience-seriously.aspx). More awesome!
 
-All of this couldn't be possible without our testers: Rohit as the test lead and Mani who’s been on EntLib team since very early release 1.0 and only skipped v4), to Erik for automating our security testing, and to Masashi for automating our UI testing. And praise for the doc team, Alex and Dennis for helping improve our learnability story. It’s not easy to reconcile 1200 pages of the docs from so many releases.
+All of this couldn't be possible without our testers: Rohit as the test lead and Mani who's been on EntLib team since very early release 1.0 and only skipped v4), to Erik for automating our security testing, and to Masashi for automating our UI testing. And praise for the doc team, Alex and Dennis for helping improve our learnability story. It's not easy to reconcile 1200 pages of the docs from so many releases.
 
 Congratulations to the entire [Enterprise Library team](http://entlib.codeplex.com/wikipage?title=EntLib5Team&referringTitle=EntLib5%20Beta1).
 

@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Code Lens for Git"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2014-05-24 02:35 -0700
-guid: http://scottdensmore.micro.blog/2014/05/24/code-lens-for-git.html
 ---
 
 [Code Lens for Git in Visual Studio 2013 Ultimate Update 3](http://blogs.msdn.com/b/visualstudioalm/archive/2014/05/23/code-lens-for-git-in-visual-studio-2013-ultimate-update-3.aspx)

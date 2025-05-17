@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Windows Azure Guidance V3 - Hybrid Applications First Drop"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-10-10 02:55 -0700
-guid: http://scottdensmore.micro.blog/2011/10/10/windows-azure-guidance-v3-hybrid-applications-first-drop.html
 ---
 
 We have been working on a new guide that is focusing on Hybrid Applications with Windows Azure. The focus is connecting on premise and off premise applications. The scenario focuses on a fictitious company "Trey Research" that supplies custom parts that then is fulfilled by offsite vendors. We show how to connect the application running in the cloud back to the corporate on premise app and

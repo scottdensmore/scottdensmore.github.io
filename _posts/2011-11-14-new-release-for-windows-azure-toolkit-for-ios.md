@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "New Release for Windows Azure Toolkit for iOS"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-11-14 02:55 -0700
-guid: http://scottdensmore.micro.blog/2011/11/14/new-release-for-windows-azure-toolkit-for-ios.html
 ---
 
 Today I just pushed a new version of the Windows Azure Toolkit for iOS to github (tagged v1.3.0). These changes include new versions for the [Windows Azure Toolkit for iOS](https://github.com/microsoft-dpe/wa-toolkit-ios), the [Configuration Utility](https://github.com/microsoft-dpe/wa-toolkit-ios-configutility) and the [Cloud Ready Packages](https://github.com/microsoft-dpe/wa-toolkit-cloudreadypackages). There are a quite a few changes in this update including:

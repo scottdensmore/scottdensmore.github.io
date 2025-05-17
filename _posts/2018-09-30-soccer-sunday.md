@@ -1,10 +1,10 @@
 ---
 layout: post
-date: 2018-09-30 11:38:51 -0800
+title: "Soccer Sunday"
 author: "Scott Densmore"
+date: 2018-09-30 11:38:51 -0800
 ---
-
-![Soccer Sunday](/assets/img/72456ffa22.jpg)
 
 Soccer Sunday
 
+![Soccer Sunday](/assets/img/72456ffa22.jpg)

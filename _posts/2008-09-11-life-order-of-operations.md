@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Life Order of Operations"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2008-09-11 00:30 -0700
-guid: http://scottdensmore.micro.blog/2008/09/07/enterprise-library-on-mono.html
 ---
 
 Customer, Company, Group / Team, Self: This is the order of operations.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Seattle Code Camp Talks"
+title: "My azure setup"
 author: "Scott Densmore"
 date: 2010-03-09 02:39 -0700
 ---

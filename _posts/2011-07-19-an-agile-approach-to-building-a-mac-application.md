@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "An Agile Approach to Building a Mac Application"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-07-19 02:50 -0700
-guid: http://scottdensmore.micro.blog/2011/07/19/an-agile-approach-to-building-a-mac-application.html
 ---
 
 I have written quite a bit of articles on iOS and Mac applications using agile techniques (unit testing, continuous integration, etc) and in this post, I am going to put it all together. We will go through how to setup the project, build the application test first, how to integrate code coverage and source control flow to build features.
@@ -13,7 +11,7 @@ I have written quite a bit of articles on iOS and Mac applications using agile t
 
 **The Application**
 
-The application itself is not all that important. I picked something that would be easy to build and demonstrate the concepts. The application is a contact application. I based it around the post of [Building a Modern Cocoa App](http://www.mcubedsw.com/blog/index.php/site/comments/building_a_modern_cocoa_app/) by [Martin Pilkington](http://www.mcubedsw.com/about).  I think the post does a great job of explaining an approach to building modern Cocoa Applications that I have taken when building apps for the Mac. The contact manager application is a Cocoa Application that uses Core Data as it's backing store with Unit Tests which gives us two projects, ContactManager and ContactManagerTests.
+The application itself is not all that important. I picked something that would be easy to build and demonstrate the concepts. The application is a contact application. I based it around the post of [Building a Modern Cocoa App](http://www.mcubedsw.com/blog/index.php/site/comments/building_a_modern_cocoa_app/) by [Martin Pilkington](http://www.mcubedsw.com/about). I think the post does a great job of explaining an approach to building modern Cocoa Applications that I have taken when building apps for the Mac. The contact manager application is a Cocoa Application that uses Core Data as it's backing store with Unit Tests which gives us two projects, ContactManager and ContactManagerTests.
 
 **Setup**
 

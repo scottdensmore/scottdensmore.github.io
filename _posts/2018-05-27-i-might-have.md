@@ -1,10 +1,9 @@
 ---
 layout: post
-microblog: true
-audio: 
+title: "The software engineer's guide to asserting dominance in the workplace"
+author: "Scott Densmore"
 date: 2018-05-27 11:19:44 -0800
-guid: http://scottdensmore.micro.blog/2018/05/27/i-might-have.html
 ---
-I might have to make a call today. 
+I might have to make a call today.
 
-<img src="http://www.scottdensmore.io/uploads/2018/64fdbb94a1.jpg" width="500" height="413" />
+![Make A Call](/assets/img/64fdbb94a1.jpg)

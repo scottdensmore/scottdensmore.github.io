@@ -1,1 +1,0 @@
-![Image](/assets/img/apple-manual.jpg) 

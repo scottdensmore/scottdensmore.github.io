@@ -1,15 +1,14 @@
 ---
 layout: post
-microblog: true
-audio: 
+title: "Before / After"
+author: "Scott Densmore"
 date: 2019-01-25T14:32:42-08:00
-guid: https://www.scottdensmore.io/2019/01/25/before-during-and.html
 ---
 
 Before during and after.
 
-<img src="uploads/2019/32cdaa0605.jpg" width="600" height="599" alt="" />
+![Before](/assets/img/32cdaa0605.jpg)
 
-<img src="uploads/2019/dbd76ecca9.jpg\" width="600" height="599" alt="" />
+![During](/assets/img/dbd76ecca9.jpg)
 
-<img src="uploads/2019/582c8c7eef.jpg" width="600" height="599" alt="" />\n
+![After](/assets/img/582c8c7eef.jpg)

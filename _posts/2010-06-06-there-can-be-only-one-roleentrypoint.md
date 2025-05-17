@@ -1,17 +1,15 @@
 ---
 layout: post
 title: "There can be only One RoleEntryPoint"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2010-06-06 02:39 -0700
-guid: http://scottdensmore.micro.blog/2010/06/06/there-can-be-only-one-roleentrypoint.html
 ---
 
 Last week we were finalizing the production of [Windows Azure Architecture Guidance Part 1](http://wag.codeplex.com/), when we came across a problem with the code. We had a few machines that were failing when trying to start the WebRole for the project. Here are the event log entries for one of the machines (They were all logged by the HostableWebCore on the local machine):
 
-1: The worker process for application pool '{E2160A33-4856-41E2-B811-E19D71F18B22}' encountered an error 'The configuration section 'system.webServer/globalModules' cannot be read because it is missing a section declaration ' trying to read global module configuration data from file '\\\\?\\C:\\Users\\<\removed\>\\AppData\\Local\\dftmp\\s0\\deployment(135)\\res\\deployment(135).aExpense.Azure.aExpense.0\\temp\\temp\\applicationHost.config', line number '0'. Worker process startup aborted.  
-2: The worker process for application pool '{E2160A33-4856-41E2-B811-E19D71F18B22}' encountered an error 'Cannot read configuration file ' trying to read configuration data from file '\\\\?\\C:\\Users\\<\removed\>\\AppData\\Local\\dftmp\\s0\\deployment(135)\\res\\deployment(135).aExpense.Azure.aExpense.0\\temp\\temp\\applicationHost.config', line number '0'. The data field contains the error code.  
-3: The Windows Process Activation Service received a change notification, but was unable to process it correctly. The data field contains the error number.  
+1: The worker process for application pool '{E2160A33-4856-41E2-B811-E19D71F18B22}' encountered an error 'The configuration section 'system.webServer/globalModules' cannot be read because it is missing a section declaration ' trying to read global module configuration data from file '\\\\?\\C:\\Users\\<\removed\>\\AppData\\Local\\dftmp\\s0\\deployment(135)\\res\\deployment(135).aExpense.Azure.aExpense.0\\temp\\temp\\applicationHost.config', line number '0'. Worker process startup aborted.
+2: The worker process for application pool '{E2160A33-4856-41E2-B811-E19D71F18B22}' encountered an error 'Cannot read configuration file ' trying to read configuration data from file '\\\\?\\C:\\Users\\<\removed\>\\AppData\\Local\\dftmp\\s0\\deployment(135)\\res\\deployment(135).aExpense.Azure.aExpense.0\\temp\\temp\\applicationHost.config', line number '0'. The data field contains the error code.
+3: The Windows Process Activation Service received a change notification, but was unable to process it correctly. The data field contains the error number.
 4: The Windows Process Activation Service encountered an error trying to read configuration data for config section 'system.applicationHost/webLimits' from file '\\\\?\\C:\\Users\\<\removed\>\\AppData\\Local\\dftmp\\s0\\deployment(135)\\res\\deployment(135).aExpense.Azure.aExpense.0\\temp\\temp\\applicationHost.config', line number '0'. The error message is: 'The configuration section 'system.applicationHost/webLimits' cannot be read because it is missing a section declaration '. The data field contains the error number.
 
 On another machine we got this error:

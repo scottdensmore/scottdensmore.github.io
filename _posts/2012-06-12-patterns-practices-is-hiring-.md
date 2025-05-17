@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "patterns & practices is hiring!"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-06-12 02:36 -0700
-guid: http://scottdensmore.micro.blog/2012/06/12/patterns-practices-is-hiring-.html
 ---
 
 I guess the cat is out of the bag or at least it is going to be so here is the post from Bob:

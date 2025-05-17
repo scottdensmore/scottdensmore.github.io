@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Feeding My Need to Experiment"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-04-08 02:33 -0700
-guid: http://scottdensmore.micro.blog/2012/04/08/feeding-my-need-to-experiment.html
 ---
 
 I was reading [Alex Homer's blog](http://blogs.msdn.com/b/alexhomer) this morning (shame on you if you are not reading it), and it got me thinking: Do I still like to experiment?
@@ -16,4 +14,3 @@ I know many people have nightmares about C++, but with C++'11 and the new modern
 I will be talking more about it as we get closer. We are getting ready to have a release on CodePlex.
 
 Enjoy!
-

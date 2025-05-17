@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2018-05-01 14:54:17 -0800
+title: "Being a Good"
 author: "Scott Densmore"
+date: 2018-05-01 00:00:00 -0800
 ---
 
 Being a good team mate should be the first requirement for any developer that is working on a team.

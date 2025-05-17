@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Claims Based Identity and Access Control"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-02-05 02:45 -0700
-guid: http://scottdensmore.micro.blog/2011/02/05/claims-based-identity-and-access-control.html
 ---
 
 Over the past year we have shipped a few guides:

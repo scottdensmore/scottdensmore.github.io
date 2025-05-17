@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "A Swift Reaction"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2014-06-15 02:36 -0700
-guid: http://scottdensmore.micro.blog/2014/06/15/a-swift-reaction.html
 ---
 
 > Swift and ReactiveCocoa seem like a perfect fit. Swift is designed with first-class functions and a succinct closure syntax, and ReactiveCocoa is all about implementing data flows using closures, in the form of Objective C blocks. Since blocks map onto Swift closures, it should be simple to get them playing nice, right?

@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "The original Apple operation manual for the original Apple computer. The original Apple operation manual for the original..."
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2013-03-04 02:34 -0700
-guid: http://scottdensmore.micro.blog/2013/03/04/the-original-apple-operation-manual-for-the-original-apple-computer-the-original-apple-operation-manual-for-the-original-.html
 ---
 
 ![Image](/assets/img/apple-manual.jpg)  

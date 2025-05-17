@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Claims Identity V2 Drop 2 Ready for You"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2011-03-24 02:45 -0700
-guid: http://scottdensmore.micro.blog/2011/03/24/claims-identity-v2-drop-2-ready-for-you.html
 ---
 
 As normal I am late to the party. We have been working hard on getting the [Claims Identity Guide](http://claimsid.codeplex.com/) updated for a V2. Our big focus for this drop is Windows Azure Access Control Service ([ACS](http://acs.codeplex.com/)). We have Federation, SOAP, and Rest services. We have passive clients (browser) and Active clients (WPF & Windows Phone 7).

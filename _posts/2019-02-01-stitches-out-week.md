@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2019-02-01T09:09:57-08:00
+title: "Stitches Out Week"
 author: "Scott Densmore"
+date: 2019-02-01 09:09:57 -0800
 ---
 
 Bandages off. A little sore and swollen. Time to get strong 💪.

@@ -1,8 +1,8 @@
 ---
 layout: post
-microblog: true
-audio: 
+Title: "Your talent is your greatest nemesis"
+author: "Scott Densmore"
 date: 2018-09-21 07:56:59 -0800
-guid: http://scottdensmore.micro.blog/2018/09/21/pulled-out-some.html
 ---
-Pulled out some Protest the Hero this morning to fix all the things for arm64e! 
+
+Pulled out some Protest the Hero this morning to fix all the things for arm64e!

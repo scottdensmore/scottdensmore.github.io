@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "My First WWDC"
-microblog: false
-audio:
+author: "Scott Densmore"
 date: 2013-05-12 02:34 -0700
-guid: http://scottdensmore.micro.blog/2013/05/12/my-first-wwdc.html
 ---
 
 Every year I say I am going to WWDC and every year it passes and I say "Next year for sure.".  This year I decided it was time to put up or shut up. I did my best: I was ready at 10, logged in and started the process. I got to the checkout process after a few restarts and a couple of browsers and after I entered all my info and clicked place order, server error. 

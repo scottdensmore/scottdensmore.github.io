@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Moving On (Again)"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2012-07-01 02:37 -0700
-guid: http://scottdensmore.micro.blog/2012/07/01/moving-on-again-.html
 ---
 
 It must be that time of year. I have been at patterns & practices for a couple of years again and it has been awesome. Since I have been back I have worked on some great content with some great people.

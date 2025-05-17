@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Asynchronous calls in C++ Windows Store Unit Tests"
-microblog: false
-audo:
+author: "Scott Densmore"
 date: 2013-01-01 02:32 -0700
-guid: http://scottdensmore.micro.blog/2013/01/01/revisiting-an-agile-approach-to-building-a-mac-application.html
 ---
 
 **Note**
