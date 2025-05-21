@@ -1,14 +1,43 @@
-title: "Your Blog Title"
+title: "Scott Densmore"
 author: "Scott Densmore"
-description: "A short description of your blog"
+description: "Thoughts on software development, technology, and programming best practices"
 url: "https://scottdensmore.github.io"
 baseurl: "" # Leave empty for username.github.io sites
 
 theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "default"
+
+# Include pages directory
+include:
+  - _pages
+
+# Site defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+atom_feed:
+  path: # blank (default) uses feed.xml
+
+
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Optional: Minimal Mistakes settings
-minimal_mistakes_skin: "default" 
+  - jekyll-include-cache
