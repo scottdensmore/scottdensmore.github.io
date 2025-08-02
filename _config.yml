@@ -32,10 +32,21 @@ defaults:
       layout: single
       author_profile: true
 
+# Footer configuration
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/scottdensmore"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/scottdensmore"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:scott@scottdensmore.com"
+
 atom_feed:
   path: # blank (default) uses feed.xml
-
-
 
 plugins:
   - jekyll-feed
