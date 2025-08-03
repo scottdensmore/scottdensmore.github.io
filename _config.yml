@@ -63,3 +63,16 @@ liquid:
 # SEO and performance
 timezone: America/Los_Angeles
 lang: en-US
+
+# Social media
+twitter:
+  username: scottdensmore
+  card: summary_large_image
+
+# SEO plugin configuration
+social:
+  name: Scott Densmore
+  links:
+    - https://twitter.com/scottdensmore
+    - https://github.com/scottdensmore
+    - https://linkedin.com/in/scottdensmore
