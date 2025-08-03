@@ -1,7 +1,7 @@
 title: "Scott Densmore"
 author: "Scott Densmore"
 description: "Thoughts on software development, technology, and programming best practices"
-url: "https://scottdensmore.github.io"
+url: "https://scottdensmore.com"
 baseurl: "" # Leave empty for username.github.io sites
 
 theme: "minimal-mistakes-jekyll"
@@ -52,3 +52,33 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
+
+# Security settings
+strict_front_matter: true
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# SEO and performance
+timezone: America/Los_Angeles
+lang: en-US
+
+# Site images
+avatar: "/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg"
+
+# Site URLs
+posts_url: "/posts/"
+
+# Social media
+twitter:
+  username: scottdensmore
+  card: summary_large_image
+
+# SEO plugin configuration
+social:
+  name: Scott Densmore
+  links:
+    - https://twitter.com/scottdensmore
+    - https://github.com/scottdensmore
+    - https://linkedin.com/in/scottdensmore

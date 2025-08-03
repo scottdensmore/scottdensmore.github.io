@@ -1,0 +1,23 @@
+<!-- Explore by Topic - Left Sidebar -->
+<aside class="topic-sidebar">
+  <h3 class="topic-sidebar__title">🏷️ Explore by Topic</h3>
+  
+  {% assign all_tags = site.posts | map: 'tags' | flatten | uniq | sort %}
+  {% if all_tags.size > 0 %}
+    <ul class="topic-list">
+      {% for tag in all_tags %}
+        <li class="topic-list__item">
+          <button type="button" data-tag="{{ tag | escape }}" class="topic-list__link" aria-label="Filter posts by {{ tag | escape }} tag">
+            <span class="topic-list__hash">#</span>{{ tag | escape }}
+          </button>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No tags found yet. Start adding tags to your posts!</p>
+  {% endif %}
+  
+  <div class="topic-sidebar__footer">
+    <button type="button" class="view-all-link" aria-label="View all blog posts">→ View All Posts</button>
+  </div>
+</aside>

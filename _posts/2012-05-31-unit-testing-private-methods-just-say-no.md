@@ -3,6 +3,9 @@ layout: post
 title: "Unit Testing Private Methods - Just Say No"
 author: "Scott Densmore"
 date: 2012-05-31 02:36 -0700
+tags: [testing, unit-testing, best-practices, development]
+categories: [Development]
+excerpt: "Agreeing with Peter Provost's take on unit testing private methods - don't do it. Focus on testing public interfaces instead."
 ---
 
 [My Take on Unit Testing Private Methods](http://www.peterprovost.org/blog/2012/05/31/my-take-on-unit-testing-private-methods):

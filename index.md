@@ -1,8 +1,20 @@
 ---
-layout: home
-title: "Welcome"
-author_profile: true
+layout: single
+title: ""
+author_profile: false
+classes: wide
 ---
 
-Welcome to my personal blog! 🚀  
-This is where I'll share my thoughts, tutorials, and more. 
+<div class="homepage-container">
+  <div class="homepage-layout">
+    {% include homepage-sidebar.html %}
+    
+    <main class="main-content">
+      <h2 class="main-content__title">📝 Latest Post</h2>
+      {% include latest-post-card.html %}
+    </main>
+  </div>
+</div>
+
+{% include site-config.html %}
+<script src="{{ '/assets/js/homepage.js' | relative_url }}"></script>

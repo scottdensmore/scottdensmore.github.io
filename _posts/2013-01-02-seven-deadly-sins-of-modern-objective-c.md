@@ -3,6 +3,9 @@ layout: post
 title: "Seven Deadly Sins of Modern Objective-C"
 author: "Scott Densmore"
 date: 2013-01-02 02:34 -0700
+tags: [ios, objective-c, best-practices, programming]
+categories: [Development]
+excerpt: "A great list of potential problems with Objective-C code that goes beyond stylistic preferences to focus on objective code quality issues."
 ---
 
 [Seven Deadly Sins of Modern Objective-C](http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c):

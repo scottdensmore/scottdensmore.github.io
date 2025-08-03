@@ -1,0 +1,16 @@
+{% comment %}
+  Site configuration data for JavaScript
+  Exposes Jekyll site variables to client-side scripts
+{% endcomment %}
+
+<script>
+  // Site configuration for JavaScript modules
+  window.SiteConfig = {
+    postsUrl: '{{ site.posts_url | relative_url }}',
+    baseUrl: '{{ site.baseurl }}',
+    url: '{{ site.url }}',
+    {% if site.allowed_origins %}
+    allowedOrigins: {{ site.allowed_origins | jsonify }}
+    {% endif %}
+  };
+</script>
