@@ -8,7 +8,9 @@
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
-          <img class="site-title__img" src="/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg" alt="Scott Densmore">
+          {% if site.profile_image %}
+            <img class="site-title__img" src="{{ site.profile_image | relative_url }}" alt="{{ site.profile_image_alt | default: 'Profile Image' }}">
+          {% endif %}
           <span class="site-title__text">{{ site.masthead_title | default: site.title }}</span>
         </a>
 
