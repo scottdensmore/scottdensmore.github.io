@@ -24,7 +24,7 @@ classes: wide
       </ul>
       
       <div style="margin-top: 1.5rem;">
-        <a href="#" onclick="showAllPosts()" style="color: #6c757d; text-decoration: none; font-weight: 500; font-size: 0.9rem;">→ View All Posts</a>
+        <a href="/posts/" style="color: #6c757d; text-decoration: none; font-weight: 500; font-size: 0.9rem;">→ View All Posts</a>
       </div>
     </div>
     
