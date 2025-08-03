@@ -16,4 +16,5 @@ classes: wide
   </div>
 </div>
 
+{% include site-config.html %}
 <script src="{{ '/assets/js/homepage.js' | relative_url }}"></script>

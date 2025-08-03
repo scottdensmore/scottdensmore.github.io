@@ -105,7 +105,8 @@
         }
         
         const encodedTag = encodeURIComponent(sanitizedTag);
-        const targetUrl = `/posts/?tag=${encodedTag}`;
+        const postsUrl = window.SiteConfig?.postsUrl || '/posts/';
+        const targetUrl = `${postsUrl}?tag=${encodedTag}`;
         
         // Navigate to filtered posts page
         window.location.href = targetUrl;
@@ -121,7 +122,8 @@
      */
     showAllPosts: function() {
       try {
-        window.location.href = '/posts/';
+        const postsUrl = window.SiteConfig?.postsUrl || '/posts/';
+        window.location.href = postsUrl;
       } catch (error) {
         console.error('Error navigating to posts page:', error);
         // Last resort fallback to home page

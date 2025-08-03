@@ -67,6 +67,9 @@ lang: en-US
 # Site images
 avatar: "/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg"
 
+# Site URLs
+posts_url: "/posts/"
+
 # Social media
 twitter:
   username: scottdensmore
