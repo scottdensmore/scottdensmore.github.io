@@ -4,6 +4,14 @@
 
 (function() {
   'use strict';
+  
+  // Allowed origins for security validation
+  const ALLOWED_ORIGINS = [
+    'https://scottdensmore.com',
+    'https://scottdensmore.github.io',
+    'http://localhost:4000',
+    'http://127.0.0.1:4000'
+  ];
 
   const Homepage = {
     /**
