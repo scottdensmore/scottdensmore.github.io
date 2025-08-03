@@ -45,7 +45,7 @@ def extract_front_matter(content)
   return nil unless end_idx
   
   yaml_content = content[3...end_idx].strip
-  YAML.load(yaml_content)
+  YAML.safe_load(yaml_content)
 end
 
 def generate_excerpt(content)
