@@ -21,31 +21,15 @@
 }
 
 /* Layout overrides for full-width design */
-.page__content {
-  max-width: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+.homepage-container .page__content,
+.homepage-container .page__inner-wrap,
+.homepage-container #main,
+.homepage-container .archive {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.page__inner-wrap {
-  max-width: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#main {
-  max-width: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-}
-
-.archive {
-  max-width: none !important;
-  width: 100% !important;
-}
-
 /* Homepage container */
 .homepage-container {
   max-width: var(--container-max-width);
