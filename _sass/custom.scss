@@ -4,7 +4,6 @@
 body {
   background-color: var(--background-main);
   color: var(--text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Ensure main content areas inherit dark theme */
@@ -14,6 +13,15 @@ body {
 .archive {
   background-color: var(--background-main);
   color: var(--text-primary);
+}
+
+/* Optimized theme transitions for specific components */
+.post-content__container,
+.latest-post,
+.page__share,
+.masthead,
+.page__footer {
+  transition: background-color 0.2s ease;
 }
 
 /* Dark theme support for masthead and navigation */
@@ -437,8 +445,13 @@ img[loading="lazy"] {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
     &:hover {
+      will-change: transform, box-shadow;
       transform: translateY(-2px);
       box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+    
+    &:not(:hover) {
+      will-change: auto;
     }
   }
   
@@ -575,10 +588,15 @@ img[loading="lazy"] {
     
     &:hover,
     &:focus {
+      will-change: transform, box-shadow;
       background: var(--button-bg-primary-hover);
       transform: translateY(-1px);
       box-shadow: 0 2px 8px var(--button-shadow-primary);
       color: var(--primary-color);
+    }
+    
+    &:not(:hover):not(:focus) {
+      will-change: auto;
     }
     
     i {
@@ -643,9 +661,14 @@ img[loading="lazy"] {
     
     &:hover,
     &:focus {
+      will-change: transform, box-shadow;
       background: var(--button-bg-primary-hover);
       transform: translateY(-1px);
       box-shadow: 0 2px 8px var(--button-shadow-primary);
+    }
+    
+    &:not(:hover):not(:focus) {
+      will-change: auto;
     }
     
     &.disabled {
