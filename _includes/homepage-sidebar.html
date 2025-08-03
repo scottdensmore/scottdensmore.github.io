@@ -7,8 +7,8 @@
     <ul class="topic-list">
       {% for tag in all_tags %}
         <li class="topic-list__item">
-          <button type="button" data-tag="{{ tag }}" class="topic-list__link" aria-label="Filter posts by {{ tag }} tag">
-            <span class="topic-list__hash">#</span>{{ tag }}
+          <button type="button" data-tag="{{ tag | escape }}" class="topic-list__link" aria-label="Filter posts by {{ tag | escape }} tag">
+            <span class="topic-list__hash">#</span>{{ tag | escape }}
           </button>
         </li>
       {% endfor %}
