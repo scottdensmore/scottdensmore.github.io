@@ -5,8 +5,6 @@ author_profile: false
 classes: wide
 ---
 
-<link rel="stylesheet" href="/assets/custom.css">
-
 <div class="container-max">
   <div class="flex-gap">
     
