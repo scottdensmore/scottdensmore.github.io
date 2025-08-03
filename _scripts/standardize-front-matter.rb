@@ -109,7 +109,7 @@ def suggest_tags(title, content)
     end
   end
   
-  suggested_tags.empty? ? ['programming'] : suggested_tags.uniq
+  suggested_tags.empty? ? ['general'] : suggested_tags.uniq
 end
 
 def suggest_categories(tags)
