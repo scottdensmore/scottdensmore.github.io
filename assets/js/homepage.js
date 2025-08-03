@@ -127,7 +127,8 @@
       } catch (error) {
         console.error('Error navigating to posts page:', error);
         // Last resort fallback to home page
-        window.location.href = '/';
+        const homeUrl = window.SiteConfig?.baseUrl || '/';
+        window.location.href = homeUrl;
       }
     }
   };
