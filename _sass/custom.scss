@@ -658,8 +658,6 @@ img[loading="lazy"] {
       box-shadow: 0 2px 8px var(--button-shadow-primary);
     }
     
-    &:not(:hover):not(:focus) {
-    }
     
     &.disabled {
       opacity: 0.5;
