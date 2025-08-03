@@ -201,7 +201,6 @@
     }
   };
 
-  // All interactions are handled via event delegation, avoiding global function exposure
   // HTML buttons use data attributes and event listeners instead of global onclick handlers
   // This approach improves security, accessibility, and maintainability
 
