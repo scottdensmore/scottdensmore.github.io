@@ -1,13 +1,53 @@
 /* Custom styles for blog homepage and components */
 
+/* Global dark theme support */
+body {
+  background-color: var(--background-main);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure main content areas inherit dark theme */
+.initial-content,
+.page__content,
+.page,
+.archive {
+  background-color: var(--background-main);
+  color: var(--text-primary);
+}
+
+/* Dark theme support for masthead and navigation */
+.masthead,
+.masthead__inner-wrap {
+  background-color: var(--background-main);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* Dark theme support for sidebar */
+.sidebar,
+.author__content,
+.author__urls-wrapper {
+  background-color: var(--background-main);
+  color: var(--text-primary);
+}
+
+/* Dark theme support for footer */
+.page__footer {
+  background-color: var(--background-main);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border-light);
+}
+
 /* CSS Variables for consistent theming */
 :root {
+  /* Light theme colors */
   --primary-color: #667eea;
   --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --secondary-color: #6c757d;
   --text-primary: #2c3e50;
   --text-secondary: #666;
   --background-light: #f8f9fa;
+  --background-main: #ffffff;
   --border-light: #eee;
   --shadow-card: 0 4px 6px rgba(0,0,0,0.1);
   --border-radius: 10px;
@@ -23,6 +63,26 @@
   --button-bg-primary: rgba(102, 126, 234, 0.1);
   --button-bg-primary-hover: rgba(102, 126, 234, 0.2);
   --button-shadow-primary: rgba(102, 126, 234, 0.2);
+}
+
+/* Dark theme colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #8b9cff;
+    --primary-gradient: linear-gradient(135deg, #8b9cff 0%, #9c88ff 100%);
+    --secondary-color: #9ca3af;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --background-light: #1f2937;
+    --background-main: #111827;
+    --border-light: #374151;
+    --shadow-card: 0 4px 6px rgba(0,0,0,0.3);
+    
+    /* Darker button backgrounds for dark theme */
+    --button-bg-primary: rgba(139, 156, 255, 0.15);
+    --button-bg-primary-hover: rgba(139, 156, 255, 0.25);
+    --button-shadow-primary: rgba(139, 156, 255, 0.3);
+  }
 }
 
 /* Layout overrides for full-width design - using higher specificity instead of !important */
@@ -329,7 +389,7 @@ img[loading="lazy"] {
 .post-content__container {
   max-width: 800px;
   margin: 0 auto;
-  background: white;
+  background: var(--background-main);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-card);
@@ -447,7 +507,7 @@ img[loading="lazy"] {
     width: 100%;
     border-collapse: collapse;
     margin: var(--spacing-lg) 0;
-    background: white;
+    background: var(--background-main);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-card);
