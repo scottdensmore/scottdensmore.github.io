@@ -69,7 +69,7 @@
       } else if (ALLOWED_ORIGINS.includes(window.location.origin)) {
         baseUrl = window.location.origin;
       } else {
-        console.warn('window.location.origin is not in allowed origins, using "/" as baseUrl');
+        console.warn('Current origin is not in allowed origins, using "/" as baseUrl');
         baseUrl = '/';
       }
       const postsPath = baseUrl.endsWith('/') ? 'posts/' : '/posts/';
