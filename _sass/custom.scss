@@ -595,16 +595,9 @@ img[loading="lazy"] {
       }
     }
     
-    /* Add arrow icons for better UX */
-    &[title*="Previous"]:before {
-      content: "←";
-      margin-right: var(--spacing-sm);
-    }
-    
-    &[title*="Next"]:after {
-      content: "→";
-      margin-left: var(--spacing-sm);
-    }
+    /* Removed fragile arrow icon selectors for better maintainability.
+       Buttons are already clearly labeled with "Previous" and "Next" text
+       from the theme, making additional icons unnecessary. */
   }
 }
 
