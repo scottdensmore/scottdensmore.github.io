@@ -252,14 +252,19 @@ img {
 }
 
 img[loading="lazy"] {
-  /* Prevent layout shift for lazy loaded images using aspect-ratio */
-  aspect-ratio: 16 / 9;
+  /* Prevent layout shift for lazy loaded images */
   background: var(--background-light);
   
-  /* Fallback for older browsers */
-  @supports not (aspect-ratio: 16 / 9) {
-    min-height: 250px;
-  }
+  /* Use object-fit to maintain aspect ratio without distortion */
+  object-fit: cover;
+  
+  /* Reserve space to prevent layout shift - use min-height instead of fixed aspect-ratio */
+  min-height: 200px;
+  
+  /* For specific use cases, add aspect-ratio classes:
+     .img--16-9 { aspect-ratio: 16 / 9; }
+     .img--4-3 { aspect-ratio: 4 / 3; }
+     .img--square { aspect-ratio: 1 / 1; } */
 }
 
 /* Custom masthead styles - using targeted class selector */
