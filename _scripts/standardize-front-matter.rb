@@ -89,8 +89,8 @@ def generate_excerpt(content)
                           .strip
   
   # Truncate to reasonable length
-  if excerpt.length > 160
-    excerpt = excerpt[0..156] + '...'
+  if excerpt.length > EXCERPT_LENGTH_LIMIT
+    excerpt = excerpt[0..(EXCERPT_LENGTH_LIMIT - 4)] + '...'
   end
   
   excerpt.empty? ? nil : excerpt
