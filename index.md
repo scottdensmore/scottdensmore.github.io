@@ -5,11 +5,18 @@ author_profile: false
 classes: wide
 ---
 
+<style>
+  .sidebar-fixed-width {
+    width: 250px;
+    flex-shrink: 0;
+  }
+</style>
+
 <div class="container-max">
   <div class="flex-gap">
     
     <!-- Explore by Topic - Left Sidebar -->
-    <div style="width: 250px; flex-shrink: 0;">
+    <div class="sidebar-fixed-width">
       <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.2rem;">🏷️ Explore by Topic</h3>
       
       {% assign all_tags = site.posts | map: 'tags' | flatten | uniq | sort %}
