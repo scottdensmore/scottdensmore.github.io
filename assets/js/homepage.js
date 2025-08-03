@@ -130,7 +130,9 @@
     }
   };
 
-  // Functions are now accessed via event listeners instead of global exposure
+  // All interactions handled via event delegation - no global function exposure needed
+  // HTML buttons use data attributes and event listeners instead of onclick handlers
+  // This provides better security, accessibility, and maintainability
 
   // Initialize when DOM is ready
   document.addEventListener('DOMContentLoaded', function() {
