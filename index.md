@@ -5,35 +5,10 @@ author_profile: false
 classes: wide
 ---
 
-<style>
-  .page__content {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .page__inner-wrap {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  #main {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
-  
-  .archive {
-    max-width: none !important;
-    width: 100% !important;
-  }
-</style>
+<link rel="stylesheet" href="/assets/custom.css">
 
-<div style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
-  <div style="display: flex; gap: 2rem; align-items: flex-start;">
+<div class="container-max">
+  <div class="flex-gap">
     
     <!-- Explore by Topic - Left Sidebar -->
     <div style="width: 250px; flex-shrink: 0;">
