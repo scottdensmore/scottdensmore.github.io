@@ -43,7 +43,8 @@
      * Navigate to all posts page
      */
     showAllPosts: function() {
-      window.location.href = '/posts/';
+      const baseUrl = getBaseUrl();
+      window.location.href = `${baseUrl}/posts/`;
     }
   };
 
