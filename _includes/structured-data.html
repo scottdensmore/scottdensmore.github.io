@@ -3,7 +3,7 @@
   Provides rich snippets for search engines
 {% endcomment %}
 
-<script type="application/ld+json">
+<script type="application/ld+json"{% if site.csp_nonce %} nonce="{{ site.csp_nonce }}"{% endif %}>
 {% if page.layout == 'post' or page.layout == 'single' %}
 {
   "@context": "https://schema.org",
