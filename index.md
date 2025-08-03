@@ -78,15 +78,27 @@ function filterByTag(tag) {
       if (response.ok) {
         window.location.href = targetUrl;
       } else {
-        alert('Tag filtering is not supported or the page does not exist.');
+        showNotification('Tag filtering is not supported or the page does not exist.');
       }
     })
     .catch(function() {
-      alert('Tag filtering is not supported or the page does not exist.');
+      showNotification('Tag filtering is not supported or the page does not exist.');
     });
 }
 
 function showAllPosts() {
   window.location.href = '/posts/';
+}
+}
+
+function showNotification(message) {
+  var notification = document.getElementById('notification-area');
+  if (notification) {
+    notification.textContent = message;
+    notification.style.display = 'block';
+    setTimeout(function() {
+      notification.style.display = 'none';
+    }, 4000); // Hide after 4 seconds
+  }
 }
 </script>
