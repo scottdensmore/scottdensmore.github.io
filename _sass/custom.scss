@@ -584,16 +584,12 @@ img[loading="lazy"] {
     
     &:hover,
     &:focus {
-      will-change: transform, box-shadow;
       background: var(--button-bg-primary-hover);
       transform: translateY(-1px);
       box-shadow: 0 2px 8px var(--button-shadow-primary);
       color: var(--primary-color);
     }
     
-    &:not(:hover):not(:focus) {
-      will-change: auto;
-    }
     
     i {
       font-size: 1rem;
