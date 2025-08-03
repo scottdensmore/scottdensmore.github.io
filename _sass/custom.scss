@@ -252,8 +252,14 @@ img {
 }
 
 img[loading="lazy"] {
-  /* Prevent layout shift for lazy loaded images */
-  min-height: 200px;
+  /* Prevent layout shift for lazy loaded images using aspect-ratio */
+  aspect-ratio: 16 / 9;
+  background: var(--background-light);
+  
+  /* Fallback for older browsers */
+  @supports not (aspect-ratio: 16 / 9) {
+    min-height: 250px;
+  }
 }
 
 /* Custom masthead styles - using higher specificity */
