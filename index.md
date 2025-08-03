@@ -7,10 +7,10 @@ classes: wide
 
 <div class="homepage-container">
   <div class="homepage-layout">
-    {% include homepage-sidebar.html %}
+    {% include random-posts-sidebar.html %}
     
     <main class="main-content">
-      <h2 class="main-content__title">📝 Latest Post</h2>
+      <h2 class="main-content__title"><i class="fas fa-newspaper"></i> Latest Post</h2>
       {% include latest-post-card.html %}
     </main>
   </div>
