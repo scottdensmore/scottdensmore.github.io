@@ -7,15 +7,15 @@
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
-        <a class="site-title" href="{{ '/' | relative_url }}" style="display: flex; align-items: center; gap: 1rem; padding: 0.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; color: white; text-decoration: none;">
-          <img src="/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg" alt="Scott Densmore" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid white; object-fit: cover; object-position: center top;">
-          <span style="font-weight: bold;">{{ site.masthead_title | default: site.title }}</span>
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          <img class="site-title__img" src="/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg" alt="Scott Densmore">
+          <span class="site-title__text">{{ site.masthead_title | default: site.title }}</span>
         </a>
 
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %} style="color: #667eea; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(102, 126, 234, 0.1); transition: all 0.3s ease;">{{ link.title }}</a>
+              <a class="masthead__menu-link" href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>
