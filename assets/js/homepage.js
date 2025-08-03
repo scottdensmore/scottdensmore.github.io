@@ -17,8 +17,28 @@
      * Bind event listeners
      */
     bindEvents: function() {
-      // Tag filtering could be enhanced here in the future
-      // For now, we just handle the basic navigation
+      // Set up event delegation for tag buttons
+      const sidebar = document.querySelector('.topic-sidebar');
+      if (sidebar) {
+        sidebar.addEventListener('click', function(event) {
+          const button = event.target.closest('.topic-list__link');
+          if (button && button.dataset.tag) {
+            event.preventDefault();
+            Homepage.filterByTag(button.dataset.tag);
+          }
+        });
+      }
+      
+      // Set up keyboard navigation for tag buttons
+      const tagButtons = document.querySelectorAll('.topic-list__link');
+      tagButtons.forEach(button => {
+        button.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            Homepage.filterByTag(this.dataset.tag);
+          }
+        });
+      });
     },
 
     /**
@@ -47,9 +67,7 @@
     }
   };
 
-  // Make functions globally available for Jekyll template usage
-  window.filterByTag = Homepage.filterByTag.bind(Homepage);
-  window.showAllPosts = Homepage.showAllPosts.bind(Homepage);
+  // Functions are now accessed via event listeners instead of global exposure
 
   // Initialize when DOM is ready
   document.addEventListener('DOMContentLoaded', function() {

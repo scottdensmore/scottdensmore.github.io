@@ -90,9 +90,20 @@
   padding: 0.3rem 0;
   border-bottom: 1px solid var(--border-light);
   transition: color 0.2s ease;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border-light);
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--text-primary);
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
   }
 }
 

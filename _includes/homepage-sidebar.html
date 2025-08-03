@@ -7,9 +7,9 @@
     <ul class="topic-list">
       {% for tag in all_tags %}
         <li class="topic-list__item">
-          <a href="#" onclick="filterByTag('{{ tag }}')" class="topic-list__link">
+          <button type="button" data-tag="{{ tag }}" class="topic-list__link" aria-label="Filter posts by {{ tag }} tag">
             <span class="topic-list__hash">#</span>{{ tag }}
-          </a>
+          </button>
         </li>
       {% endfor %}
     </ul>

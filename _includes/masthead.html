@@ -8,16 +8,26 @@
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
-          <img src="/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg" alt="Scott Densmore" class="site-title__avatar">
+          <img src="{{ '/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg' | relative_url }}" alt="Scott Densmore" class="site-title__avatar">
           <span class="site-title__text">{{ site.masthead_title | default: site.title }}</span>
         </a>
 
         <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
+          {%- if site.data.navigation and site.data.navigation.main -%}
+            {%- for link in site.data.navigation.main -%}
+              <li class="masthead__menu-item">
+                <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+          {%- else -%}
+            <!-- Fallback navigation when navigation.yml is missing -->
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              <a href="{{ '/posts/' | relative_url }}">Posts</a>
             </li>
-          {%- endfor -%}
+            <li class="masthead__menu-item">
+              <a href="{{ '/about/' | relative_url }}">About</a>
+            </li>
+          {%- endif -%}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
