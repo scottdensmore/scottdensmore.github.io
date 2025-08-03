@@ -5,44 +5,39 @@ author_profile: false
 classes: wide
 ---
 
-<style>
-  .sidebar-fixed-width {
-    width: 250px;
-    flex-shrink: 0;
-  }
-</style>
+
 
 <div class="container-max">
   <div class="flex-gap">
     
     <!-- Explore by Topic - Left Sidebar -->
     <div class="sidebar-fixed-width">
-      <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.2rem;">🏷️ Explore by Topic</h3>
+      <h3 class="sidebar-title">🏷️ Explore by Topic</h3>
       
       {% assign all_tags = site.posts | map: 'tags' | flatten | uniq | sort %}
-      <ul style="list-style: none; padding: 0; margin: 0;">
+      <ul class="sidebar-tag-list">
         {% for tag in all_tags %}
-          <li style="margin-bottom: 0.5rem;">
-            <a href="/posts/?tag={{ tag }}" onclick="filterByTag('{{ tag }}')" style="color: #667eea; text-decoration: none; font-weight: 500; display: flex; align-items: center; padding: 0.3rem 0; border-bottom: 1px solid #eee; transition: color 0.2s ease;">
-              <span style="margin-right: 0.5rem;">#</span>{{ tag }}
+          <li class="sidebar-tag-list-item">
+            <a href="/posts/?tag={{ tag }}" onclick="filterByTag('{{ tag }}')" class="sidebar-tag-link">
+              <span class="sidebar-tag-hash">#</span>{{ tag }}
             </a>
           </li>
         {% endfor %}
       </ul>
       
-      <div style="margin-top: 1.5rem;">
-        <a href="/posts/" style="color: #6c757d; text-decoration: none; font-weight: 500; font-size: 0.9rem;">→ View All Posts</a>
+      <div class="sidebar-view-all">
+        <a href="/posts/" class="sidebar-view-all-link">→ View All Posts</a>
       </div>
     </div>
     
     <!-- Latest Post - Main Content -->
-    <div style="flex: 1; min-width: 0;">
+    <div class="main-content">
       <h2>📝 Latest Post</h2>
 
 {% assign latest_post = site.posts.first %}
 {% if latest_post %}
-<div class="latest-post" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 1rem; border-left: 4px solid #667eea;">
-  <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem;"><a href="{{ latest_post.url }}" style="text-decoration: none; color: inherit;">{{ latest_post.title }}</a></h3>
+<div class="latest-post">
+  <h3 class="latest-post-title"><a href="{{ latest_post.url }}" class="latest-post-title-link">{{ latest_post.title }}</a></h3>
   <p style="color: #666; margin-bottom: 1rem; font-size: 0.9rem; display: flex; align-items: center;"><i class="fas fa-calendar-alt" style="margin-right: 0.5rem;"></i>{{ latest_post.date | date: "%B %d, %Y" }}</p>
   {% if latest_post.tags and latest_post.tags.size > 0 %}
     <div style="margin-bottom: 1rem;">
