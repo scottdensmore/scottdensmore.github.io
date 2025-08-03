@@ -45,7 +45,30 @@ def extract_front_matter(content)
   return nil unless end_idx
   
   yaml_content = content[3...end_idx].strip
-  YAML.safe_load(yaml_content)
+  
+  begin
+    YAML.safe_load(yaml_content)
+  rescue Psych::SyntaxError => e
+    puts "ERROR: Malformed YAML front matter detected"
+    puts "  YAML parsing error: #{e.message}"
+    puts "  Problem line: #{e.line}" if e.respond_to?(:line)
+    puts "  Problem column: #{e.column}" if e.respond_to?(:column)
+    puts "  YAML content:"
+    yaml_content.split("\n").each_with_index do |line, idx|
+      puts "    #{idx + 1}: #{line}"
+    end
+    puts
+    return nil
+  rescue StandardError => e
+    puts "ERROR: Unexpected error parsing YAML front matter"
+    puts "  Error: #{e.class}: #{e.message}"
+    puts "  YAML content:"
+    yaml_content.split("\n").each_with_index do |line, idx|
+      puts "    #{idx + 1}: #{line}"
+    end
+    puts
+    return nil
+  end
 end
 
 def generate_excerpt(content)
@@ -99,10 +122,22 @@ def suggest_categories(tags)
 end
 
 def process_post(file_path)
-  content = File.read(file_path)
+  begin
+    content = File.read(file_path)
+  rescue StandardError => e
+    puts "ERROR: Failed to read file #{File.basename(file_path)}"
+    puts "  Error: #{e.class}: #{e.message}"
+    puts
+    return false
+  end
+  
   front_matter = extract_front_matter(content)
   
-  return unless front_matter
+  unless front_matter
+    puts "SKIPPED: #{File.basename(file_path)} - No valid front matter found"
+    puts
+    return false
+  end
   
   # Generate suggestions
   title = front_matter['title'] || ''
@@ -116,23 +151,52 @@ def process_post(file_path)
   front_matter['excerpt'] = excerpt if excerpt
   
   # Reconstruct file
-  yaml_string = YAML.dump(front_matter).sub(/\A---\n/, '').sub(/\n\z/, '')
-  content_without_front_matter = content.gsub(/\A---.*?---\n/m, '')
-  
-  new_content = "---\n#{yaml_string}\n---\n#{content_without_front_matter}"
-  
-  File.write(file_path, new_content)
+  begin
+    yaml_string = YAML.dump(front_matter).sub(/\A---\n/, '').sub(/\n\z/, '')
+    content_without_front_matter = content.gsub(/\A---.*?---\n/m, '')
+    
+    new_content = "---\n#{yaml_string}\n---\n#{content_without_front_matter}"
+    
+    File.write(file_path, new_content)
+  rescue StandardError => e
+    puts "ERROR: Failed to write updated content to #{File.basename(file_path)}"
+    puts "  Error: #{e.class}: #{e.message}"
+    puts
+    return false
+  end
   
   puts "Updated: #{File.basename(file_path)}"
   puts "  Tags: #{tags.join(', ')}"
   puts "  Categories: #{categories.join(', ')}"
   puts "  Excerpt: #{excerpt ? excerpt[0..50] + '...' : 'None'}"
   puts
+  
+  return true
 end
 
 # Process all posts
+files_processed = 0
+files_skipped = 0
+files_errored = 0
+
 Dir.glob('_posts/*.md').each do |file|
-  process_post(file)
+  begin
+    result = process_post(file)
+    if result == false
+      files_skipped += 1
+    else
+      files_processed += 1
+    end
+  rescue StandardError => e
+    files_errored += 1
+    puts "FATAL ERROR processing #{File.basename(file)}"
+    puts "  Error: #{e.class}: #{e.message}"
+    puts "  Backtrace: #{e.backtrace.first(3).join("\n             ")}"
+    puts
+  end
 end
 
 puts "Front matter standardization complete!"
+puts "  Files processed: #{files_processed}"
+puts "  Files skipped: #{files_skipped}" if files_skipped > 0
+puts "  Files with errors: #{files_errored}" if files_errored > 0
