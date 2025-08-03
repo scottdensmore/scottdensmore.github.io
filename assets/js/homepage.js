@@ -18,25 +18,35 @@
      */
     bindEvents: function() {
       try {
-        // Set up event delegation for tag buttons
+        // Set up event delegation for tag buttons and view all button
         const sidebar = document.querySelector('.topic-sidebar');
         if (sidebar) {
           sidebar.addEventListener('click', function(event) {
             try {
-              const button = event.target.closest('.topic-list__link');
-              if (button && button.dataset.tag) {
+              // Handle tag filter buttons
+              const tagButton = event.target.closest('.topic-list__link');
+              if (tagButton && tagButton.dataset.tag) {
                 event.preventDefault();
-                Homepage.filterByTag(button.dataset.tag);
+                Homepage.filterByTag(tagButton.dataset.tag);
+                return;
+              }
+              
+              // Handle view all posts button
+              const viewAllButton = event.target.closest('.view-all-link');
+              if (viewAllButton) {
+                event.preventDefault();
+                Homepage.showAllPosts();
+                return;
               }
             } catch (error) {
-              console.error('Error handling tag button click:', error);
+              console.error('Error handling sidebar button click:', error);
             }
           });
         } else {
-          console.info('Topic sidebar not found, skipping tag button setup');
+          console.info('Topic sidebar not found, skipping button setup');
         }
         
-        // Set up keyboard navigation for tag buttons
+        // Set up keyboard navigation for buttons
         const tagButtons = document.querySelectorAll('.topic-list__link');
         if (tagButtons.length > 0) {
           tagButtons.forEach(button => {
@@ -53,6 +63,21 @@
           });
         } else {
           console.info('No tag buttons found, skipping keyboard navigation setup');
+        }
+        
+        // Set up keyboard navigation for view all button
+        const viewAllButton = document.querySelector('.view-all-link');
+        if (viewAllButton) {
+          viewAllButton.addEventListener('keydown', function(event) {
+            try {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                Homepage.showAllPosts();
+              }
+            } catch (error) {
+              console.error('Error handling view all keyboard navigation:', error);
+            }
+          });
         }
       } catch (error) {
         console.error('Error setting up event listeners:', error);
