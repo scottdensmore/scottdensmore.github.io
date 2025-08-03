@@ -69,8 +69,19 @@ classes: wide
 
 <script>
 function filterByTag(tag) {
-  // This will redirect to a tag-filtered posts page
-  window.location.href = '/posts/?tag=' + encodeURIComponent(tag);
+  // Attempt to redirect to a tag-filtered posts page, but check if the page exists first
+  var targetUrl = '/posts/?tag=' + encodeURIComponent(tag);
+  fetch(targetUrl, { method: 'HEAD' })
+    .then(function(response) {
+      if (response.ok) {
+        window.location.href = targetUrl;
+      } else {
+        alert('Tag filtering is not supported or the page does not exist.');
+      }
+    })
+    .catch(function() {
+      alert('Tag filtering is not supported or the page does not exist.');
+    });
 }
 
 function showAllPosts() {
