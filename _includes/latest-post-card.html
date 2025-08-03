@@ -1,0 +1,49 @@
+<!-- Latest Post Card Component -->
+{% assign latest_post = site.posts.first %}
+{% if latest_post %}
+  <article class="latest-post">
+    <h3 class="latest-post__title">
+      <a href="{{ latest_post.url }}">{{ latest_post.title }}</a>
+    </h3>
+    
+    <div class="latest-post__meta">
+      <i class="fas fa-calendar-alt"></i>
+      <time datetime="{{ latest_post.date | date_to_xmlschema }}">
+        {{ latest_post.date | date: "%B %d, %Y" }}
+      </time>
+    </div>
+    
+    {% if latest_post.tags and latest_post.tags.size > 0 %}
+      <div class="latest-post__tags">
+        {% for tag in latest_post.tags %}
+          <span class="tag">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    <div class="latest-post__excerpt">
+      {% if latest_post.excerpt %}
+        {{ latest_post.excerpt | strip_html | truncate: 200 }}
+      {% else %}
+        {{ latest_post.content | strip_html | truncate: 200 }}
+      {% endif %}
+    </div>
+    
+    <footer class="latest-post__footer">
+      <span class="latest-badge">Latest</span>
+      <a href="{{ latest_post.url }}" class="read-more-link">
+        Read More <i class="fas fa-arrow-right"></i>
+      </a>
+    </footer>
+  </article>
+{% else %}
+  <article class="latest-post">
+    <h3 class="latest-post__title">No Posts Yet</h3>
+    <div class="latest-post__excerpt">
+      Start writing your first blog post!
+    </div>
+    <footer class="latest-post__footer">
+      <span class="coming-soon-badge">Coming Soon</span>
+    </footer>
+  </article>
+{% endif %}

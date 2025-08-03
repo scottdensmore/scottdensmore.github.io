@@ -23,21 +23,36 @@ This is Scott Densmore's personal Jekyll blog hosted on GitHub Pages using the M
 ### Directory Structure
 - `_config.yml` - Main Jekyll configuration file
 - `_posts/` - Blog posts in Markdown format with YAML front matter
-- `_layouts/` - HTML templates (currently just `post.html`)
+- `_includes/` - Reusable HTML components (masthead, homepage components)
+- `_layouts/` - HTML templates
+- `_sass/` - Custom SCSS stylesheets
+- `_docs/` - Architecture and development documentation
 - `_site/` - Generated static site (git ignored)
-- `assets/` - Static assets (images, files, CSS, JS)
-- `index.md` - Homepage content
+- `assets/` - Static assets organized by type
+  - `assets/css/` - Compiled stylesheets
+  - `assets/js/` - JavaScript files
+  - `assets/img/` - Images and media files
 
 ### Content Management
 - Blog posts follow Jekyll naming convention: `YYYY-MM-DD-title.md`
-- Posts use YAML front matter with `layout`, `title`, `date`, and `author` fields
+- Posts use YAML front matter with `layout`, `title`, `date`, `author`, and `tags` fields
+- **Tags system**: Posts can be tagged for categorization and filtering
 - Historical posts span from 2008-2024 with extensive technical content
-- Images and files stored in `assets/img/` and `assets/files/`
+- Images optimized and stored in `assets/img/`
 
-### Theme Configuration
-- Uses Minimal Mistakes Jekyll theme with default skin
-- Site configured for GitHub Pages deployment
-- Author profile enabled on homepage
+### Modern Architecture (2024 Refactor)
+- **Component-based**: Modular HTML includes for reusability
+- **CSS Architecture**: SCSS with CSS custom properties for theming
+- **JavaScript**: Modular ES6 with proper error handling
+- **No inline styles**: All styling externalized to SCSS files
+- **Responsive design**: Mobile-first approach with flexbox/grid
+- **Accessibility**: Semantic HTML with ARIA labels where needed
+
+### Homepage Features
+- **Two-column layout**: Sidebar navigation + main content
+- **Dynamic tagging**: Auto-generated tag navigation from all posts
+- **Latest post card**: Displays most recent blog post with metadata
+- **Custom masthead**: Profile integration with gradient branding
 
 ## Key Files
 - `_config.yml:1-14` - Site configuration including title, author, and theme settings
