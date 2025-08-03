@@ -10,7 +10,53 @@
      * Initialize homepage functionality
      */
     init: function() {
+      this.validateSiteConfig();
       this.bindEvents();
+    },
+
+    /**
+     * Validate and warn about SiteConfig availability
+     */
+    validateSiteConfig: function() {
+      if (!window.SiteConfig) {
+        console.warn('SiteConfig not available - using fallback URLs');
+        return false;
+      }
+      
+      if (!window.SiteConfig.postsUrl) {
+        console.warn('SiteConfig.postsUrl not configured - using fallback');
+      }
+      
+      return true;
+    },
+
+    /**
+     * Get posts URL with robust fallback mechanism
+     */
+    getPostsUrl: function() {
+      // Primary: Use configured posts URL
+      if (window.SiteConfig?.postsUrl) {
+        return window.SiteConfig.postsUrl;
+      }
+      
+      // Secondary: Try to derive from current page structure
+      const currentPath = window.location.pathname;
+      if (currentPath === '/' || currentPath === '/index.html') {
+        // Look for posts link in navigation
+        const postsLink = document.querySelector('a[href*="posts"]');
+        if (postsLink) {
+          const href = postsLink.getAttribute('href');
+          console.info('Derived posts URL from navigation:', href);
+          return href;
+        }
+      }
+      
+      // Tertiary: Check for posts directory in current URL structure
+      const baseUrl = window.SiteConfig?.baseUrl || window.location.origin;
+      const postsPath = baseUrl.endsWith('/') ? 'posts/' : '/posts/';
+      
+      console.warn('Using constructed posts URL:', baseUrl + postsPath);
+      return baseUrl + postsPath;
     },
 
     /**
@@ -105,7 +151,7 @@
         }
         
         const encodedTag = encodeURIComponent(sanitizedTag);
-        const postsUrl = window.SiteConfig?.postsUrl || '/posts/';
+        const postsUrl = this.getPostsUrl();
         const targetUrl = `${postsUrl}?tag=${encodedTag}`;
         
         // Navigate to filtered posts page
@@ -122,7 +168,7 @@
      */
     showAllPosts: function() {
       try {
-        const postsUrl = window.SiteConfig?.postsUrl || '/posts/';
+        const postsUrl = this.getPostsUrl();
         window.location.href = postsUrl;
       } catch (error) {
         console.error('Error navigating to posts page:', error);
