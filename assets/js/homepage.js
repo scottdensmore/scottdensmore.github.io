@@ -33,7 +33,7 @@
       
       // Validate tag parameter
       const encodedTag = encodeURIComponent(tag);
-      const targetUrl = `/posts/?tag=${encodedTag}`;
+      const targetUrl = window.POSTS_URL + `?tag=${encodedTag}`;
       
       // Navigate to filtered posts page
       window.location.href = targetUrl;
