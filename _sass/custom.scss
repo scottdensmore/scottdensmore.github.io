@@ -18,6 +18,11 @@
   --spacing-xl: 2rem;
   --container-max-width: 1400px;
   --sidebar-width: 250px;
+  
+  /* Button background colors for consistent theming */
+  --button-bg-primary: rgba(102, 126, 234, 0.1);
+  --button-bg-primary-hover: rgba(102, 126, 234, 0.2);
+  --button-shadow-primary: rgba(102, 126, 234, 0.2);
 }
 
 /* Layout overrides for full-width design - using higher specificity instead of !important */
@@ -190,7 +195,7 @@
 }
 
 .tag {
-  background: rgba(102, 126, 234, 0.1);
+  background: var(--button-bg-primary);
   color: var(--primary-color);
   padding: 0.2rem 0.6rem;
   border-radius: var(--border-radius-small);
@@ -305,12 +310,12 @@ img[loading="lazy"] {
   font-weight: 600;
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: 20px;
-  background: rgba(102, 126, 234, 0.1);
+  background: var(--button-bg-primary);
   transition: all 0.3s ease;
   
   &:hover,
   &:focus {
-    background: rgba(102, 126, 234, 0.2);
+    background: var(--button-bg-primary-hover);
   }
 }
 
@@ -494,7 +499,7 @@ img[loading="lazy"] {
   /* Style share buttons to match header buttons */
   .btn {
     color: var(--primary-color);
-    background: rgba(102, 126, 234, 0.1);
+    background: var(--button-bg-primary);
     border: none;
     border-radius: 20px;
     padding: var(--spacing-sm) var(--spacing-md);
@@ -510,9 +515,9 @@ img[loading="lazy"] {
     
     &:hover,
     &:focus {
-      background: rgba(102, 126, 234, 0.2);
+      background: var(--button-bg-primary-hover);
       transform: translateY(-1px);
-      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+      box-shadow: 0 2px 8px var(--button-shadow-primary);
       color: var(--primary-color);
     }
     
@@ -522,7 +527,7 @@ img[loading="lazy"] {
     
     /* Custom colors for different platforms while maintaining consistency */
     &.btn--x {
-      background: rgba(102, 126, 234, 0.1);
+      background: var(--button-bg-primary);
       
       &:hover {
         background: rgba(29, 161, 242, 0.1);
@@ -532,7 +537,7 @@ img[loading="lazy"] {
     }
     
     &.btn--linkedin {
-      background: rgba(102, 126, 234, 0.1);
+      background: var(--button-bg-primary);
       
       &:hover {
         background: rgba(0, 119, 181, 0.1);
@@ -542,7 +547,7 @@ img[loading="lazy"] {
     }
     
     &.btn--bluesky {
-      background: rgba(102, 126, 234, 0.1);
+      background: var(--button-bg-primary);
       
       &:hover {
         background: rgba(0, 133, 255, 0.1);
@@ -567,7 +572,7 @@ img[loading="lazy"] {
     font-weight: 600;
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: 20px;
-    background: rgba(102, 126, 234, 0.1);
+    background: var(--button-bg-primary);
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
@@ -578,9 +583,9 @@ img[loading="lazy"] {
     
     &:hover,
     &:focus {
-      background: rgba(102, 126, 234, 0.2);
+      background: var(--button-bg-primary-hover);
       transform: translateY(-1px);
-      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+      box-shadow: 0 2px 8px var(--button-shadow-primary);
     }
     
     &.disabled {
@@ -588,7 +593,7 @@ img[loading="lazy"] {
       cursor: not-allowed;
       
       &:hover {
-        background: rgba(102, 126, 234, 0.1);
+        background: var(--button-bg-primary);
         transform: none;
         box-shadow: none;
       }
@@ -624,7 +629,7 @@ img[loading="lazy"] {
   }
   
   .tag {
-    background: rgba(102, 126, 234, 0.1);
+    background: var(--button-bg-primary);
     color: var(--primary-color);
     padding: 0.2rem 0.6rem;
     border-radius: var(--border-radius-small);
@@ -633,7 +638,7 @@ img[loading="lazy"] {
     transition: background-color 0.2s ease;
     
     &:hover {
-      background: rgba(102, 126, 234, 0.2);
+      background: var(--button-bg-primary-hover);
     }
   }
 }
