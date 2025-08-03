@@ -17,28 +17,46 @@
      * Bind event listeners
      */
     bindEvents: function() {
-      // Set up event delegation for tag buttons
-      const sidebar = document.querySelector('.topic-sidebar');
-      if (sidebar) {
-        sidebar.addEventListener('click', function(event) {
-          const button = event.target.closest('.topic-list__link');
-          if (button && button.dataset.tag) {
-            event.preventDefault();
-            Homepage.filterByTag(button.dataset.tag);
-          }
-        });
+      try {
+        // Set up event delegation for tag buttons
+        const sidebar = document.querySelector('.topic-sidebar');
+        if (sidebar) {
+          sidebar.addEventListener('click', function(event) {
+            try {
+              const button = event.target.closest('.topic-list__link');
+              if (button && button.dataset.tag) {
+                event.preventDefault();
+                Homepage.filterByTag(button.dataset.tag);
+              }
+            } catch (error) {
+              console.error('Error handling tag button click:', error);
+            }
+          });
+        } else {
+          console.info('Topic sidebar not found, skipping tag button setup');
+        }
+        
+        // Set up keyboard navigation for tag buttons
+        const tagButtons = document.querySelectorAll('.topic-list__link');
+        if (tagButtons.length > 0) {
+          tagButtons.forEach(button => {
+            button.addEventListener('keydown', function(event) {
+              try {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  Homepage.filterByTag(this.dataset.tag);
+                }
+              } catch (error) {
+                console.error('Error handling keyboard navigation:', error);
+              }
+            });
+          });
+        } else {
+          console.info('No tag buttons found, skipping keyboard navigation setup');
+        }
+      } catch (error) {
+        console.error('Error setting up event listeners:', error);
       }
-      
-      // Set up keyboard navigation for tag buttons
-      const tagButtons = document.querySelectorAll('.topic-list__link');
-      tagButtons.forEach(button => {
-        button.addEventListener('keydown', function(event) {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            Homepage.filterByTag(this.dataset.tag);
-          }
-        });
-      });
     },
 
     /**
@@ -46,24 +64,44 @@
      * @param {string} tag - The tag to filter by
      */
     filterByTag: function(tag) {
-      if (!tag) {
-        console.warn('No tag provided for filtering');
-        return;
+      try {
+        if (!tag || typeof tag !== 'string') {
+          console.warn('Invalid tag provided for filtering:', tag);
+          this.showAllPosts();
+          return;
+        }
+        
+        // Sanitize and validate tag parameter
+        const sanitizedTag = tag.trim();
+        if (sanitizedTag.length === 0) {
+          console.warn('Empty tag provided for filtering');
+          this.showAllPosts();
+          return;
+        }
+        
+        const encodedTag = encodeURIComponent(sanitizedTag);
+        const targetUrl = `/posts/?tag=${encodedTag}`;
+        
+        // Navigate to filtered posts page
+        window.location.href = targetUrl;
+      } catch (error) {
+        console.error('Error filtering by tag:', error);
+        // Fallback to all posts page
+        this.showAllPosts();
       }
-      
-      // Validate tag parameter
-      const encodedTag = encodeURIComponent(tag);
-      const targetUrl = `/posts/?tag=${encodedTag}`;
-      
-      // Navigate to filtered posts page
-      window.location.href = targetUrl;
     },
 
     /**
      * Navigate to all posts page
      */
     showAllPosts: function() {
-      window.location.href = '/posts/';
+      try {
+        window.location.href = '/posts/';
+      } catch (error) {
+        console.error('Error navigating to posts page:', error);
+        // Last resort fallback to home page
+        window.location.href = '/';
+      }
     }
   };
 

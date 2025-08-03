@@ -1,0 +1,19 @@
+{% comment %}
+  Responsive image include for optimal loading
+  Usage: {% include responsive-image.html src="path/to/image.jpg" alt="Alt text" class="optional-class" %}
+{% endcomment %}
+
+{% assign image_path = include.src %}
+{% assign alt_text = include.alt | default: "Image" %}
+{% assign css_class = include.class | default: "" %}
+{% assign loading = include.loading | default: "lazy" %}
+
+<img 
+  src="{{ image_path | relative_url }}" 
+  alt="{{ alt_text }}"
+  {% if css_class != "" %}class="{{ css_class }}"{% endif %}
+  loading="{{ loading }}"
+  decoding="async"
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+>

@@ -8,7 +8,7 @@
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
-          <img src="{{ '/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg' | relative_url }}" alt="Scott Densmore" class="site-title__avatar">
+          {% include responsive-image.html src="/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg" alt="Scott Densmore" class="site-title__avatar" loading="eager" width="40" height="40" %}
           <span class="site-title__text">{{ site.masthead_title | default: site.title }}</span>
         </a>
 
