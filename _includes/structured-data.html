@@ -50,7 +50,9 @@
     {% endfor %}
   ],
   {% endif %}
-  "wordCount": {{ page.content | strip_html | number_of_words }},
+  {% if page.word_count %}
+  "wordCount": {{ page.word_count }},
+  {% endif %}
   {% if page.categories and page.categories.size > 0 %}
   "articleSection": "{% for cat in page.categories %}{{ cat | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
   {% else %}
