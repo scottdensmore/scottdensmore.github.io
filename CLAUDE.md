@@ -43,22 +43,29 @@ This is Scott Densmore's personal Jekyll blog hosted on GitHub Pages using the M
 ### Modern Architecture (2024 Refactor)
 - **Component-based**: Modular HTML includes for reusability
 - **CSS Architecture**: SCSS with CSS custom properties for theming
+- **Dark Mode Support**: Automatic system preference detection via `prefers-color-scheme`
 - **JavaScript**: Modular ES6 with proper error handling
 - **No inline styles**: All styling externalized to SCSS files
 - **Responsive design**: Mobile-first approach with flexbox/grid
 - **Accessibility**: Semantic HTML with ARIA labels where needed
 
-### Homepage Features
-- **Two-column layout**: Sidebar navigation + main content
+### Design Features
+- **Two-column layout**: Sidebar navigation + main content on homepage
 - **Dynamic tagging**: Auto-generated tag navigation from all posts
 - **Latest post card**: Displays most recent blog post with metadata
 - **Custom masthead**: Profile integration with gradient branding
+- **Enhanced post design**: Card-based layout with rounded corners and shadows
+- **Consistent button styling**: Unified design across navigation, pagination, and social sharing
+- **Dark/Light theme support**: Seamless automatic switching based on system preferences
 
 ## Key Files
 - `_config.yml:1-14` - Site configuration including title, author, and theme settings
 - `Gemfile:1-3` - Ruby gem dependencies for GitHub Pages
 - `index.md:1-8` - Homepage layout and welcome message
-- `_layouts/post.html:1-5` - Simple post layout template
+- `_layouts/post.html:1-27` - Enhanced post layout with meta information and card styling
+- `_sass/custom.scss` - Custom SCSS with dark/light theme support and component styling
+- `_includes/social-share.html:1-20` - Custom social sharing without Facebook
+- `_includes/latest-post-card.html:1-49` - Homepage latest post component
 
 ## Workflow Notes
 - This is a Jekyll static site, so changes to content require regeneration
