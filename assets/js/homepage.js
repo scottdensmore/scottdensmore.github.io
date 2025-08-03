@@ -52,7 +52,15 @@
       }
       
       // Tertiary: Check for posts directory in current URL structure
-      const baseUrl = window.SiteConfig?.baseUrl || window.location.origin;
+      let baseUrl;
+      if (window.SiteConfig?.baseUrl) {
+        baseUrl = window.SiteConfig.baseUrl;
+      } else if (ALLOWED_ORIGINS.includes(window.location.origin)) {
+        baseUrl = window.location.origin;
+      } else {
+        console.warn('window.location.origin is not in allowed origins, using "/" as baseUrl');
+        baseUrl = '/';
+      }
       const postsPath = baseUrl.endsWith('/') ? 'posts/' : '/posts/';
       
       console.warn('Using constructed posts URL:', baseUrl + postsPath);
