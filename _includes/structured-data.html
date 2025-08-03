@@ -51,7 +51,11 @@
   ],
   {% endif %}
   "wordCount": {{ page.content | strip_html | number_of_words }},
-  "articleSection": "Technology",
+  {% if page.categories and page.categories.size > 0 %}
+  "articleSection": "{% for cat in page.categories %}{{ cat | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+  {% else %}
+  "articleSection": "{{ site.default_category | default: 'General' | escape }}",
+  {% endif %}
   "inLanguage": "{{ site.lang | default: 'en-US' }}"
 }
 {% else %}
