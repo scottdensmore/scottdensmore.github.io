@@ -5,14 +5,13 @@ layout: single
 author_profile: true
 ---
 
-Thank you for your interest in reaching out to me. I'm always open to discussing software development topics, potential collaborations, or answering questions about my work.
+Thank you for your interest in reaching out to me. I'm always open to discussing topics or answering questions about my work.
 
 ## Ways to Connect
 
 - **Email**: [scott.densmore@gmail.com](mailto:scott.densmore@gmail.com)
 - **GitHub**: [scottdensmore](https://github.com/scottdensmore)
 - **LinkedIn**: [Scott Densmore](https://www.linkedin.com/in/scottdensmore)
-- **Twitter**: [@scottdensmore](https://twitter.com/scottdensmore)
 
 ## Get in Touch
 
