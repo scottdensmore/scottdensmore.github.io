@@ -8,6 +8,9 @@
   window.SiteConfig = {
     postsUrl: '{{ site.posts_url | relative_url }}',
     baseUrl: '{{ site.baseurl }}',
-    url: '{{ site.url }}'
+    url: '{{ site.url }}',
+    {% if site.allowed_origins %}
+    allowedOrigins: {{ site.allowed_origins | jsonify }}
+    {% endif %}
   };
 </script>

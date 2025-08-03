@@ -1,0 +1,125 @@
+# Tag mapping configuration for front matter standardization
+# Maps tags to keywords that should trigger their inclusion
+
+tag_mapping:
+  # Technology
+  azure:
+    - azure
+    - cloud
+    - microsoft
+  windows:
+    - windows
+    - microsoft
+  ios:
+    - ios
+    - iphone
+    - ipad
+    - objective-c
+    - cocoa
+    - swift
+    - xcode
+    - apple
+    - mac
+  dotnet:
+    - .net
+    - c#
+    - unity
+    - enterprise library
+    - wcf
+  web:
+    - javascript
+    - web service
+    - wsdl
+    - api
+  database:
+    - sqlite
+    - nhibernate
+    - table storage
+  testing:
+    - unit test
+    - tdd
+    - bdd
+    - test driving
+  git:
+    - git
+    - github
+  visual-studio:
+    - visual studio
+    - vsts
+    - team city
+
+  # Development Practices
+  agile:
+    - agile
+    - scrum
+  architecture:
+    - architecture
+    - design
+    - pattern
+  security:
+    - claims
+    - identity
+    - ssl
+    - certificate
+  best-practices:
+    - best practice
+    - code comment
+    - commit message
+
+  # Personal
+  personal:
+    - vacation
+    - travel
+    - coffee
+    - workout
+    - health
+    - recovery
+    - family
+  career:
+    - job
+    - work
+    - hiring
+    - career
+  conference:
+    - conference
+    - speaking
+    - talk
+    - user group
+
+  # Reviews/Opinions
+  review:
+    - review
+  opinion:
+    - perspective
+    - creed
+
+# Category mapping - groups tags into higher-level categories
+category_mapping:
+  Technology:
+    - azure
+    - windows
+    - ios
+    - dotnet
+    - web
+    - database
+    - git
+    - visual-studio
+  Development:
+    - testing
+    - agile
+    - architecture
+    - security
+    - best-practices
+  Personal:
+    - personal
+    - career
+  Community:
+    - conference
+    - review
+    - opinion
+
+# Configuration
+config:
+  excerpt_length_limit: 160
+  default_tag: general
+  default_category: Technology

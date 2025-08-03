@@ -5,16 +5,28 @@
 (function() {
   'use strict';
   
-  // Allowed origins for security validation
-  const ALLOWED_ORIGINS = [
-    'https://scottdensmore.com',
-    'https://scottdensmore.github.io'
-  ];
-  
-  // Add development URLs only in development environment
-  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    ALLOWED_ORIGINS.push('http://localhost:4000', 'http://127.0.0.1:4000');
+  // Get allowed origins from site configuration or use defaults
+  function getAllowedOrigins() {
+    // Try to get from site configuration first
+    if (window.SiteConfig?.allowedOrigins && Array.isArray(window.SiteConfig.allowedOrigins)) {
+      return window.SiteConfig.allowedOrigins.slice(); // Return a copy
+    }
+    
+    // Fallback to default production origins
+    const origins = [
+      'https://scottdensmore.com',
+      'https://scottdensmore.github.io'
+    ];
+    
+    // Add development URLs only in development environment
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      origins.push('http://localhost:4000', 'http://127.0.0.1:4000');
+    }
+    
+    return origins;
   }
+  
+  const ALLOWED_ORIGINS = getAllowedOrigins();
 
   const Homepage = {
     /**

@@ -2,44 +2,34 @@
 
 require 'yaml'
 
-# Configuration constants
-EXCERPT_LENGTH_LIMIT = 160
+# Load configuration from YAML file
+def load_configuration
+  config_file = File.join(__dir__, 'tag-mappings.yml')
+  
+  unless File.exist?(config_file)
+    puts "ERROR: Configuration file not found: #{config_file}"
+    puts "Please create tag-mappings.yml with tag and category mappings."
+    exit 1
+  end
+  
+  begin
+    YAML.safe_load(File.read(config_file))
+  rescue StandardError => e
+    puts "ERROR: Failed to load configuration file: #{config_file}"
+    puts "  Error: #{e.class}: #{e.message}"
+    exit 1
+  end
+end
 
-# Define tag mapping based on title/content keywords
-TAG_MAPPING = {
-  # Technology
-  'azure' => ['azure', 'cloud', 'microsoft'],
-  'windows' => ['windows', 'microsoft'],
-  'ios' => ['ios', 'iphone', 'ipad', 'objective-c', 'cocoa', 'swift', 'xcode', 'apple', 'mac'],
-  'dotnet' => ['.net', 'c#', 'unity', 'enterprise library', 'wcf'],
-  'web' => ['javascript', 'web service', 'wsdl', 'api'],
-  'database' => ['sqlite', 'nhibernate', 'table storage'],
-  'testing' => ['unit test', 'tdd', 'bdd', 'test driving'],
-  'git' => ['git', 'github'],
-  'visual-studio' => ['visual studio', 'vsts', 'team city'],
-  
-  # Development Practices
-  'agile' => ['agile', 'scrum'],
-  'architecture' => ['architecture', 'design', 'pattern'],
-  'security' => ['claims', 'identity', 'ssl', 'certificate'],
-  'best-practices' => ['best practice', 'code comment', 'commit message'],
-  
-  # Personal
-  'personal' => ['vacation', 'travel', 'coffee', 'workout', 'health', 'recovery', 'family'],
-  'career' => ['job', 'work', 'hiring', 'career'],
-  'conference' => ['conference', 'speaking', 'talk', 'user group'],
-  
-  # Reviews/Opinions
-  'review' => ['review'],
-  'opinion' => ['perspective', 'creed']
-}
+# Load configuration
+CONFIG = load_configuration
 
-CATEGORY_MAPPING = {
-  'Technology' => ['azure', 'windows', 'ios', 'dotnet', 'web', 'database', 'git', 'visual-studio'],
-  'Development' => ['testing', 'agile', 'architecture', 'security', 'best-practices'],
-  'Personal' => ['personal', 'career'],
-  'Community' => ['conference', 'review', 'opinion']
-}
+# Extract mappings and constants from configuration
+TAG_MAPPING = CONFIG['tag_mapping'] || {}
+CATEGORY_MAPPING = CONFIG['category_mapping'] || {}
+EXCERPT_LENGTH_LIMIT = CONFIG.dig('config', 'excerpt_length_limit') || 160
+DEFAULT_TAG = CONFIG.dig('config', 'default_tag') || 'general'
+DEFAULT_CATEGORY = CONFIG.dig('config', 'default_category') || 'Technology'
 
 def extract_front_matter(content)
   return nil unless content.start_with?('---')
@@ -109,7 +99,7 @@ def suggest_tags(title, content)
     end
   end
   
-  suggested_tags.empty? ? ['general'] : suggested_tags.uniq
+  suggested_tags.empty? ? [DEFAULT_TAG] : suggested_tags.uniq
 end
 
 def suggest_categories(tags)
@@ -121,7 +111,7 @@ def suggest_categories(tags)
     end
   end
   
-  categories.empty? ? ['Technology'] : categories.uniq
+  categories.empty? ? [DEFAULT_CATEGORY] : categories.uniq
 end
 
 def process_post(file_path)
