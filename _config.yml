@@ -64,6 +64,9 @@ liquid:
 timezone: America/Los_Angeles
 lang: en-US
 
+# Site images
+avatar: "/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg"
+
 # Social media
 twitter:
   username: scottdensmore

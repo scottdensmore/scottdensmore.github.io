@@ -27,7 +27,7 @@
   {% if page.image %}
     <meta property="og:image" content="{{ page.image | absolute_url }}">
   {% else %}
-    <meta property="og:image" content="{{ '/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg' | absolute_url }}">
+    <meta property="og:image" content="{{ site.avatar | absolute_url }}">
   {% endif %}
   <meta property="og:image:alt" content="{{ page.title | default: site.title | escape }} - {{ site.description | escape }}">
   {% if page.date %}
@@ -49,7 +49,7 @@
   {% if page.image %}
     <meta name="twitter:image" content="{{ page.image | absolute_url }}">
   {% else %}
-    <meta name="twitter:image" content="{{ '/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg' | absolute_url }}">
+    <meta name="twitter:image" content="{{ site.avatar | absolute_url }}">
   {% endif %}
   <meta name="twitter:image:alt" content="{{ page.title | default: site.title | escape }}">
 {% else %}
@@ -59,14 +59,14 @@
   <meta property="og:description" content="{{ site.description | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
-  <meta property="og:image" content="{{ '/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg' | absolute_url }}">
+  <meta property="og:image" content="{{ site.avatar | absolute_url }}">
   <meta property="og:image:alt" content="{{ site.title | escape }} - {{ site.description | escape }}">
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@scottdensmore">
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="twitter:description" content="{{ site.description | escape }}">
-  <meta name="twitter:image" content="{{ '/assets/img/Github-2023-06-Densmore-Scott-002-2.jpg' | absolute_url }}">
+  <meta name="twitter:image" content="{{ site.avatar | absolute_url }}">
 {% endif %}
 
 <!-- Structured Data for SEO -->
