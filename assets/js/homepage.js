@@ -157,7 +157,13 @@
           this.showAllPosts();
           return;
         }
-        
+        // Only allow alphanumerics, hyphens, underscores, and spaces (adjust as needed)
+        const validTagPattern = /^[\w\- ]+$/;
+        if (!validTagPattern.test(sanitizedTag)) {
+          console.warn('Tag contains invalid characters:', sanitizedTag);
+          this.showAllPosts();
+          return;
+        }
         const encodedTag = encodeURIComponent(sanitizedTag);
         const postsUrl = this.getPostsUrl();
         const targetUrl = `${postsUrl}?tag=${encodedTag}`;
