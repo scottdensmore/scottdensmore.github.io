@@ -34,9 +34,9 @@
   {% if page.image %}
   "image": {
     "@type": "ImageObject",
-    "url": "{{ page.image | absolute_url }}",
-    "width": 1200,
-    "height": 630
+    "url": "{{ page.image | absolute_url }}"{% if page.image_width and page.image_height %},
+    "width": {{ page.image_width }},
+    "height": {{ page.image_height }}{% endif %}
   },
   {% endif %}
   "mainEntityOfPage": {
