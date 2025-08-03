@@ -16,7 +16,7 @@ classes: wide
       <ul style="list-style: none; padding: 0; margin: 0;">
         {% for tag in all_tags %}
           <li style="margin-bottom: 0.5rem;">
-            <a href="#" onclick="filterByTag('{{ tag }}')" style="color: #667eea; text-decoration: none; font-weight: 500; display: flex; align-items: center; padding: 0.3rem 0; border-bottom: 1px solid #eee; transition: color 0.2s ease;">
+            <a href="/posts/?tag={{ tag }}" onclick="filterByTag('{{ tag }}')" style="color: #667eea; text-decoration: none; font-weight: 500; display: flex; align-items: center; padding: 0.3rem 0; border-bottom: 1px solid #eee; transition: color 0.2s ease;">
               <span style="margin-right: 0.5rem;">#</span>{{ tag }}
             </a>
           </li>
