@@ -2,6 +2,9 @@
 
 require 'yaml'
 
+# Configuration constants
+EXCERPT_LENGTH_LIMIT = 160
+
 # Define tag mapping based on title/content keywords
 TAG_MAPPING = {
   # Technology
