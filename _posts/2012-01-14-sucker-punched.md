@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Sucker Punched"
-author: "Scott Densmore"
+title: Sucker Punched
+author: Scott Densmore
 date: 2012-01-14 02:56 -0700
+tags:
+- conference
 ---
 
 My daughter was sucker punched on the bus after school.

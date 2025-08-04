@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "S is for Service"
-author: "Scott Densmore"
+title: S is for Service
+author: Scott Densmore
 date: 2012-02-22 02:33 -0700
+tags:
+- conference
+- testing
 ---
 
 It is also for Single Responsibility Principle.

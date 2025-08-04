@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "Reusable Podfiles"
-author: "Scott Densmore"
+title: Reusable Podfiles
+author: Scott Densmore
 date: 2014-05-07 02:35 -0700
+tags:
+- ios
+- architecture
 ---
 
 [Dream Engine Blog](http://blog.dreamengine.com/post/introducing-cocoapods-podules):

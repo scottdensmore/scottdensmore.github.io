@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Thinktecture IdentityServer v1.0"
-author: "Scott Densmore"
+title: Thinktecture IdentityServer v1.0
+author: Scott Densmore
 date: 2011-12-10 02:56 -0700
+tags:
+- windows
+- azure
+- architecture
+- security
+- career
+- dotnet
 ---
 
 If you are interested in Claims Based Identity you have to check this out.  I can't recommend this enough. I am really looking forward to the Azure release!

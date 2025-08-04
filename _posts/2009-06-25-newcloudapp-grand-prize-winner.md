@@ -1,8 +1,14 @@
 ---
 layout: post
-title: "newCloudApp(): Grand Prize Winner"
-author: "Scott Densmore"
+title: 'newCloudApp(): Grand Prize Winner'
+author: Scott Densmore
 date: 2009-06-25 01:54 -0700
+tags:
+- personal
+- azure
+- ios
+- career
+- dotnet
 ---
 
 After many long nights and to much Starbuck's coffee, [Kevin](http://geekswithblogs.net/SunnyCoder/Default.aspx) and I have finally done it. The waiting game is over and they announced today that we won! Go check out [Impulse](http://www.myimpulselive.com/). I am still feverishly finishing up the iPhone app now that the OS 3.0 SDK has hit. You can still vote for us at [new CloudApp()](http://www.newcloudapp.com/) if you think our app is cool. Not sure when our app is going to be listed on Azure's page or the [new CloudApp()](http://www.newcloudapp.com/) page.. I hope soon.

@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "Meme Time: Growing Up Geek"
-author: "Scott Densmore"
+title: 'Meme Time: Growing Up Geek'
+author: Scott Densmore
 date: 2008-10-04 01:30 -0700
+tags:
+- agile
+- ios
 ---
 [Brad Wilson](http://bradwilson.typepad.com) decided to [tag me geek](http://bradwilson.typepad.com/blog/2008/10/meme-time-growi.html).
 

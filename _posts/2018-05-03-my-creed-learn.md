@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "My Creed: Learn"
-author: "Scott Densmore"
+title: 'My Creed: Learn'
+author: Scott Densmore
 date: 2018-05-03 00:00:00 -0800
+tags:
+- opinion
 ---
 
 My creed. Learn it, love it, live it:

@@ -1,8 +1,20 @@
 ---
 layout: post
-title: "Enterprise Library: A History"
-author: "Scott Densmore"
+title: 'Enterprise Library: A History'
+author: Scott Densmore
 date: 2010-02-22 01:54 -0700
+tags:
+- conference
+- windows
+- azure
+- visual-studio
+- architecture
+- agile
+- opinion
+- ios
+- career
+- best-practices
+- dotnet
 ---
 
 With the release of [Enterprise Library 5.0 beta 1](http://www.codeplex.com/entlib) (including [Unity 2.0](http://unity.codeplex.com/wikipage?title=Unity2Beta1ChangeLog&referringTitle=Unity2%20Beta1)) I thought I would give a (somewhat) brief history of the project. When we released version 1.0, I don't think any of us ever thought there would be a 5.

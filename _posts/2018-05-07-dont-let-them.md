@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "I am not Trash"
-author: "Scott Densmore"
+title: I am not Trash
+author: Scott Densmore
 date: 2018-05-07 10:04:50 -0800
+tags:
+- personal
 ---
 
 Don't let them take you out if they think you are trash.

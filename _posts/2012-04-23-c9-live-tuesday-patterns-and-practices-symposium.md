@@ -1,8 +1,14 @@
 ---
 layout: post
-title: "C9 Live: Tuesday - Patterns and Practices Symposium"
-author: "Scott Densmore"
+title: 'C9 Live: Tuesday - Patterns and Practices Symposium'
+author: Scott Densmore
 date: 2012-04-23 02:33 -0700
+tags:
+- windows
+- azure
+- architecture
+- career
+- dotnet
 ---
 
 I'll be there!

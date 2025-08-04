@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Useful Xcode Build Phases"
-author: "Scott Densmore"
+title: Useful Xcode Build Phases
+author: Scott Densmore
 date: 2014-02-09 02:34 -0700
+tags:
+- ios
 ---
 
 [Useful Xcode Build Phases - Matthew Morey](http://matthewmorey.com/xcode-build-phases/?utm_campaign=iOS_Dev_Weekly_Issue_131&utm_medium=email&utm_source=iOS%2BDev%2BWeekly):

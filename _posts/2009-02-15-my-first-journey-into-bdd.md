@@ -1,8 +1,17 @@
 ---
 layout: post
-title: "My First Journey into BDD"
-author: "Scott Densmore"
+title: My First Journey into BDD
+author: Scott Densmore
 date: 2009-02-15 01:54 -0700
+tags:
+- windows
+- azure
+- architecture
+- agile
+- ios
+- testing
+- career
+- dotnet
 ---
 
 Lately I have been trying to teach people TDD and running into the usual suspects of misconceptions. I decided that maybe it was about time to update my tool belt and try teaching in a new way. I also wanted to try out something new and hopefully improve myself. I decided to give [BDD (Behavior Driven Development)](http://behaviour-driven.org/) a try.

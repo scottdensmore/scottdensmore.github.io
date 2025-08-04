@@ -1,8 +1,14 @@
 ---
 layout: post
-title: "Paging with Windows Azure Table Storage"
-author: "Scott Densmore"
+title: Paging with Windows Azure Table Storage
+author: Scott Densmore
 date: 2010-04-27 02:39 -0700
+tags:
+- windows
+- azure
+- ios
+- career
+- database
 ---
 
 Steve Marx has a great post on [paging over data](http://blog.smarx.com/posts/paging-over-data-in-windows-azure-tables) that uses the Storage Client Library shipped with previous versions of the Windows Azure SDK. You can update this code and make it work with the current SDK. It uses the DataServiceQuery and uses the underlying rest header calls to get the next partition and row key for the next query. In the current SDK, the [CloudTableQuery\<TElement\>](http://msdn.microsoft.com/en-us/library/ee758648.aspx) now handles dealing with continuation tokens. If you execute queries, you will not need to deal with the 1000 entity limitation. You can read more about this from [Neil Mackenzie's post on queries](http://nmackenzie.spaces.live.com/blog/cns!B863FF075995D18A!564.entry).

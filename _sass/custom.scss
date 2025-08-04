@@ -1,3 +1,6 @@
+/* Import mixins */
+@import 'mixins';
+
 /* Custom styles for blog homepage and components */
 
 /* Global dark theme support */
@@ -27,8 +30,28 @@ body {
 /* Dark theme support for masthead and navigation */
 .masthead,
 .masthead__inner-wrap {
-  background-color: var(--background-main);
+  background-color: var(--background-main) !important;
   border-bottom: 1px solid var(--border-light);
+}
+
+/* Force greedy-nav to use dark theme colors */
+.greedy-nav {
+  background-color: var(--background-main) !important;
+  
+  a {
+    color: var(--text-primary) !important;
+  }
+}
+
+/* Ensure all masthead navigation links use theme colors */
+.masthead__menu-item a,
+.visible-links a {
+  color: var(--text-primary) !important;
+  
+  &:hover,
+  &:focus {
+    color: var(--primary-color) !important;
+  }
 }
 
 /* Dark theme support for sidebar */
@@ -235,43 +258,18 @@ body {
 }
 
 .shuffle-posts-btn {
-  color: var(--primary-color);
-  background: var(--button-bg-primary);
-  border: none;
-  border-radius: 20px;
-  padding: var(--spacing-sm) var(--spacing-md);
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  font-family: inherit;
+  @include button-primary;
+  
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
   justify-content: center;
-  transition: all 0.2s ease;
-  
-  &:hover,
-  &:focus {
-    background: var(--button-bg-primary-hover);
-    transform: translateY(-1px);
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-  }
 }
 
 .view-all-posts-link {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-align: center;
+  @include button-link;
   
-  &:hover,
-  &:focus {
-    color: var(--text-primary);
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-  }
+  text-align: center;
 }
 
 /* Main content area */
@@ -331,11 +329,7 @@ body {
 }
 
 .tag {
-  background: var(--button-bg-primary);
-  color: var(--primary-color);
-  padding: 0.2rem 0.6rem;
-  border-radius: var(--border-radius-small);
-  font-size: 0.8rem;
+  @include tag-style;
   margin-right: var(--spacing-sm);
   display: inline-block;
 }
@@ -371,18 +365,13 @@ body {
 }
 
 .read-more-link {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 600;
+  @include button-link;
+  
   display: flex;
   align-items: center;
   
   i {
     margin-left: var(--spacing-sm);
-  }
-  
-  &:hover {
-    color: var(--text-primary);
   }
 }
 
@@ -768,13 +757,8 @@ img[loading="lazy"] {
   }
   
   .tag {
-    background: var(--button-bg-primary);
-    color: var(--primary-color);
-    padding: 0.2rem 0.6rem;
-    border-radius: var(--border-radius-small);
-    font-size: 0.8rem;
+    @include tag-style;
     text-decoration: none;
-    transition: background-color 0.2s ease;
     
     &:hover {
       background: var(--button-bg-primary-hover);
@@ -841,15 +825,11 @@ img[loading="lazy"] {
 }
 
 .year-nav-link {
+  @include button-base(var(--background-light));
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-sm);
-  background: var(--background-light);
-  border-radius: var(--border-radius);
-  text-decoration: none;
-  color: var(--text-primary);
-  transition: all 0.2s ease;
   border-left: 3px solid transparent;
   
   &:hover,
@@ -1116,21 +1096,11 @@ img[loading="lazy"] {
 }
 
 .view-archive-link {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 600;
+  @include button-primary;
+  
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-md);
-  background: var(--button-bg-primary);
-  border-radius: 20px;
-  transition: all 0.2s ease;
-  
-  &:hover {
-    background: var(--button-bg-primary-hover);
-    transform: translateY(-1px);
-  }
 }
 
 /* Responsive design */

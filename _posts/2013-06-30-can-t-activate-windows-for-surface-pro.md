@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Can't Activate Windows for Surface Pro"
-author: "Scott Densmore"
+title: Can't Activate Windows for Surface Pro
+author: Scott Densmore
 date: 2013-06-30 02:34 -0700
+tags:
+- azure
+- windows
+- career
 ---
 
 Since I am leaving Microsoft I decided to reset my Surface Pro to remove everything and start over. I had moved the restore partition to a USB drive earlier so I popped it in and reset. After going through setup, I got the dialog that I needed to Activate windows. I thought maybe something went wrong with setup so I started over, rest and still, it wants me to activate.

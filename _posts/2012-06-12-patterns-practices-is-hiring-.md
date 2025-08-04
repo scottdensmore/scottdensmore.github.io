@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "patterns & practices is hiring!"
-author: "Scott Densmore"
+title: patterns & practices is hiring!
+author: Scott Densmore
 date: 2012-06-12 02:36 -0700
+tags:
+- career
+- architecture
 ---
 
 I guess the cat is out of the bag or at least it is going to be so here is the post from Bob:

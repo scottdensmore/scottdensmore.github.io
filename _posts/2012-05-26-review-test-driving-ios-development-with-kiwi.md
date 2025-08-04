@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Review: Test Driving iOS Development with Kiwi"
-author: "Scott Densmore"
+title: 'Review: Test Driving iOS Development with Kiwi'
+author: Scott Densmore
 date: 2012-05-26 02:35 -0700
+tags:
+- git
+- architecture
+- review
+- ios
+- career
+- testing
 ---
 
 I have long been a fan of Test Driven Development (TDD). I have used all kinds of frameworks for doing my tests and for all of them have adopted the [Act, Arrange, Assert](http://c2.com/cgi/wiki?ArrangeActAssert) pattern. I have looked into doing [Behaviour-Driven Development](http://behaviour-driven.org/BehaviourDrivenDevelopment) and like the idea, just never found a framework that I was comfortable with and could use back and forth with [unit testing](http://c2.com/cgi/wiki?UnitTest). 

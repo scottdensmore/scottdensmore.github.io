@@ -1,8 +1,16 @@
 ---
 layout: post
-title: "Seattle Code Camp Talks"
-author: "Scott Densmore"
+title: Seattle Code Camp Talks
+author: Scott Densmore
 date: 2010-02-28 02:39 -0700
+tags:
+- conference
+- windows
+- azure
+- visual-studio
+- agile
+- ios
+- testing
 ---
 
 It is time for [Seattle Code Camp](https://seattle.codecamp.us/registered/default.aspx) again. There are plenty of great talks and if you are in the area you should go vote for the ones you will want to see. This year the talks are being held at building 92 ("The Commons") at Microsoft. I will be doing two talks:

@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "What A Difference Six Years Makes..."
-author: "Scott Densmore"
+title: What A Difference Six Years Makes...
+author: Scott Densmore
 date: 2013-09-20 02:34 -0700
+tags:
+- azure
+- windows
+- ios
 ---
 
 [ParisLemon — What A Difference Six Years Makes...](http://parislemon.com/post/61777379694/what-a-difference-six-years-makes):

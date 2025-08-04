@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Sunstreaker Reservation: Cocoa Web Services With Complex Types"
+title: 'Sunstreaker Reservation: Cocoa Web Services With Complex Types'
 date: 2008-10-13 01:30 -0700
-author: "Scott Densmore"
+author: Scott Densmore
+tags:
+- web
+- windows
+- azure
+- ios
+- career
+- dotnet
 ---
 So far we have been doing what I do in most projects when I start, spiking some concepts. I can't say I have really time boxed myself on these because the wife and kids would probably not like the schedule. This spike mainly consisted of trying to figure out how to take make calls to a web service that has request and response objects that are Complex Types. This proved to be a little more complicated than I had anticipated.
 

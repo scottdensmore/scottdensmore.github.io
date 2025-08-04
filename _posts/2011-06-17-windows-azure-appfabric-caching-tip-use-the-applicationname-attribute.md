@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Windows Azure AppFabric Caching Tip - Use the applicationName attribute"
-author: "Scott Densmore"
+title: Windows Azure AppFabric Caching Tip - Use the applicationName attribute
+author: Scott Densmore
 date: 2011-06-17 02:50 -0700
+tags:
+- azure
+- windows
+- career
 ---
 
 We are working on updates to our [Developing Applications for the Cloud](http://msdn.microsoft.com/en-us/library/ff966499.aspx) content. In the first version we used a feature from [MVC Futures](http://mvc.codeplex.com/) to simulate View State in our code so we didn't have to deal with Session in the application. Now with the release of AppFabric Caching as a Session provider, we are switching our code to use this. At first we found the following:

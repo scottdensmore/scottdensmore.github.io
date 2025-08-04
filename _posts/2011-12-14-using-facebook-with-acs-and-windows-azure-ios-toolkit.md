@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Using Facebook with ACS and Windows Azure iOS Toolkit"
-author: "Scott Densmore"
+title: Using Facebook with ACS and Windows Azure iOS Toolkit
+author: Scott Densmore
 date: 2011-12-14 02:56 -0700
+tags:
+- windows
+- azure
+- git
+- architecture
+- ios
+- security
 ---
 
 Simon Guest posted a way to [extract your Facebook information from the ACS token](http://simonguest.com/2011/11/11/extracting-and-using-facebook-oauth-token-from-acs).  Now there is nothing wrong with how Simon did this, I am just updating the toolkit to add all the claims to the claim set from ACS that will make this easier.

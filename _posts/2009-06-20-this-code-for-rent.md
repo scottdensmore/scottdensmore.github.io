@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "This Code For Rent"
-author: "Scott Densmore"
+title: This Code For Rent
+author: Scott Densmore
 date: 2009-06-02 01:54 -0700
+tags:
+- agile
+- conference
 ---
 
 Given the current economy and the housing market here in Florida, we have been talking a lot about renting versus owning a home. How does this have anything to do with code? Glad you asked. In the life of any given application, you are probably in it for only a short time (relatively). You might be on the team that builds the version 1.0 product or you might be on the team that is supporting version 6 of a product on version 8. Whatever the case may be, more often than not, you are just there renting the code.  

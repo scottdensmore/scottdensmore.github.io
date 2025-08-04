@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "New Versions of our Windows Azure Guidance Available"
-author: "Scott Densmore"
+title: New Versions of our Windows Azure Guidance Available
+author: Scott Densmore
 date: 2011-12-07 02:55 -0700
+tags:
+- azure
+- windows
 ---
 
 Windows Azure is a moving platform.  When we first released these guides, the SDK was young and we decided we needed to refresh to support the latest 1.6 SDK. You can now get these from MSDN:

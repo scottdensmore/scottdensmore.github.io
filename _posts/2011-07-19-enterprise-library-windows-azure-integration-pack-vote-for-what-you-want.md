@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Enterprise Library Windows Azure Integration Pack - Vote for What You Want"
-author: "Scott Densmore"
+title: Enterprise Library Windows Azure Integration Pack - Vote for What You Want
+author: Scott Densmore
 date: 2011-07-19 02:55 -0700
+tags:
+- dotnet
+- agile
+- azure
+- windows
 ---
 
 Grigori and team have opened up voting on there Enterprise Library Windows Azure Integration Pack. Go vote to provide the direction they should take.

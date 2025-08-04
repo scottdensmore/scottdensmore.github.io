@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "Hilos and Unit Testing in C++"
-author: "Scott Densmore"
+title: Hilos and Unit Testing in C++
+author: Scott Densmore
 date: 2012-05-25 02:34 -0700
+tags:
+- visual-studio
+- testing
 ---
 
 Jason Zander's blog post on Unit Testing mentioned our Hilo project doing unit testing for Metro Applications in C++.

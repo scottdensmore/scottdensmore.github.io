@@ -1,0 +1,44 @@
+{% comment %}
+  Centralized Data Processing Component
+  
+  This include processes and caches expensive operations to avoid duplication
+  across multiple components like archive.md, archive-stats.html, etc.
+  
+  Usage: {% include data-processors.html %}
+  
+  Sets the following variables for reuse:
+  - posts_by_year: Posts grouped by year
+  - all_tags: Unique sorted tags from all posts  
+  - all_tags_count: Total number of unique tags
+  - total_posts: Total number of posts
+  - max_posts_per_year: Maximum posts in any single year (for statistics)
+  - years_active: Number of years with posts
+{% endcomment %}
+
+{% comment %} Only process once per page load {% endcomment %}
+{% unless data_processed %}
+  
+  {% comment %} Group posts by year - used by archive.md and archive-stats.html {% endcomment %}
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  
+  {% comment %} Process all tags efficiently - flatten and sort once {% endcomment %}
+  {% assign all_tags = site.posts | map: 'tags' | flatten | uniq | sort %}
+  {% assign all_tags_count = all_tags | size %}
+  
+  {% comment %} Basic counts {% endcomment %}
+  {% assign total_posts = site.posts.size %}
+  {% assign years_active = posts_by_year.size %}
+  
+  {% comment %} Calculate maximum posts per year for statistics visualization {% endcomment %}
+  {% assign max_posts_per_year = 0 %}
+  {% for year_group in posts_by_year %}
+    {% assign year_post_count = year_group.items | size %}
+    {% if year_post_count > max_posts_per_year %}
+      {% assign max_posts_per_year = year_post_count %}
+    {% endif %}
+  {% endfor %}
+  
+  {% comment %} Mark as processed to prevent recomputation {% endcomment %}
+  {% assign data_processed = true %}
+  
+{% endunless %}

@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Iron Foundry V2"
-author: "Scott Densmore"
+title: Iron Foundry V2
+author: Scott Densmore
 date: 2014-05-18 02:35 -0700
+tags:
+- dotnet
+- azure
+- windows
+- career
 ---
 
 For the last several months I have been working on an extension with Cloud Foundry V2 that allows users to deploy Windows / .NET applications: Iron Foundry. 

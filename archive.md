@@ -12,12 +12,14 @@ classes: wide
     <p class="archive-summary">{{ site.posts.size }} posts spanning {{ site.posts.last.date | date: "%Y" }} to {{ site.posts.first.date | date: "%Y" }}</p>
   </div>
 
+  <!-- Load centralized data processing -->
+  {% include data-processors.html %}
+  
   <div class="archive-layout">
     <!-- Year Navigation Sidebar -->
     <aside class="archive-sidebar">
       <h3><i class="fas fa-calendar-alt"></i> Browse by Year</h3>
       <nav class="year-navigation">
-        {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
         {% for year_group in posts_by_year %}
           {% assign year = year_group.name %}
           {% assign post_count = year_group.items | size %}
@@ -31,7 +33,6 @@ classes: wide
 
     <!-- Main Archive Content -->
     <main class="archive-main">
-      {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
       {% for year_group in posts_by_year %}
         {% assign year = year_group.name %}
         {% assign posts_by_month = year_group.items | group_by_exp: "post", "post.date | date: '%B'" %}
@@ -95,62 +96,4 @@ classes: wide
   </div>
 </div>
 
-<script>
-// Archive page JavaScript for smooth scrolling and year navigation
-document.addEventListener('DOMContentLoaded', function() {
-  // Smooth scrolling for year navigation
-  const yearLinks = document.querySelectorAll('.year-nav-link');
-  
-  yearLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      
-      if (targetElement) {
-        // Remove active class from all links
-        yearLinks.forEach(l => l.classList.remove('active'));
-        // Add active class to clicked link
-        this.classList.add('active');
-        
-        // Smooth scroll to target
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-  
-  // Update active year link on scroll
-  const yearSections = document.querySelectorAll('.year-section');
-  const updateActiveYear = () => {
-    let currentYear = '';
-    
-    yearSections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= 100 && rect.bottom >= 100) {
-        currentYear = section.id.replace('year-', '');
-      }
-    });
-    
-    if (currentYear) {
-      yearLinks.forEach(link => {
-        link.classList.toggle('active', link.dataset.year === currentYear);
-      });
-    }
-  };
-  
-  // Throttled scroll handler
-  let scrollTimeout;
-  window.addEventListener('scroll', () => {
-    if (scrollTimeout) {
-      clearTimeout(scrollTimeout);
-    }
-    scrollTimeout = setTimeout(updateActiveYear, 50);
-  });
-  
-  // Set initial active year
-  updateActiveYear();
-});
-</script>
+<script src="/assets/js/archive-navigation.js"></script>

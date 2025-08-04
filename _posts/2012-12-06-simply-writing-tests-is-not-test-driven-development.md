@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Simply Writing Tests Is Not Test Driven Development"
-author: "Scott Densmore"
+title: Simply Writing Tests Is Not Test Driven Development
+author: Scott Densmore
 date: 2012-12-06 02:33 -0700
+tags:
+- agile
+- testing
+- architecture
 ---
 
 [Simply Writing Tests Is Not Test Driven Development](https://spin.atomicobject.com/writing-tests-is-not-tdd/):

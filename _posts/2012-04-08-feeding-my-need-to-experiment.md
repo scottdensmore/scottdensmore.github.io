@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Feeding My Need to Experiment"
-author: "Scott Densmore"
+title: Feeding My Need to Experiment
+author: Scott Densmore
 date: 2012-04-08 02:33 -0700
+tags:
+- azure
+- windows
+- conference
+- career
 ---
 
 I was reading [Alex Homer's blog](http://blogs.msdn.com/b/alexhomer) this morning (shame on you if you are not reading it), and it got me thinking: Do I still like to experiment?

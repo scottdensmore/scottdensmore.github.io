@@ -1,8 +1,18 @@
 ---
 layout: post
-title: "That Was A Really Long Vacation"
-author: "Scott Densmore"
+title: That Was A Really Long Vacation
+author: Scott Densmore
 date: 2010-01-28 01:54 -0700
+tags:
+- conference
+- windows
+- personal
+- azure
+- architecture
+- ios
+- testing
+- career
+- dotnet
 ---
 
 In May it will be 2 years that I have been in the Sunshine State (Florida). I am going back to Seattle and Microsoft at the beginning of February. I have met and worked with a lot of great people. I will definitely miss the town (Celebration) and the sun, yet I can't wait to get back and take some of the great things I have learned from the people I have met while I was here. There are so many things I have done of the past couple of years that I don't think I would have had the chance/taken the time to do if I didn't live here. Here is a list in no particular order:

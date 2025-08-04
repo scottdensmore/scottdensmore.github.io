@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Claims Based Identity and Access Control"
-author: "Scott Densmore"
+title: Claims Based Identity and Access Control
+author: Scott Densmore
 date: 2011-02-05 02:45 -0700
+tags:
+- azure
+- windows
+- security
 ---
 
 Over the past year we have shipped a few guides:

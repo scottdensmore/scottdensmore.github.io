@@ -1,8 +1,16 @@
 ---
 layout: post
-title: "Moving On (Again)"
-author: "Scott Densmore"
+title: Moving On (Again)
+author: Scott Densmore
 date: 2012-07-01 02:37 -0700
+tags:
+- windows
+- azure
+- visual-studio
+- architecture
+- security
+- career
+- dotnet
 ---
 
 It must be that time of year. I have been at patterns & practices for a couple of years again and it has been awesome. Since I have been back I have worked on some great content with some great people.

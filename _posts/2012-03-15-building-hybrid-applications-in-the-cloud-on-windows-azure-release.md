@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Building Hybrid Applications in the Cloud on Windows Azure Release"
-author: "Scott Densmore"
+title: Building Hybrid Applications in the Cloud on Windows Azure Release
+author: Scott Densmore
 date: 2012-03-15 02:33 -0700
+tags:
+- azure
+- windows
+- security
+- career
 ---
 
 It always takes a while for your project to go live on MSDN but it is alive… ALIVE!  We really put a lot of effort into this one and is the last in the series. You should go [check it out](http://msdn.microsoft.com/en-us/library/hh871440.aspx).

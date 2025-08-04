@@ -1,8 +1,14 @@
 ---
 layout: post
-title: "My azure setup"
-author: "Scott Densmore"
+title: My azure setup
+author: Scott Densmore
 date: 2010-03-09 02:39 -0700
+tags:
+- windows
+- personal
+- azure
+- visual-studio
+- career
 ---
 
 The first thing I did to get started on our new [Azure Guidance project](http://www.codeplex.com/wag) is setup the environment. Since I always seem to forget or people keep asking me what my setup is I thought I would write it down so I don't have to keep reminding myself over and over.

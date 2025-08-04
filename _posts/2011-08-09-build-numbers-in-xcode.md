@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Build Numbers in Xcode"
-author: "Scott Densmore"
+title: Build Numbers in Xcode
+author: Scott Densmore
 date: 2011-08-09 02:55 -0700
+tags:
+- git
+- ios
+- career
 ---
 
 Working on a Mac / iOS projects, I have been trying to come up with an easy way to bump versions when it goes out the door for testing or production. Mostly I have been working it out manually, yet that is now fun after the dozenth time. I  started looking around for something that would fit my [workflow](http://nvie.com/posts/a-successful-git-branching-model/). I found a couple of posts that help me out.

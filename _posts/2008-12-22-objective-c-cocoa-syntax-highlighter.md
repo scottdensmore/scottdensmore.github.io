@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "Objective-C / Cocoa Syntax Highlighter"
-author: "Scott Densmore"
+title: Objective-C / Cocoa Syntax Highlighter
+author: Scott Densmore
 date: 2008-12-08 01:54 -0700
+tags:
+- ios
+- career
 ---
 
 <p>Decided to take some of the code for the syntaxhighlighter project and create a file for objective-c / cocoa. Going to be making a few updates to this post to see if it works with some random Objective-C / Cocoa code:</p>

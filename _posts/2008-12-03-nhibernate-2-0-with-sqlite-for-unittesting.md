@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "NHibernate 2.0 with SQLite for UnitTesting"
-author: "Scott Densmore"
+title: NHibernate 2.0 with SQLite for UnitTesting
+author: Scott Densmore
 date: 2008-12-03 01:30 -0700
+tags:
+- database
+- testing
 ---
 
 I spent the last month learning NHibernate and I am definitely a fan. I have been using [SQLite](http://sqlite.phxsoftware.com/) for unit testing similar to [Ayende](http://ayende.com/Blog/Default.aspx) in his [post](http://ayende.com/Blog/archive/2006/10/14/UnitTestingWithNHibernateActiveRecord.aspx). The problem I ran into is that every time I ran my tests the connection was getting reset. A little google whispering and I found the answer in [Justin Etheredge's](http://www.codethinked.com/) [post](http://www.codethinked.com/post/2008/10/19/NHibernate-20-SQLite-and-In-Memory-Databases.aspx). Hopefully this will help me remember as well as others.

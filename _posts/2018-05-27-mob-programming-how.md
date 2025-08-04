@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Mob Programming: How We Stumbled Upon and Learned to Love It"
-author: "Scott Densmore"
+title: 'Mob Programming: How We Stumbled Upon and Learned to Love It'
+author: Scott Densmore
 date: 2018-05-27 12:23:19 -0800
+tags:
+- career
+- web
+- best-practices
 ---
 
 [Mob Programming: How We Stumbled Upon and Learned to Love It](https://spin.atomicobject.com/2018/05/23/mob-programming-story/)

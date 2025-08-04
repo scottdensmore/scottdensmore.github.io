@@ -1,8 +1,17 @@
 ---
 layout: post
-title: "How a Checkbox Saved Paving My Machine"
-author: "Scott Densmore"
+title: How a Checkbox Saved Paving My Machine
+author: Scott Densmore
 date: 2010-05-28 02:39 -0700
+tags:
+- conference
+- windows
+- azure
+- visual-studio
+- architecture
+- ios
+- career
+- dotnet
 ---
 
 Last week we started working on the code for part 2 of our [Windows Azure Architecture Guidance](http://wag.codeplex.com). Eugenio has a great [writeup of our start to Part 2](http://blogs.msdn.com/b/eugeniop/archive/2010/05/24/windows-azure-architecture-guide-part-2-tailspin-surveys-authn-and-authz.aspx). We started framing out the code for our project. We decided to use MVC 2, .NET 4.0 / VS2010 for this project. Once we started hosting the application in Azure using .NET 4.0 (yes there are tools coming for this), the application stopped working on my machine. At first I thought this was an Azure problem but come to find out it is actually has to do with MVC 2 and IIS. The problem came down to a check box. The problem is actually documented in a [KB](http://support.microsoft.com/?kbid=2023146) and the ReadMe from the .NET 4 install. Both talk about returning a 404 errors, but I found that my situation turned into blank pages. All this came down to a single checkbox in IIS: HTTP Redirection.

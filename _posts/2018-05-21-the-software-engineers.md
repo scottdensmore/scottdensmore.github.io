@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "The software engineer's guide to asserting dominance in the workplace"
-author: "Scott Densmore"
+title: The software engineer's guide to asserting dominance in the workplace
+author: Scott Densmore
 date: 2018-05-20 18:30:35 -0800
+tags:
+- dotnet
+- career
 ---
 
 [The software engineer's guide to asserting dominance in the workplace](https://medium.com/feature-creep/the-software-engineer-s-guide-to-asserting-office-dominance-ddea7b598df7)

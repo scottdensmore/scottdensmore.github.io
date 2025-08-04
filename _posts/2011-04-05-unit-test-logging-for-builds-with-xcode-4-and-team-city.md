@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Unit Test Logging for Builds with Xcode 4 and Team City"
-author: "Scott Densmore"
+title: Unit Test Logging for Builds with Xcode 4 and Team City
+author: Scott Densmore
 date: 2011-04-05 02:45 -0700
+tags:
+- git
+- visual-studio
+- agile
+- ios
+- testing
+- career
 ---
 
 One of the things I wanted to do after getting comfortable with the iOS/Mac platform(s) was trying to take my "agile" ways to the platforms (for this post specifically testing). I started learning all this in the Xcode 3 days. I really think with the release of Xcode 4, things are getting much better. WIth workspaces, schemes and better unit testing integration, I believe Xcode 4 is making my life as a developer easier on the platform.

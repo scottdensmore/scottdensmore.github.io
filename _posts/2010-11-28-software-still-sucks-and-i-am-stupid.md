@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Software Still Sucks and I Am Stupid"
-author: "Scott Densmore"
+title: Software Still Sucks and I Am Stupid
+author: Scott Densmore
 date: 2010-11-28 02:39 -0700
+tags:
+- security
+- ios
+- career
 ---
 
 So I am back on the kick to get rid of cable.  I don't really watch anything except the cooking channel and the occasional football game. I decided to sign up for Netflix since I can put this on all my devices that I have (XBox 360, PS3, iPad, iPhone) and I can catch up on a lot of shows.

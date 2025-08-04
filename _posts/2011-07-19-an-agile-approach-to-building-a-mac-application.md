@@ -1,8 +1,18 @@
 ---
 layout: post
-title: "An Agile Approach to Building a Mac Application"
-author: "Scott Densmore"
+title: An Agile Approach to Building a Mac Application
+author: Scott Densmore
 date: 2011-07-19 02:50 -0700
+tags:
+- git
+- architecture
+- agile
+- review
+- ios
+- testing
+- career
+- best-practices
+- dotnet
 ---
 
 I have written quite a bit of articles on iOS and Mac applications using agile techniques (unit testing, continuous integration, etc) and in this post, I am going to put it all together. We will go through how to setup the project, build the application test first, how to integrate code coverage and source control flow to build features.

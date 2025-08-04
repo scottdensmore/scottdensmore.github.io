@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Thinktecture.IdentityModel.* on GitHub"
-author: "Scott Densmore"
+title: Thinktecture.IdentityModel.* on GitHub
+author: Scott Densmore
 date: 2012-03-06 02:33 -0700
+tags:
+- dotnet
+- security
+- git
+- career
 ---
 
 [Thinktecture.IdentityModel.\* on GitHub](http://www.leastprivilege.com/ThinktectureIdentityModelOnGitHub.aspx)

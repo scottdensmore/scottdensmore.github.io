@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "What is in a Parameter Name"
-author: "Scott Densmore"
+title: What is in a Parameter Name
+author: Scott Densmore
 date: 2008-08-01 00:00 -0700
+tags:
+- windows
+- azure
+- architecture
+- testing
+- career
+- dotnet
 ---
 
 I have been working on an extension to Unity for a while to do interception. It is basically a port that [Brad Wilson](http://bradwilson.typepad.com) and I did for [ObjectBuilder](http://www.codeplex.com/objectbuilder) and the SimpleContainer we built. I first did this before I left patterns & practices and pushed it on to the UnityContrib site. All went well until I wanted to go back and update the code for Unity 1.1\. When I ran the unit tests, I got 14 errors and a very odd stack trace:

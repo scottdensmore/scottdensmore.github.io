@@ -20,17 +20,37 @@ tag_mapping:
     - xcode
     - apple
     - mac
+    - faceid
+    - touchid
+    - omnifocus
+    - sync
+    - mobileme
+    - keychain
+    - idisk
+    - hilo
+    - codeplex
+    - drop
   dotnet:
     - .net
     - c#
     - unity
     - enterprise library
     - wcf
+    - wpf
+    - snoop
+    - visual tree
+    - ppl
+    - parallel programming
   web:
     - javascript
     - web service
     - wsdl
     - api
+    - dns
+    - https
+    - mozilla
+    - cartoon
+    - intro
   database:
     - sqlite
     - nhibernate
@@ -40,6 +60,8 @@ tag_mapping:
     - tdd
     - bdd
     - test driving
+    - ui tests
+    - running
   git:
     - git
     - github
@@ -65,6 +87,18 @@ tag_mapping:
     - best practice
     - code comment
     - commit message
+    - consistency
+    - culture
+    - embrace
+    - mob programming
+    - mobbing
+    - swarming
+    - backlog
+    - estimate
+    - stories
+    - team meeting
+    - compiling
+    - walk
 
   # Personal
   personal:
@@ -75,11 +109,101 @@ tag_mapping:
     - health
     - recovery
     - family
+    - disney
+    - season pass
+    - air mattress
+    - sleep
+    - grey
+    - rainy
+    - northwest
+    - weather
+    - paranoia
+    - easter
+    - holiday
+    - christmas
+    - merry
+    - downtime
+    - ghosts
+    - face id
+    - touchid
+    - awesome
+    - beastly
+    - animal
+    - mouth breather
+    - rmbf
+    - emotional
+    - fahrenheit
+    - sad
+    - books
+    - banned
+    - big brother
+    - eye rolling
+    - kids
+    - daughter
+    - schizoid
+    - kanye
+    - west
+    - power
+    - song
+    - music
+    - band
+    - college football
+    - playoffs
+    - burpee
+    - burpees
+    - soccer
+    - exercise
+    - fitness
+    - pizza
+    - domino's
+    - food
+    - space invaders
+    - video games
+    - gaming
+    - wallpaper
+    - wall paper
+    - mission
+    - life
+    - over
+    - days like these
+    - pulled out
+    - wonder
+    - insurance
+    - clause
+    - 5 second rule
+    - sunday
+    - cant get
+    - not this
+    - dont let them
+    - wish people
+    - will no
+    - bob's burgers
+    - whistler
+    - girls
+    - way home
+    - cant get
+    - head today
+    - scariest
+    - distance
+    - miss you
+    - forget you
+    - accident prone
+    - gravity tester
+    - take you out
+    - trash
+    - garbage
   career:
     - job
     - work
     - hiring
     - career
+    - parting ways
+    - move on
+    - moving on
+    - learned
+    - blast
+    - different
+    - expected
   conference:
     - conference
     - speaking
@@ -89,9 +213,24 @@ tag_mapping:
   # Reviews/Opinions
   review:
     - review
+    - zefrank
+    - youtube
+    - watch
+    - favorite
+    - great things
+    - explanation
   opinion:
     - perspective
     - creed
+    - moore's law
+    - silicon
+    - ghost
+    - parallel programming
+    - shiny toy
+    - life sequence
+    - waiting
+    - correlation
+    - strong
 
 # Category mapping - groups tags into higher-level categories
 category_mapping:
