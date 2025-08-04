@@ -1,0 +1,60 @@
+<!-- Archive Statistics Component -->
+<div class="archive-stats">
+  <h3 class="archive-stats__title">
+    <i class="fas fa-chart-bar"></i> Blog Statistics
+  </h3>
+  
+  <div class="archive-stats__grid">
+    <div class="stat-item">
+      <span class="stat-number">{{ site.posts.size }}</span>
+      <span class="stat-label">Total Posts</span>
+    </div>
+    
+    <div class="stat-item">
+      {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      <span class="stat-number">{{ posts_by_year.size }}</span>
+      <span class="stat-label">Years Active</span>
+    </div>
+    
+    <div class="stat-item">
+      {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | uniq %}
+      <span class="stat-number">{{ all_tags.size }}</span>
+      <span class="stat-label">Unique Tags</span>
+    </div>
+  </div>
+  
+  <div class="archive-stats__years">
+    <h4>Posts by Year</h4>
+    <div class="year-bars">
+      {% assign max_posts = 0 %}
+      {% for year_group in posts_by_year %}
+        {% assign count = year_group.items | size %}
+        {% if count > max_posts %}
+          {% assign max_posts = count %}
+        {% endif %}
+      {% endfor %}
+      
+      {% for year_group in posts_by_year %}
+        {% assign year = year_group.name %}
+        {% assign count = year_group.items | size %}
+        {% assign percentage = count | times: 100.0 | divided_by: max_posts %}
+        
+        <div class="year-bar">
+          <div class="year-info">
+            <span class="year">{{ year }}</span>
+            <span class="count">{{ count }}</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar" style="width: {{ percentage }}%"></div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class="archive-stats__footer">
+    <a href="/archive/" class="view-archive-link">
+      <i class="fas fa-archive"></i> View Full Archive
+    </a>
+  </div>
+</div>
