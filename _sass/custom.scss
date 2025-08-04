@@ -136,72 +136,135 @@ body {
   align-items: flex-start;
 }
 
-/* Sidebar styles */
-.topic-sidebar {
+/* Random Posts Sidebar styles */
+.random-posts-sidebar {
   width: var(--sidebar-width);
   flex-shrink: 0;
 }
 
-.topic-sidebar__title {
+.random-posts-sidebar__title {
   color: var(--text-primary);
   margin-bottom: var(--spacing-md);
   font-size: 1.2rem;
+  
+  i {
+    margin-right: var(--spacing-sm);
+    color: var(--primary-color);
+  }
 }
 
-.topic-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.random-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  transition: opacity 0.2s ease;
 }
 
-.topic-list__item {
+.random-post-card {
+  background: var(--background-light);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  border-left: 3px solid var(--primary-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+}
+
+.random-post-card__title {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.random-post-card__link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.random-post-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
 }
 
-.topic-list__link {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
+.random-post-card__date {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid var(--border-light);
-  transition: color 0.2s ease;
-  background: none;
-  border: none;
-  border-bottom: 1px solid var(--border-light);
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
+  gap: 0.3rem;
+}
 
+.random-post-card__tags {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.random-post-card__tag {
+  background: var(--button-bg-primary);
+  color: var(--primary-color);
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--border-radius-small);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.random-post-card__excerpt {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.random-posts-sidebar__footer {
+  margin-top: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.shuffle-posts-btn {
+  color: var(--primary-color);
+  background: var(--button-bg-primary);
+  border: none;
+  border-radius: 20px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  transition: all 0.2s ease;
+  
   &:hover,
   &:focus {
-    color: var(--text-primary);
+    background: var(--button-bg-primary-hover);
+    transform: translateY(-1px);
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
   }
 }
 
-.topic-list__hash {
-  margin-right: var(--spacing-sm);
-}
-
-.topic-sidebar__footer {
-  margin-top: var(--spacing-lg);
-}
-
-.view-all-link {
+.view-all-posts-link {
   color: var(--secondary-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  padding: 0;
+  text-align: center;
   
   &:hover,
   &:focus {
@@ -219,6 +282,11 @@ body {
 
 .main-content__title {
   margin-bottom: var(--spacing-lg);
+  
+  i {
+    margin-right: var(--spacing-sm);
+    color: var(--primary-color);
+  }
 }
 
 /* Latest post card */
@@ -721,8 +789,18 @@ img[loading="lazy"] {
     gap: var(--spacing-lg);
   }
   
-  .topic-sidebar {
+  .random-posts-sidebar {
     width: 100%;
+  }
+  
+  .random-posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-sm);
+  }
+  
+  .random-post-card {
+    padding: var(--spacing-sm);
   }
   
   .homepage-container {
