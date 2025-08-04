@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Creating a SSL Certificate for the Cloud Ready Packages for the iOS Windows Azure Toolkit"
-author: "Scott Densmore"
+title: Creating a SSL Certificate for the Cloud Ready Packages for the iOS Windows
+  Azure Toolkit
+author: Scott Densmore
 date: 2012-01-29 02:20 -0700
+tags:
+- windows
+- azure
+- git
+- security
+- ios
 ---
 
 With the [iOS Windows Azure Toolkit](https://github.com/microsoft-dpe/wa-toolkit-ios), you can use the ready made Windows Azure Packages that use ACS or Membership to manage users to Windows Azure Storage. These packages require you to have a SSL certificate. More than likely you are running on a Mac.

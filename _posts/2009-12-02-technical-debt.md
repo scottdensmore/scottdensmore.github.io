@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Technical Debt"
-author: "Scott Densmore"
+title: Technical Debt
+author: Scott Densmore
 date: 2009-12-02 01:54 -0700
+tags:
+- career
 ---
 
 I am always amazed when people look at me weird when I mention Technical Debt. I thought this was a universal understanding. Well, you know what they say about assumptions.

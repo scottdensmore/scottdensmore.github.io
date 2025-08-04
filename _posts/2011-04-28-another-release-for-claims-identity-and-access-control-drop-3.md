@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Another release for claims identity and access control drop 3"
-author: "Scott Densmore"
+title: Another release for claims identity and access control drop 3
+author: Scott Densmore
 date: 2011-04-28
+tags:
+- security
 ---
 
 We just posted another drop for the [Claims Based Identity Guidance](http://claimsid.codeplex.com/).  This will be our last drop before we release. We would love any feedback. This new drop includes:

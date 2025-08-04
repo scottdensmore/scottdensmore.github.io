@@ -1,0 +1,281 @@
+/**
+ * SCSS Mixins for Scott Densmore's Blog
+ * Reusable patterns to reduce code duplication and improve maintainability
+ */
+
+// ==========================================================================
+// Button Mixins
+// ==========================================================================
+
+/// Base button styling with common properties
+/// @param $bg-color - Background color (default: primary button background)
+/// @param $text-color - Text color (default: primary color)
+/// @param $border-radius - Border radius (default: 20px for pill shape)
+@mixin button-base(
+  $bg-color: var(--button-bg-primary),
+  $text-color: var(--primary-color),
+  $border-radius: 20px
+) {
+  background: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $border-radius;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  
+  &:hover,
+  &:focus {
+    background: var(--button-bg-primary-hover);
+    transform: translateY(-1px);
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+    &:hover {
+      background: $bg-color;
+      transform: none;
+      outline: none;
+    }
+  }
+}
+
+/// Primary button styling (main actions)
+@mixin button-primary() {
+  @include button-base();
+}
+
+/// Secondary button styling (less prominent actions)
+@mixin button-secondary() {
+  @include button-base(
+    $bg-color: var(--background-light),
+    $text-color: var(--text-secondary)
+  );
+  
+  &:hover,
+  &:focus {
+    background: var(--button-bg-primary);
+    color: var(--primary-color);
+  }
+}
+
+/// Link-style button (appears as link but behaves as button)
+@mixin button-link() {
+  @include button-base(
+    $bg-color: transparent,
+    $text-color: var(--primary-color),
+    $border-radius: 4px
+  );
+  
+  padding: var(--spacing-sm);
+  
+  &:hover,
+  &:focus {
+    background: var(--button-bg-primary);
+    transform: none;
+  }
+}
+
+/// Icon button styling (for buttons with only icons)
+@mixin button-icon($size: 2.5rem) {
+  @include button-base(
+    $bg-color: var(--background-light),
+    $border-radius: 50%
+  );
+  
+  width: $size;
+  height: $size;
+  padding: 0;
+  
+  &:hover,
+  &:focus {
+    background: var(--button-bg-primary);
+    box-shadow: 0 2px 8px var(--button-shadow-primary);
+  }
+}
+
+/// Navigation link styling (for main navigation)
+@mixin nav-link() {
+  @include button-base();
+  font-size: 0.9rem;
+  
+  &.active {
+    background: var(--button-bg-primary-hover);
+    color: var(--primary-color);
+  }
+}
+
+// ==========================================================================
+// Card Mixins  
+// ==========================================================================
+
+/// Base card styling with shadow and hover effects
+/// @param $bg-color - Background color
+/// @param $border-color - Left border accent color
+@mixin card-base(
+  $bg-color: var(--background-light),
+  $border-color: var(--primary-color)
+) {
+  background: $bg-color;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  border-left: 4px solid $border-color;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+}
+
+/// Post card styling (for blog post previews)
+@mixin post-card() {
+  @include card-base();
+  margin-bottom: var(--spacing-md);
+}
+
+/// Stats card styling (for statistics displays)
+@mixin stats-card() {
+  @include card-base();
+  text-align: center;
+  
+  .stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    line-height: 1.2;
+  }
+  
+  .stat-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.2rem;
+  }
+}
+
+// ==========================================================================
+// Layout Mixins
+// ==========================================================================
+
+/// Responsive container with max-width and padding
+@mixin container() {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+  
+  @media (max-width: 768px) {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+/// Flexbox utilities
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+// ==========================================================================
+// Typography Mixins
+// ==========================================================================
+
+/// Truncate text with ellipsis
+/// @param $lines - Number of lines before truncation (default: 1)
+@mixin text-truncate($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/// Screen reader only text (accessible but visually hidden)
+@mixin sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ==========================================================================
+// Animation Mixins
+// ==========================================================================
+
+/// Smooth fade-in animation
+@mixin fade-in($duration: 0.3s) {
+  opacity: 0;
+  animation: fadeIn $duration ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/// Smooth slide-up animation  
+@mixin slide-up($duration: 0.3s, $distance: 20px) {
+  transform: translateY($distance);
+  animation: slideUp $duration ease-out forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+// ==========================================================================
+// Tag Mixins
+// ==========================================================================
+
+/// Tag styling for consistent appearance
+@mixin tag-style($bg-color: var(--button-bg-primary), $text-color: var(--primary-color)) {
+  background: $bg-color;
+  color: $text-color;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--border-radius-small);
+  font-size: 0.8rem;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}

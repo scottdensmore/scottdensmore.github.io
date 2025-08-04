@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Cocoa to Web Service: Sunstreaker Reservation"
+title: 'Cocoa to Web Service: Sunstreaker Reservation'
 date: 2008-09-26 01:30 -0700
-author: "Scott Densmore"
+author: Scott Densmore
+tags:
+- web
+- conference
+- agile
+- ios
+- career
+- dotnet
 ---
 In my [last post](http://scottdensmore.typepad.com/blog/2008/09/cocoa-to-wsdl-web-service-or-hi-pc-it-is-me-mac.html) I started putting together connecting my Mac to my WCF web service. I decided to make this into a series in the spirit of [MVC Storefront](http://blog.wekeroad.com/mvc-storefront/). I needed a good name. I talked with [jedi](http://blogs.msdn.com/agilemonkey/) about what I should name my series. He liked the Transformer names so picked one that I had as a kid, [Sunstreaker](http://en.wikipedia.org/wiki/Sunstreaker).
 

@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "A Cartoon Intro to DNS over HTTPS"
-author: "Scott Densmore"
+title: A Cartoon Intro to DNS over HTTPS
+author: Scott Densmore
 date: 2018-07-10 09:00:32 -0800
+tags:
+- web
 ---
 
 Even simple enough for me.

@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Simple Capped Exponential Back-Off for Queues"
-author: "Scott Densmore"
+title: Simple Capped Exponential Back-Off for Queues
+author: Scott Densmore
 date: 2012-04-28 02:34 -0700
+tags:
+- best-practices
+- azure
+- windows
+- career
 ---
 
 Really cool post on Windows Azure Queues. This is something that would be easy to replace in our [guidance on Windows Azure](http://msdn.microsoft.com/en-us/library/ff898430.aspx).

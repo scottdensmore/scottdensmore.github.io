@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "A perspective: developers vs Microsoft"
-author: "Scott Densmore"
+title: 'A perspective: developers vs Microsoft'
+author: Scott Densmore
 date: 2013-05-19 02:34 -0700
+tags:
+- opinion
+- azure
+- windows
 ---
 
 [A perspective: developers vs Microsoft | ReactOS Project](http://www.reactos.org/node/637): 

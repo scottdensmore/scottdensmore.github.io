@@ -1,8 +1,16 @@
 ---
 layout: post
-title: "Getting Our Heads in the Cloud"
-author: "Scott Densmore"
+title: Getting Our Heads in the Cloud
+author: Scott Densmore
 date: 2010-02-28 01:54 -0700
+tags:
+- conference
+- windows
+- azure
+- architecture
+- ios
+- career
+- dotnet
 ---
 
 This week we start working on our Azure Guidance project. Many customers are looking to move to [Azure](http://www.microsoft.com/windowsazure/) and need good guidance on how to make the move to the new platform. At patterns & practices, this is our number one goal. You could think of this as a program that will have multiple projects associated with it. The program will follow three major themes:

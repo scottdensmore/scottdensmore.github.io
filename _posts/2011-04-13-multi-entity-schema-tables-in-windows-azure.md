@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Multi Entity Schema Tables in Windows Azure"
-author: "Scott Densmore"
+title: Multi Entity Schema Tables in Windows Azure
+author: Scott Densmore
 date: 2011-04-13 02:45 -0700
+tags:
+- conference
+- windows
+- azure
+- git
+- security
+- career
 ---
 
 > The source for this is available on [github](https://github.com/scottdensmore/AzureMultiEntitySchema).

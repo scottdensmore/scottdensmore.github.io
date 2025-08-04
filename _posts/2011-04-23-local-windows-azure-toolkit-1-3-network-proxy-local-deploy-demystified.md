@@ -1,8 +1,14 @@
 ---
 layout: post
-title: "Local Windows Azure Toolkit >= 1.3 + Network Proxy + Local Deploy = Demystified"
-author: "Scott Densmore"
+title: Local Windows Azure Toolkit >= 1.3 + Network Proxy + Local Deploy = Demystified
+author: Scott Densmore
 date: 2011-04-23 02:45 -0700
+tags:
+- conference
+- windows
+- azure
+- security
+- career
 ---
 
 I was working on updating the [TailSpin application](http://wag.codeplex.com/) to use Windows Azure Access Control Service (ACS) this week and ran into a small problem.  I am using a WebClient in the controller to call back to ACS to get a list of the Identity Providers. While testing the implementation, I would constantly get a 500 error when running in the local dev fabric. When I would run the web site in IIS it would work just fine. This was driving me insane. I spent a few hours "boogling" (bing + google) around looking for an answer. I could not find anything.

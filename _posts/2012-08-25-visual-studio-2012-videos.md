@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Microsoft's New Logo"
-author: "Scott Densmore"
+title: Microsoft's New Logo
+author: Scott Densmore
 date: 2012-08-25 02:33 -0700
+tags:
+- azure
+- windows
+- visual-studio
+- career
 ---
 
 One of the things my team worked on for Visual Studio 2012 is the Video feature. The idea is to give you a good introduction into a specific feature in VS. One of the problems I know I have had in the past is I think I want to use a cool new feature, but I can't find anyway to use it or the documentation is a bit obscure. One way people learn is visually and giving them a brief video into how the feature works seemed like a good idea.  The start page in Visual Studio Premium and Ultimate shows a list of the videos that you have and puts a check box in the one you have not seen:

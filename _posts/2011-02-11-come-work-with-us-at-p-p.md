@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Come work with us at p&p"
-author: "Scott Densmore"
+title: Come work with us at p&p
+author: Scott Densmore
 date: 2011-02-11 02:45 -0700
+tags:
+- azure
+- windows
+- career
+- architecture
 ---
 
 Ever wanted to change the world? You too could come and enjoy the fun we have every day. If you think you would like to do this go apply here.

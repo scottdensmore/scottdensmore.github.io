@@ -1,8 +1,19 @@
 ---
 layout: post
-title: "Asynchronous calls in C++ Windows Store Unit Tests"
-author: "Scott Densmore"
+title: Asynchronous calls in C++ Windows Store Unit Tests
+author: Scott Densmore
 date: 2013-01-01 02:32 -0700
+tags:
+- windows
+- git
+- architecture
+- agile
+- review
+- ios
+- testing
+- career
+- best-practices
+- dotnet
 ---
 
 **Note**

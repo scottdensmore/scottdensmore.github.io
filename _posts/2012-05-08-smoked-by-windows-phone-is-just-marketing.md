@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "Smoked by Windows Phone is Just Marketing"
-author: "Scott Densmore"
+title: Smoked by Windows Phone is Just Marketing
+author: Scott Densmore
 date: 2012-05-08 02:34 -0700
+tags:
+- dotnet
+- windows
 ---
 
 I am not a huge fan of the Windows Phone. It is a personal taste. I am not that into Metro. I keep seeing these things about being smoked by Windows Phone and it makes me sad. Are people really that gullible? Don't they realize that the person using the phone is an expert with the phone.  This is all they do. Do you really think the test is not rigged in every way to give the advantage to the Windows Phone? This reminds me of the quote from Princess Bride when Vizzini and the Man in Black go against each other:

@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Debugger Type Visualizers for C++ in Visual Studio 2012"
-author: "Scott Densmore"
+title: Debugger Type Visualizers for C++ in Visual Studio 2012
+author: Scott Densmore
 date: 2012-07-15 02:38 -0700
+tags:
+- visual-studio
 ---
 
 This is cool stuff. If you have your own types and want to extend the debugger… this is for you. (Or if you are just a big nerd like me).

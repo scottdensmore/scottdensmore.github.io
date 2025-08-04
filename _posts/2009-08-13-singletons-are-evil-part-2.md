@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Singletons Are Evil Part 2"
-author: "Scott Densmore"
+title: Singletons Are Evil Part 2
+author: Scott Densmore
 date: 2009-08-13 01:54 -0700
+tags:
+- dotnet
+- azure
+- windows
+- conference
 ---
 
 A while back I wrote a post about why [singletons are evil](http://blogs.msdn.com/scottdensmore/archive/2004/05/25/140827.aspx). I still agree with that statement, yet after my comment on twitter today, I think I need to show how you can solve this problem differently.  

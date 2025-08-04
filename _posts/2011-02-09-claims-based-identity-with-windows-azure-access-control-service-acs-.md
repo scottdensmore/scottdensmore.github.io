@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Claims Based Identity with Windows Azure Access Control Service (ACS)"
-author: "Scott Densmore"
+title: Claims Based Identity with Windows Azure Access Control Service (ACS)
+author: Scott Densmore
 date: 2011-02-09 02:45 -0700
+tags:
+- security
+- azure
+- windows
+- ios
 ---
 
 We are making good headway on our new project.  We have started converting our current scenarios over to ACS.  [Eugenio](http://blogs.msdn.com/b/eugeniop/) has a couple of great posts on our first scenario using ACS as a Federation Provider.

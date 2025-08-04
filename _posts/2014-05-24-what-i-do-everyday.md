@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "What I Do Everyday"
-author: "Scott Densmore"
+title: What I Do Everyday
+author: Scott Densmore
 date: 2014-05-24 02:36 -0700
+tags:
+- dotnet
+- career
 ---
 
 If you every wanted to know what I do everyday… this is it:

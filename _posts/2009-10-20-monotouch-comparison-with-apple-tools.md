@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "MonoTouch Comparison with Apple Tools"
-author: "Scott Densmore"
+title: MonoTouch Comparison with Apple Tools
+author: Scott Densmore
 date: 2009-10-20 01:54 -0700
+tags:
+- dotnet
+- security
+- ios
+- career
 ---
 
 I have been playing around with MonoTouch trying to figure out if I liked the new approach to building Cocoa Touch apps. I decided to take a couple of the samples built using MonoTouch and build them for the Cocoa Touch using Apple's toolset.

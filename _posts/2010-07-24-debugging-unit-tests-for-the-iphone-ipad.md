@@ -1,8 +1,14 @@
 ---
 layout: post
-title: "Debugging Unit Tests for the iPhone/iPad"
-author: "Scott Densmore"
+title: Debugging Unit Tests for the iPhone/iPad
+author: Scott Densmore
 date: 2010-07-24 02:39 -0700
+tags:
+- conference
+- windows
+- ios
+- career
+- testing
 ---
 
 **Update 8/17/2010**

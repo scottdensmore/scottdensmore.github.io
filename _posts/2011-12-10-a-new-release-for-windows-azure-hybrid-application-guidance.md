@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "A New Release for Windows Azure Hybrid Application Guidance"
-author: "Scott Densmore"
+title: A New Release for Windows Azure Hybrid Application Guidance
+author: Scott Densmore
 date: 2011-12-10 02:55 -0700
+tags:
+- azure
+- windows
 ---
 
 We have made some significant updates to the guidance. We have put everything into one solution with deep integration with Windows Azure Cache and Service Bus.

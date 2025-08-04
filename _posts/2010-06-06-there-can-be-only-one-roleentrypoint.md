@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "There can be only One RoleEntryPoint"
-author: "Scott Densmore"
+title: There can be only One RoleEntryPoint
+author: Scott Densmore
 date: 2010-06-06 02:39 -0700
+tags:
+- windows
+- azure
+- visual-studio
+- architecture
+- ios
+- career
 ---
 
 Last week we were finalizing the production of [Windows Azure Architecture Guidance Part 1](http://wag.codeplex.com/), when we came across a problem with the code. We had a few machines that were failing when trying to start the WebRole for the project. Here are the event log entries for one of the machines (They were all logged by the HostableWebCore on the local machine):

@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Life Order of Operations"
-author: "Scott Densmore"
+title: Life Order of Operations
+author: Scott Densmore
 date: 2008-09-11 00:30 -0700
+tags:
+- azure
+- windows
+- career
 ---
 
 Customer, Company, Group / Team, Self: This is the order of operations.

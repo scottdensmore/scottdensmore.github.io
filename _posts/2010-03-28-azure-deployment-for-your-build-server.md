@@ -1,8 +1,19 @@
 ---
 layout: post
-title: "Azure Deployment for your Build Server"
+title: Azure Deployment for your Build Server
 date: 2010-03-28 02:39 -0700
-author: "Scott Densmore"
+author: Scott Densmore
+tags:
+- web
+- windows
+- personal
+- azure
+- git
+- visual-studio
+- ios
+- security
+- career
+- dotnet
 ---
 
 One of the more mundane tasks when working with Azure is the deployment process. There are APIs that can help deploy your application without having to go through the [Windows Azure portal](http://windows.azure.com) and Visual Studio. These APIs have been wrapped up nicely with the [Windows Azure Service Management CmdLets](http://code.msdn.microsoft.com/azurecmdlets). The one thing that would make this all better is if we could use these APIs and scripts to deploy our project every time a build we define happens. That is exactly what we have done for our [Windows Azure Guidance](http://wag.codeplex.com/) and I wanted to go ahead and get it out there for people to use. My friend [Jim's post](http://www.jimzimmerman.com/blog/2010/03/16/Deploying+An+Azure+Project+Using+TFS+2010.aspx) was a start and this is the next step.

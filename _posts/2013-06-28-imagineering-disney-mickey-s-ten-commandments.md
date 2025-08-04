@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Imagineering Disney: Mickey's Ten Commandments"
-author: "Scott Densmore"
+title: 'Imagineering Disney: Mickey''s Ten Commandments'
+author: Scott Densmore
 date: 2013-06-28 02:34 -0700
+tags:
+- dotnet
+- security
+- conference
+- architecture
 ---
 
 This is great advise…. even when it comes to software.

@@ -1,8 +1,17 @@
 ---
 layout: post
-title: "Cocoa to WSDL Web Service or \"Hi PC.. it is me Mac\""
-author: "Scott Densmore"
+title: Cocoa to WSDL Web Service or "Hi PC.. it is me Mac"
+author: Scott Densmore
 date: 2008-09-20 01:30 -0700
+tags:
+- web
+- conference
+- windows
+- azure
+- ios
+- testing
+- career
+- dotnet
 ---
 A while back I read [Kevin Hoffman's blog](http://dotnetaddict.dotnetdevelopersjournal.com/read/poster/87984.htm) [attempting to connect to a WSDL Web Service](http://dotnetaddict.dotnetdevelopersjournal.com/consuming_a_wsdl_web_service_from_cocoa__failed_attempt_1.htm) and it didn't work out so well for him. I don't know if he got any further, yet I decided that I wanted to give it a go. I decided I wanted build an application so I needed a theme. I decided I would build a Reservation system. This would allow me to build the Web Services .NET / WCF and a client in Cocoa (I say a client because I am going to try and also build one with MVC / Dynamic Data).
 

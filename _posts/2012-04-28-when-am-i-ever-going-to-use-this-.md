@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "When am I ever going to use this?"
-author: "Scott Densmore"
+title: When am I ever going to use this?
+author: Scott Densmore
 date: 2012-04-28 02:34 -0700
+tags:
+- ios
+- career
 ---
 
 There was a question on stackoverflow on [how to write an iOS app purely in C](http://stackoverflow.com/questions/10289890/how-to-write-ios-app-purely-in-c/10290255). Of course, anything is possible given time and money. The question is, why would I want to do this. Most of the time, you wouldn't, yet I don't think that is the lesson to learn here. It is not about mental gymnastics, it is understanding the system you live in.

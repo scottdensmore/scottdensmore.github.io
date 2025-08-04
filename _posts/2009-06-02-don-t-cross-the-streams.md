@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Don't Cross the Streams"
-author: "Scott Densmore"
+title: Don't Cross the Streams
+author: Scott Densmore
 date: 2009-06-02 01:54 -0700
+tags:
+- conference
+- career
+- architecture
 ---
 
 > "There's something very important I forgot to tell you.

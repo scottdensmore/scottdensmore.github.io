@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Windows Azure Deployment for your Build Server Part 2 : Deploy Certs"
+title: 'Windows Azure Deployment for your Build Server Part 2 : Deploy Certs'
 date: 2010-04-15 02:39 -0700
-author: "Scott Densmore"
+author: Scott Densmore
+tags:
+- web
+- windows
+- azure
+- git
+- security
+- career
 ---
 
 In [Part 1](ttp://scottdensmore.micro.blog/2010/03/28/azure-deployment-for-your-build-server.html) I discussed how you could use msbuild + PowerShell to deploy your Windows Azure projects. Another thing you might need to deploy is your certificates for SSL etc. I figured that was the next logical step so I modified the scripts to include this. The new deploycert.ps1 file takes you API certificate, the hosted service name and the cert path and password for your certificate. I added a property group to hold the certificate information in the msbuild file.

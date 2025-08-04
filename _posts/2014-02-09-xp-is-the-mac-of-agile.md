@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "XP is the Mac of Agile"
-author: "Scott Densmore"
+title: XP is the Mac of Agile
+author: Scott Densmore
 date: 2014-02-09 02:35 -0700
 guid: http://scottdensmore.micro.blog/2014/02/09/xp-is-the-mac-of-agile.html
+tags:
+- agile
+- ios
 ---
 
 [XP is the Mac of Agile](http://agilewarrior.wordpress.com/2014/02/03/xp-is-the-mac-of-agile/):

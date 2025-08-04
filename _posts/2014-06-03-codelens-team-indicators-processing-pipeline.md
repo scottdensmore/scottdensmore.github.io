@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "CodeLens Team Indicators - Processing Pipeline"
-author: "Scott Densmore"
+title: CodeLens Team Indicators - Processing Pipeline
+author: Scott Densmore
 date: 2014-06-03 02:36 -0700
+tags:
+- azure
+- windows
+- visual-studio
 ---
 
 [CodeLens Team Indicators - Processing Pipeline - Microsoft Application Lifecycle Management - Site Home - MSDN Blogs](http://blogs.msdn.com/b/visualstudioalm/archive/2014/05/23/codelens-team-indicators-processing-pipeline.aspx): 

@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "Time to Watch"
-author: "Scott Densmore"
+title: Time to Watch
+author: Scott Densmore
 date: 2018-02-22 00:00:00 -0800
+tags:
+- review
+- personal
 ---
 
 Time to watch all the kids play. Love hearing everyone from elementary to high school.

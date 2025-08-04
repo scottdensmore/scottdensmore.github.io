@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Another Update for the Deployment scripts for Windows Azure"
-author: "Scott Densmore"
+title: Another Update for the Deployment scripts for Windows Azure
+author: Scott Densmore
 date: 2011-02-24 02:45 -0700
+tags:
+- azure
+- windows
+- git
 ---
 
 [Tom Hollander](http://blogs.msdn.com/b/tomholl/) called me the other day looking for some advice on deployment scripts for Windows Azure. Given that I have not got around to updating these for the new SDK and commandlets, I decided it was about time. Tom did beat me to the punch and put out [his own post](http://blogs.msdn.com/b/tomholl/archive/2011/02/23/using-msbuild-to-deploy-to-multiple-windows-azure-environments.aspx) (which is very good), yet I figured I would update the scripts and push them out to [github](https://github.com/scottdensmore/AzureDeploySample).  Now anytime you want, you can fork, send me pull requests etc.
