@@ -782,6 +782,357 @@ img[loading="lazy"] {
   }
 }
 
+/* Archive page styles */
+.archive-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.archive-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  
+  h1 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    
+    i {
+      color: var(--primary-color);
+      margin-right: var(--spacing-sm);
+    }
+  }
+  
+  .archive-summary {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+}
+
+.archive-layout {
+  display: flex;
+  gap: var(--spacing-xl);
+  align-items: flex-start;
+}
+
+/* Archive Sidebar */
+.archive-sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  position: sticky;
+  top: var(--spacing-xl);
+  
+  h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+    
+    i {
+      color: var(--primary-color);
+      margin-right: var(--spacing-sm);
+    }
+  }
+}
+
+.year-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.year-nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  
+  &:hover,
+  &.active {
+    background: var(--button-bg-primary);
+    border-left-color: var(--primary-color);
+    transform: translateX(2px);
+  }
+  
+  .year {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .post-count {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: var(--background-main);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--border-radius-small);
+  }
+}
+
+/* Archive Main Content */
+.archive-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.year-section {
+  margin-bottom: var(--spacing-xl);
+  scroll-margin-top: var(--spacing-xl);
+}
+
+.year-header {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  
+  i {
+    color: var(--primary-color);
+  }
+  
+  .year-post-count {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: normal;
+    background: var(--button-bg-primary);
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--border-radius-small);
+    margin-left: auto;
+  }
+}
+
+.months-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.month-section {
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  border-left: 4px solid var(--primary-color);
+}
+
+.month-header {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  
+  .month-post-count {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: var(--background-main);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border-radius-small);
+    font-weight: normal;
+  }
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.archive-post {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--background-main);
+  border-radius: var(--border-radius);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-card);
+  }
+}
+
+.post-date {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.post-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-title {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.post-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tag-more {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Archive Statistics Component */
+.archive-stats {
+  background: var(--background-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  margin: var(--spacing-lg) 0;
+}
+
+.archive-stats__title {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.1rem;
+  
+  i {
+    color: var(--primary-color);
+    margin-right: var(--spacing-sm);
+  }
+}
+
+.archive-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.stat-item {
+  text-align: center;
+  background: var(--background-main);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+}
+
+.archive-stats__years h4 {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+}
+
+.year-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.year-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.year-info {
+  min-width: 4rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  
+  .year {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  
+  .count {
+    color: var(--text-secondary);
+  }
+}
+
+.bar-container {
+  flex: 1;
+  height: 0.5rem;
+  background: var(--background-main);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background: var(--primary-gradient);
+  border-radius: 0.25rem;
+  transition: width 0.3s ease;
+}
+
+.archive-stats__footer {
+  margin-top: var(--spacing-lg);
+  text-align: center;
+}
+
+.view-archive-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--button-bg-primary);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: var(--button-bg-primary-hover);
+    transform: translateY(-1px);
+  }
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .homepage-layout {
@@ -886,5 +1237,87 @@ img[loading="lazy"] {
         display: none; /* Hide text labels on mobile, show only icons */
       }
     }
+  }
+  
+  /* Responsive archive styles */
+  .archive-container {
+    padding: var(--spacing-md);
+  }
+  
+  .archive-layout {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+  
+  .archive-sidebar {
+    width: 100%;
+    position: static;
+    order: 2;
+    
+    h3 {
+      text-align: center;
+      margin-bottom: var(--spacing-md);
+    }
+  }
+  
+  .year-navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .year-nav-link {
+    flex-direction: column;
+    min-width: 4rem;
+    text-align: center;
+    
+    .post-count {
+      margin-top: 0.2rem;
+    }
+  }
+  
+  .archive-main {
+    order: 1;
+  }
+  
+  .year-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    
+    .year-post-count {
+      margin-left: 0;
+      align-self: flex-end;
+    }
+  }
+  
+  .month-section {
+    padding: var(--spacing-md);
+  }
+  
+  .archive-post {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .post-date {
+    align-self: center;
+  }
+  
+  .archive-stats__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .year-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+  }
+  
+  .year-info {
+    justify-content: center;
+    gap: var(--spacing-sm);
   }
 }
