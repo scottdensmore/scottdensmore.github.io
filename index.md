@@ -13,6 +13,8 @@ classes: wide
       <h2 class="main-content__title"><i class="fas fa-newspaper"></i> Latest Post</h2>
       {% include latest-post-card.html %}
       
+      {% include featured-posts.html %}
+      
       {% include archive-stats.html %}
     </main>
   </div>
