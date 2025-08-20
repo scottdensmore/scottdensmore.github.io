@@ -60,7 +60,8 @@ classes: wide
                     <article class="archive-post">
                       <div class="post-date">
                         <time datetime="{{ post.date | date_to_xmlschema }}">
-                          {{ post.date | date: "%d" }}
+                          <span style="font-size: 0.8rem; text-transform: uppercase;">{{ post.date | date: "%b" }}</span>
+                          <span>{{ post.date | date: "%d" }}</span>
                         </time>
                       </div>
                       
