@@ -4,6 +4,7 @@ layout: single
 
 <div class="posts-container">
   <p class="posts-subtitle">Browse all blog posts by year and month</p>
+  {{ content }}
 
   {% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsByYear %}
