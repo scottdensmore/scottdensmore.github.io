@@ -9,7 +9,7 @@ classes: wide
   <section class="homepage-posts">
     {% for post in site.posts limit: 20 %}
       <article class="post-item">
-        <a href="{{ post.url }}" class="post-item__link">
+        <a href="{{ post.url | relative_url }}" class="post-item__link">
           <h2 class="post-item__title">{{ post.title }}</h2>
         </a>
         <div class="post-item__meta">
@@ -30,6 +30,6 @@ classes: wide
   </section>
 
   <div class="homepage-more">
-    <a href="/posts/" class="homepage-more__link">View all posts &rarr;</a>
+    <a href="{{ '/posts/' | relative_url }}" class="homepage-more__link">View all posts &rarr;</a>
   </div>
 </div>
