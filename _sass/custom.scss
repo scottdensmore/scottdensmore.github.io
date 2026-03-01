@@ -641,8 +641,15 @@ img {
       border-right: 1px solid var(--border-light);
     }
 
+    /* Remove bottom border from items in the last row */
     &:nth-last-child(-n+2) {
       border-bottom: none;
+    }
+
+    /* When there is an odd number of items, restore the border
+       for the second-to-last item, which is still in the previous row */
+    &:nth-last-child(2):nth-child(even) {
+      border-bottom: 1px solid var(--border-light);
     }
   }
 
