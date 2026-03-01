@@ -4,7 +4,3 @@ main:
     url: /about/
   - title: "Posts"
     url: /posts/
-  - title: "Archive"
-    url: /archive/
-  - title: "Contact"
-    url: /contact/

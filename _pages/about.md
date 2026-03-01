@@ -2,11 +2,11 @@
 permalink: /about/
 title: "About Me"
 layout: single
-author_profile: true
+author_profile: false
 ---
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/scott-pixle.png" alt="Scott Densmore" style="max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<div class="about-avatar">
+  <img src="/assets/img/scott-pixle.png" alt="Scott Densmore">
 </div>
 
 ## So You Ended Up Here: My Condolences.
@@ -40,4 +40,13 @@ To save you the trouble of internet stalking, here are the answers to your burni
 
 Look, the point of this page is to tell you that there's a real, slightly weird human behind this blog. If any of this resonates with you, then you'll probably enjoy what I write.
 
-📩 [Contact Scott Densmore](/contact/)
+## GitHub Activity
+
+<div class="github-activity">
+  <a href="https://github.com/scottdensmore">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://ghchart.rshah.org/60a5fa/scottdensmore" />
+      <img src="https://ghchart.rshah.org/0066cc/scottdensmore" alt="Scott's GitHub Contribution Graph" />
+    </picture>
+  </a>
+</div>
