@@ -1,0 +1,27 @@
+<!-- Search Overlay -->
+<div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="Search posts">
+  <div class="search-overlay__dialog">
+    <div class="search-overlay__header">
+      <div class="search-overlay__input-wrap">
+        <svg class="search-overlay__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" id="search-input" class="search-overlay__input" placeholder="Search posts..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <kbd class="search-overlay__kbd">Esc</kbd>
+      </div>
+      <button id="search-close" class="search-overlay__close" aria-label="Close search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+    <div class="search-overlay__footer">
+      <span class="search-overlay__shortcut">
+        <kbd>&#8984;K</kbd> to toggle
+      </span>
+    </div>
+  </div>
+</div>
