@@ -634,109 +634,83 @@ img {
   flex-shrink: 0;
 }
 
-/* Posts page - taxonomy index (year grid) */
-.taxonomy__index {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 var(--spacing-xl) 0;
-  border: 1px solid var(--border-light);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-
-  li {
-    margin: 0;
-    border-bottom: 1px solid var(--border-light);
-
-    &:nth-child(odd) {
-      border-right: 1px solid var(--border-light);
-    }
-
-    /* Remove bottom border from items in the last row */
-    &:nth-last-child(-n+2) {
-      border-bottom: none;
-    }
-
-    /* When there is an odd number of items, restore the border
-       for the second-to-last item, which is still in the previous row */
-    &:nth-last-child(2):nth-child(even) {
-      border-bottom: 1px solid var(--border-light);
-    }
-  }
-
-  a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-sm) var(--spacing-md);
-    color: var(--text-primary);
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-
-    &:hover {
-      background: var(--background-light);
-    }
-
-    strong {
-      font-weight: 600;
-    }
-  }
-
-  .taxonomy__count {
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-  }
+/* Posts page */
+.posts-container {
+  padding: var(--spacing-lg) 0;
 }
 
-/* Posts page - year sections */
-.taxonomy__section {
+.posts-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0 0 var(--spacing-xl) 0;
+}
+
+.posts-year {
   margin-bottom: var(--spacing-xl);
 }
 
-.archive__subtitle {
-  font-size: 1.3rem;
-  font-weight: 600;
+.posts-year__title {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--text-primary);
+  margin: 0;
   padding-bottom: var(--spacing-sm);
-  border-bottom: 1px solid var(--border-light);
-  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--accent-color);
 }
 
-/* Posts page - individual post items */
-.entries-list {
-  .list__item {
-    padding: var(--spacing-md) 0;
-    border-bottom: 1px solid var(--border-light);
+.posts-year__count {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
 
-    &:last-child {
-      border-bottom: none;
-    }
+.posts-month__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+}
+
+.posts-month__count {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.posts-entry {
+  margin-bottom: var(--spacing-lg);
+}
+
+.posts-entry__title-link {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent-color) !important;
+  text-decoration: none;
+  line-height: 1.4;
+
+  &:hover {
+    text-decoration: underline;
   }
+}
 
-  .archive__item-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0 0 var(--spacing-sm) 0;
-    line-height: 1.4;
+.posts-entry__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-top: 0.3em;
 
-    a {
-      color: var(--text-primary);
-      text-decoration: none;
-
-      &:hover {
-        color: var(--accent-color);
-      }
-    }
+  .icon {
+    opacity: 0.7;
   }
+}
 
-  .archive__item-excerpt {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin: 0;
-  }
+.posts-entry__excerpt {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0.5em 0 0 0;
 }
 
 /* Responsive design */
