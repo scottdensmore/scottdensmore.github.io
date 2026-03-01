@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: var(--spacing-md);
   color: var(--text-secondary);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   margin-bottom: var(--spacing-sm);
 }
 
@@ -616,7 +616,7 @@ img {
   gap: var(--spacing-sm);
   margin-bottom: var(--spacing-lg);
   color: var(--text-secondary);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   flex-wrap: wrap;
 
   time {
@@ -709,7 +709,7 @@ img {
   align-items: center;
   gap: 0.4em;
   color: var(--text-secondary);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   margin-top: 0.3em;
 
   .icon {
