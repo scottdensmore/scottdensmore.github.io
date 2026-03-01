@@ -90,18 +90,10 @@
       })
       .then(function (data) {
         searchIndex = data;
-
-        // If the user has already entered a query while the index was loading,
-        // rerun the search now that the index is available.
-        if (
-          searchOverlay &&
-          searchOverlay.classList.contains('is-active') &&
-          searchInput
-        ) {
-          var currentQuery = searchInput.value.trim();
-          if (currentQuery.length >= 2) {
-            performSearch(currentQuery);
-          }
+        // Re-run search if user typed while index was loading
+        var pending = searchInput.value.trim();
+        if (pending.length >= 2) {
+          performSearch(pending);
         }
       })
       .catch(function (err) {
