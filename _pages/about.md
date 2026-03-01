@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 <div class="about-avatar">
-  <img src="/assets/img/scott-pixle.png" alt="Scott Densmore">
+  <img src="{{ '/assets/img/scott-pixle.png' | relative_url }}" alt="Scott Densmore">
 </div>
 
 ## So You Ended Up Here: My Condolences.
