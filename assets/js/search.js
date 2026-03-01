@@ -90,6 +90,19 @@
       })
       .then(function (data) {
         searchIndex = data;
+
+        // If the user has already entered a query while the index was loading,
+        // rerun the search now that the index is available.
+        if (
+          searchOverlay &&
+          searchOverlay.classList.contains('is-active') &&
+          searchInput
+        ) {
+          var currentQuery = searchInput.value.trim();
+          if (currentQuery.length >= 2) {
+            performSearch(currentQuery);
+          }
+        }
       })
       .catch(function (err) {
         console.error('Search index load error:', err);
