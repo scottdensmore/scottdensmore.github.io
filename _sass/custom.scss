@@ -54,9 +54,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead__nav {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .site-title {
@@ -68,9 +69,19 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary) !important;
   text-decoration: none;
   letter-spacing: -0.01em;
+  margin-right: auto;
+  flex-shrink: 0;
 
   &:hover {
     color: var(--text-secondary) !important;
+  }
+}
+
+/* Override theme greedy-nav styles */
+.greedy-nav {
+  background: transparent !important;
+  .visible-links {
+    flex: initial !important;
   }
 }
 
