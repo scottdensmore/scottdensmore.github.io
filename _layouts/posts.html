@@ -21,7 +21,9 @@ layout: single
           <article class="posts-entry">
             <a href="{{ post.url | relative_url }}" class="posts-entry__title-link">{{ post.title }}</a>
             <div class="posts-entry__meta">
-              {% include icon-calendar.html %}
+              <span aria-hidden="true" class="posts-entry__calendar-icon">
+                {% include icon-calendar.html %}
+              </span>
               <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
               {% assign words = post.content | number_of_words %}
               {% assign minutes = words | plus: 199 | divided_by: 200 %}
