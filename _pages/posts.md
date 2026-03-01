@@ -1,8 +1,6 @@
 ---
-title: "All Posts"
+title: ""
 permalink: /posts/
 layout: posts
 author_profile: false
 ---
-
-This page contains an archive of all posts on this blog, organized by date.
