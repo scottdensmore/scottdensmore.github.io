@@ -21,6 +21,9 @@ classes: wide
           {% assign minutes = words | plus: 199 | divided_by: 200 %}
           {% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
           <span class="post-item__reading-time">{{ minutes }} min read</span>
+          {% if post.content contains '<img' %}
+            <span class="post-item__has-image" title="Contains images" aria-hidden="true">{% include icon-image.html %}</span>
+          {% endif %}
         </div>
         {% if post.excerpt %}
           <p class="post-item__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
