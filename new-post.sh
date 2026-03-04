@@ -4,7 +4,12 @@
 
 set -e
 
-TITLE="${1:?Usage: ./new-post.sh \"Your Post Title\"}"
+if [ $# -lt 1 ]; then
+    echo "Usage: ./new-post.sh \"Your Post Title\"" >&2
+    exit 2
+fi
+
+TITLE="$1"
 
 SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-\|-$//g')
 DATE=$(date '+%Y-%m-%d')
@@ -27,4 +32,9 @@ tags: []
 EOF
 
 echo "Created: $FILENAME"
-${EDITOR:-code} "$FILENAME"
+PREFERRED_EDITOR="${VISUAL:-${EDITOR:-code}}"
+if command -v "$PREFERRED_EDITOR" >/dev/null 2>&1; then
+    "$PREFERRED_EDITOR" "$FILENAME"
+else
+    echo "No editor found. Edit manually: $FILENAME" >&2
+fi
