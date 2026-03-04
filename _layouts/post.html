@@ -15,6 +15,10 @@ layout: single
       {% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
       <span class="post-meta__separator">&middot;</span>
       <span>{{ minutes }} min read</span>
+      {% if content contains '<img' or content contains '![' %}
+        <span class="post-meta__separator">&middot;</span>
+        <span class="post-meta__has-image" title="Contains images">{% include icon-image.html %}</span>
+      {% endif %}
       {% if page.tags and page.tags.size > 0 %}
         <span class="post-meta__separator">&middot;</span>
         {% for tag in page.tags %}
