@@ -1,0 +1,13 @@
+/doctor
+
+---
+
+lets remove that form the settings.local.json
+
+---
+
+/claude-code-setup:claude-automation-recommender
+
+---
+
+Lets build the ones you recommmended. We can remove the Gemini.md. Lets create an Agents.md so all coding agents can use it and link to the Claude.md. I think this is the best option since I use multiple coding agents

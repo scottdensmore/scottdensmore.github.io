@@ -1,0 +1,29 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "7a8da92448af",
+  "strategy": "manual-commit",
+  "branch": "add-coding-agent-setup",
+  "checkpoints_count": 4,
+  "files_touched": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "_scripts/update-modified.rb"
+  ],
+  "sessions": [
+    {
+      "metadata": "/7a/8da92448af/0/metadata.json",
+      "transcript": "/7a/8da92448af/0/full.jsonl",
+      "compact_transcript": "/7a/8da92448af/0/transcript.jsonl",
+      "content_hash": "/7a/8da92448af/0/content_hash.txt",
+      "prompt": "/7a/8da92448af/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 57,
+    "cache_creation_tokens": 90953,
+    "cache_read_tokens": 2293804,
+    "output_tokens": 40793,
+    "api_call_count": 30
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "7a8da92448af",
+  "session_id": "fa7a5381-0492-4480-83cf-4aa43b10e528",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-26T19:15:13.829535Z",
+  "branch": "add-coding-agent-setup",
+  "checkpoints_count": 4,
+  "save_step_count": 1,
+  "files_touched": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "_scripts/update-modified.rb"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-8[1m]",
+  "turn_id": "f98c3748232c",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 57,
+    "cache_creation_tokens": 90953,
+    "cache_read_tokens": 2293804,
+    "output_tokens": 40793,
+    "api_call_count": 30
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "prompt-skill-claude-code-doctor-2026-07-26T18:57:37.511411Z",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "doctor"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "prompt_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "ce357c7e7d41",
+      "timestamp": "2026-07-26T18:57:37.511411Z",
+      "native": {
+        "command": "/doctor"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/doctor",
+        "default_collapsed": true
+      }
+    },
+    {
+      "id": "prompt-skill-claude-code-claude-code-setup:claude-automation-recommender-2026-07-26T19:04:06.442231Z",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "claude-code-setup:claude-automation-recommender"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "prompt_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "6f0f5d75f41c",
+      "timestamp": "2026-07-26T19:04:06.442231Z",
+      "native": {
+        "command": "/claude-code-setup:claude-automation-recommender"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/claude-code-setup:claude-automation-recommender",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 4
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-26T19:15:13.807825Z",
+    "agent_lines": 122,
+    "agent_removed": 68,
+    "human_added": 126,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 248,
+    "total_lines_changed": 316,
+    "agent_percentage": 60.12658227848101,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 256,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".claude/launch.json": 11,
+        ".claude/settings.json": 84,
+        ".claude/settings.local.json": 5,
+        ".codex/config.toml": 3,
+        ".codex/hooks.json": 52,
+        ".cursor/hooks.json": 40,
+        ".github/hooks/entire.json": 61
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 5,
+      "user_lines_removed": 0,
+      "agent_lines_added": 499,
+      "agent_lines_removed": 68,
+      "user_added_per_file": {
+        ".claude/settings.local.json": 5
+      }
+    }
+  ]
+}
