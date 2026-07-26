@@ -1,0 +1,5 @@
+yep go ahead and squash merge
+
+---
+
+Take a look at all the dependabot allerts and resolve them

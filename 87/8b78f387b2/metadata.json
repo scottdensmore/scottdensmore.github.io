@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "878b78f387b2",
+  "strategy": "manual-commit",
+  "branch": "security/bundle-update",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "Gemfile.lock"
+  ],
+  "sessions": [
+    {
+      "metadata": "/87/8b78f387b2/0/metadata.json",
+      "transcript": "/87/8b78f387b2/0/full.jsonl",
+      "compact_transcript": "/87/8b78f387b2/0/transcript.jsonl",
+      "content_hash": "/87/8b78f387b2/0/content_hash.txt",
+      "prompt": "/87/8b78f387b2/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 20,
+    "cache_creation_tokens": 12810,
+    "cache_read_tokens": 1445376,
+    "output_tokens": 7083,
+    "api_call_count": 11
+  }
+}
