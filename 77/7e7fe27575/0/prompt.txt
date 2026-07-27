@@ -43,3 +43,7 @@ yes
 ---
 
 Ok want to add all the entire things that are not checked in. It should be checked in as part of the repo
+
+---
+
+entire created those what should we do with them?
