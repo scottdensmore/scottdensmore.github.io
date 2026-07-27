@@ -1,0 +1,94 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "fe2c420a2c1b",
+  "session_id": "fa7a5381-0492-4480-83cf-4aa43b10e528",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-27T02:21:52.258562Z",
+  "branch": "security/fix-f2-command-injection",
+  "checkpoints_count": 2,
+  "save_step_count": 1,
+  "files_touched": [],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-8[1m]",
+  "turn_id": "6fbf6346068f",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 4829,
+    "cache_creation_tokens": 838549,
+    "cache_read_tokens": 20947099,
+    "output_tokens": 119213,
+    "api_call_count": 130
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "prompt-skill-claude-code-doctor-2026-07-26T18:57:37.511411Z",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "doctor"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "prompt_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "ce357c7e7d41",
+      "timestamp": "2026-07-26T18:57:37.511411Z",
+      "native": {
+        "command": "/doctor"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/doctor",
+        "default_collapsed": true
+      }
+    },
+    {
+      "id": "prompt-skill-claude-code-claude-code-setup:claude-automation-recommender-2026-07-26T19:04:06.442231Z",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "claude-code-setup:claude-automation-recommender"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "prompt_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "6f0f5d75f41c",
+      "timestamp": "2026-07-26T19:04:06.442231Z",
+      "native": {
+        "command": "/claude-code-setup:claude-automation-recommender"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/claude-code-setup:claude-automation-recommender",
+        "default_collapsed": true
+      }
+    },
+    {
+      "id": "prompt-skill-claude-code-claude-security:claude-security-2026-07-26T23:49:38.273771Z",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "claude-security:claude-security"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "prompt_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "91d17c25bc31",
+      "timestamp": "2026-07-26T23:49:38.273771Z",
+      "native": {
+        "command": "/claude-security:claude-security"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/claude-security:claude-security",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 13
+  }
+}
