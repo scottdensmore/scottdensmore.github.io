@@ -47,7 +47,7 @@ staged_files.each do |file_path|
     File.write(file_path, new_content)
 
     # Stage the changes so they are included in the commit
-    `git add #{file_path}`
+    system('git', 'add', '--', file_path)
 
     puts "  - Updated #{file_path}"
   rescue Psych::SyntaxError => e
