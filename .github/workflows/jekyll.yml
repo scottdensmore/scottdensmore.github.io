@@ -34,7 +34,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
       - name: Setup Ruby
-        # https://github.com/ruby/setup-ruby/releases/tag/v1.321.0
+        # https://github.com/ruby/setup-ruby/releases/tag/v1.329.0
         uses: ruby/setup-ruby@651ff0d62c5c79bed6d53ec518387aae20e72c1a
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
