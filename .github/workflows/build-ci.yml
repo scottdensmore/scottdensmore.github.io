@@ -1,0 +1,49 @@
+# Build validation only. The separate jekyll.yml publisher stays disabled.
+name: Offline site build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      BUNDLE_FROZEN: 'true'
+      BUNDLE_DEPLOYMENT: 'true'
+      BUNDLE_DISABLE_VERSION_CHECK: 'true'
+      JEKYLL_ENV: production
+      NO_NETRC: '1'
+      JEKYLL_GITHUB_TOKEN: ''
+      GITHUB_TOKEN: ''
+      GH_TOKEN: ''
+      PAGES_REPO_NWO: scottdensmore/scottdensmore.github.io
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Require preinstalled pinned Ruby and Bundler without installation
+        run: python3 -I _scripts/ci/select_ruby.py
+      - name: Install only frozen project gems into runner scratch space
+        run: |
+          "$CI_RUBY" -rrubygems -e 'gem "bundler", ENV.fetch("CI_BUNDLER_VERSION"); load ENV.fetch("CI_BUNDLE")' -- install --jobs 2 --retry 0
+      - name: Render all site content with offline GitHub metadata and no network
+        run: |
+          "$CI_RUBY" -rrubygems -e 'gem "bundler", ENV.fetch("CI_BUNDLER_VERSION"); load ENV.fetch("CI_BUNDLE")' -- exec "$CI_RUBY" _scripts/ci/build_offline.rb
+      - name: Validate actual HTML, search records, feed and sitemap
+        run: python3 -I _scripts/ci/check_site.py
+      - name: Preserve site content, runtime pins and dependency locks
+        run: |
+          git diff --exit-code
+          echo 'Offline site rendering only, with GitHub metadata using its offline fallback. No Pages configuration, site upload, deployment, release, runtime/tool installation or live metadata acceptance.' >> "$GITHUB_STEP_SUMMARY"
