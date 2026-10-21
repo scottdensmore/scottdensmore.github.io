@@ -2,7 +2,7 @@ source "https://rubygems.org"
 # Match the existing Actions build and activated plugin versions.
 gem "jekyll", "3.10.0"
 gem "minimal-mistakes-jekyll", "4.28.1"
-gem "json", "2.21.2"
+gem "json", "3.1.0"
 gem "kramdown-parser-gfm", "1.1.0"
 gem "faraday-retry"
 group :jekyll_plugins do
