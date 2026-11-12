@@ -15,3 +15,21 @@ vendor/
 *.log
 
 .env
+.env.*
+!.env.example
+
+# Ruby LSP and debugger history
+.ruby-lsp/
+.byebug_history
+
+# Additional OS metadata and editors
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+[Dd]esktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
