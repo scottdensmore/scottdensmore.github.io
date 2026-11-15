@@ -17,7 +17,7 @@ tags:
 
 I have written quite a bit of articles on iOS and Mac applications using agile techniques (unit testing, continuous integration, etc) and in this post, I am going to put it all together. We will go through how to setup the project, build the application test first, how to integrate code coverage and source control flow to build features.
 
-[Download the code.](https://github.com/scottdensmore/ContactManager)
+[Download the code.](https://github.com/scottdensmore/contactmanager)
 
 **The Application**
 
@@ -62,6 +62,6 @@ This one was pretty easy as well. I followed the process from [here](http://nvie
 
 **Wrap Up**
 
-The [code](https://github.com/scottdensmore/ContactManager) is the best place to learn. I hope you find a few nuggets in here that you can use on your projects. It has taken me a while to find my groove yet I am really happy with this now.
+The [code](https://github.com/scottdensmore/contactmanager) is the best place to learn. I hope you find a few nuggets in here that you can use on your projects. It has taken me a while to find my groove yet I am really happy with this now.
 
 If you want to know more about Unit Testing I would go check out [Unit Testing with XCode](http://ideveloper.tv/store/details?product_code=10007).

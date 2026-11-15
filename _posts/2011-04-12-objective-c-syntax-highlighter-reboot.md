@@ -8,7 +8,7 @@ tags:
 - ios
 ---
 
-I really like [Syntax Highlighter](http://alexgorbatchev.com/SyntaxHighlighter/). I like when the code is put in a pre tag and looks like something from the IDE. I had an Objective C highlighter for a previous version of Syntax Highlighter, so I decided to upgrade and post the highlighter to [github](https://github.com/scottdensmore/ObjectiveCSyntaxHighlighter). I am sure I have missed some things here and I hope that others fork and update it as the platform(s) get updated. Here is an example of what it looks like. [Download](https://github.com/scottdensmore/ObjectiveCSyntaxHighlighter) and enjoy!
+I really like [Syntax Highlighter](http://alexgorbatchev.com/SyntaxHighlighter/). I like when the code is put in a pre tag and looks like something from the IDE. I had an Objective C highlighter for a previous version of Syntax Highlighter, so I decided to upgrade and post the highlighter to [github](https://github.com/scottdensmore/objc-syntax-highlighter). I am sure I have missed some things here and I hope that others fork and update it as the platform(s) get updated. Here is an example of what it looks like. [Download](https://github.com/scottdensmore/objc-syntax-highlighter) and enjoy!
 
 **Sample**
 

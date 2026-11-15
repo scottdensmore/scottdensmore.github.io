@@ -14,7 +14,7 @@ tags:
 
 One of the things I wanted to do after getting comfortable with the iOS/Mac platform(s) was trying to take my "agile" ways to the platforms (for this post specifically testing). I started learning all this in the Xcode 3 days. I really think with the release of Xcode 4, things are getting much better. WIth workspaces, schemes and better unit testing integration, I believe Xcode 4 is making my life as a developer easier on the platform.
 
-All the code for this project can be found on github [here](https://github.com/scottdensmore/OCUnitLogger).
+All the code for this project can be found on github [here](https://github.com/scottdensmore/ocunit-logger).
 
 **Unit Testing**
 
@@ -122,4 +122,4 @@ The bowling project is a Coca Framework project created with Unit Tests. It is p
 
 **Conclusion**
 
-This is a pretty simple add to any of your projects. If you are using TeamCity and want to have a good log for your unit tests, you can drop this in and have TeamCity do the rest. If you want to make it better please fork from [here](https://github.com/scottdensmore/OCUnitLogger) and pound away.
+This is a pretty simple add to any of your projects. If you are using TeamCity and want to have a good log for your unit tests, you can drop this in and have TeamCity do the rest. If you want to make it better please fork from [here](https://github.com/scottdensmore/ocunit-logger) and pound away.

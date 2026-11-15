@@ -12,7 +12,7 @@ tags:
 - career
 ---
 
-> The source for this is available on [github](https://github.com/scottdensmore/AzureMultiEntitySchema).
+> The source for this is available on [github](https://github.com/scottdensmore/azure-multi-entity-schema).
 
 ### Update
 
@@ -82,4 +82,4 @@ QueueCommandHandler.For(exportQueue).Every(TimeSpan.FromSeconds(5)).WithPosionMe
 **Conclusion
 **
 
-This is the beginning of our updates to our [Windows Azure Guidance](http://msdn.microsoft.com/en-us/library/ff898430.aspx). We want to show even better ways of moving and developing applications for the cloud. Go check out the [source](https://github.com/scottdensmore/AzureMultiEntitySchema).
+This is the beginning of our updates to our [Windows Azure Guidance](http://msdn.microsoft.com/en-us/library/ff898430.aspx). We want to show even better ways of moving and developing applications for the cloud. Go check out the [source](https://github.com/scottdensmore/azure-multi-entity-schema).

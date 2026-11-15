@@ -22,7 +22,7 @@ I had previously published this and with all the new things I have learned, I th
 
 I have written quite a bit about using agile techniques (unit testing, continuous integration, etc) and in this post, I am going to put it all together. We will go through how to setup the project, build the application test first, how to integrate code coverage and source control flow to build features.
 
-[Download the code.](https://github.com/scottdensmore/ContactManager)
+[Download the code.](https://github.com/scottdensmore/contactmanager)
 
 **The Application**
 
@@ -71,7 +71,7 @@ I use [home-brew](http://mxcl.github.com/homebrew/) to install everything. You c
 
 **Wrap Up**
 
-The [code](https://github.com/scottdensmore/ContactManager) is the best place to learn. I hope you find a few nuggets in here that you can use on your projects. It has taken me a while to find my groove yet I am really happy with this now. And I am always looking to improve.
+The [code](https://github.com/scottdensmore/contactmanager) is the best place to learn. I hope you find a few nuggets in here that you can use on your projects. It has taken me a while to find my groove yet I am really happy with this now. And I am always looking to improve.
 
 If you want to know more about Unit Testing I would go check out [Unit Testing with Xcode](http://ideveloper.tv/store/details?product_code=10007) or [Test-Driven iOS Development](http://www.amazon.com/Test-Driven-iOS-Development-Developers-Library/dp/0321774183/ref=sr_1_1?ie=UTF8&qid=1357072434&sr=8-1&keywords=unit+testing+ios).
 
