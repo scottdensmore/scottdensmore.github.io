@@ -25,7 +25,7 @@ After refining this for a while I have changed my workflow now to this:
 
 Pretty easy now. 
 
-Download the code from the GitHub project [here](https://github.com/scottdensmore/BuildNumberTest).
+Download the code from the GitHub project [here](https://github.com/scottdensmore/build-number-test).
 
 Updated 6/20/2013 with new workflow.
 
